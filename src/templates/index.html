@@ -22,9 +22,25 @@ title: Index page
 			<video class="animate__animated animate__zoomIn" src="./img/nxmn-video.mp4" autoplay muted loop></video>
 		</section>
 		{% include "partials/sections/_projects.html" %}
+		{% include "partials/sections/_doingnow.html" %}
+		<section class="kp">
+			<div class="container">
+				<div class="kp__title standart wow animate__animated animate__fadeIn">Получить</div>
+				<div class="kp__subtitle standart wow animate__animated animate__fadeIn">Больше проектов </div>
+				<div class="kp__suptitle standart wow animate__animated animate__fadeIn">В индивидуальном КП</div>
+				<button class="kp__btn btn wow animate__animated animate__fadeInUp">
+					<span>получить предложение</span>
+					<svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<rect width="56" height="56" rx="10" fill="#186D72" />
+						<path d="M20.929 35.0711L35.0711 20.929M35.0711 20.929L28.5931 21.7501M35.0711 20.929L34.25 27.407" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+					</svg>
+				</button>
+				<p class="kp__text text--large wow animate__animated animate__fadeInUp">
+					Персонализированная информация и оценка стоимости работы
+				</p>
+			</div>
+		</section>
 		{% include "partials/sections/_telegram.html" %}
-		
-
     </main>
 
 	{% include "partials/_footer.html" %}

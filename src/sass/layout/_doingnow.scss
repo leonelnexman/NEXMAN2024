@@ -1,0 +1,42 @@
+.doingnow{
+    margin-bottom: 12rem;
+    .container{
+        display: flex;
+        gap: 7rem;
+    }
+    .swiper-wrapper{
+        -webkit-transition-timing-function:linear!important;   
+        transition-timing-function:linear!important; 
+        position: relative;
+    } 
+    &__title{
+        color: $light-middle-gray;
+    }
+    &__subtitle{
+        margin-left: 12.1rem;
+    }
+    .swiper-slide{
+        border-radius: 3rem;
+        width: 23.6rem;
+        background: $light-gray;
+        cursor: pointer;
+    }
+    &__slide-img{
+        width: 100%;
+        height: 11.6rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-bottom: 0.1rem solid $dark;
+    }
+    &__slide-name{
+        width: 100%;
+        height: 11rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 3rem;
+        text-align: center;
+    }
+}
+

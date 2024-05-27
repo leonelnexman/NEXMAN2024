@@ -122,3 +122,43 @@
         }
     }
 }
+
+.kp{
+    margin-bottom: 9rem;
+    .container{
+        width: 141rem;
+        padding: 9rem 5.7rem;
+        background: $dark;
+        border-radius: 3rem;
+        position: relative;
+    }
+    &__title{
+        color: $white;
+        margin-bottom: 2rem;
+        transition-duration: 3s;
+    }
+    &__subtitle{
+        color: $white-55;
+        margin-left: 16.4rem;
+        margin-bottom: 2rem;
+        transition-duration: 3s;
+    }
+    &__suptitle{
+        color: $white; 
+        margin-left: 48rem;
+        margin-bottom: 2rem;
+        white-space: nowrap;
+        transition-duration: 3s;
+    }
+    &__btn{
+        position: absolute;
+        top: 20.3rem;
+        right: 5rem;
+    }
+    &__text{
+        position: absolute;
+        color: $white;
+        max-width: 29.1rem;
+        bottom: 8.7rem;
+    }
+}

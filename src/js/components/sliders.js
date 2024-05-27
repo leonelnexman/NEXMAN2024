@@ -17,3 +17,25 @@ const socialsslider = new Swiper('.header__socials-slider', {
     loop: true,
     allowTouchMove: false,
 });
+
+const doingnow = new Swiper('.doingnow__slider', {
+    modules: [Autoplay],
+    spaceBetween: 15,
+    centeredSlides: true,
+    loop: true,
+    speed: 3900,
+    freeMode: true,
+    autoplay: {
+        delay: 10,
+        disableOnInteraction: false
+    },
+    slidesPerView: "auto",
+});
+
+doingnow.el.addEventListener('mouseenter', () => {
+    doingnow.autoplay.stop(); 
+});
+
+doingnow.el.addEventListener('mouseleave', () => {
+    doingnow.autoplay.start();
+});

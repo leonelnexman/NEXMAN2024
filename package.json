@@ -1,8 +1,8 @@
 {
   "name": "NEXMAN",
   "version": "0.1.0",
-  "authors": "Ask1n",
-  "homepage": "https://leonelnexman.github.io/PSR/",
+  "authors": "Mirax",
+  "homepage": "https://github.com/leonelnexman/NEXMAN2024/",
   "scripts": {
     "deploy": "gh-pages -d build",
     "build": "gulp build --production",
