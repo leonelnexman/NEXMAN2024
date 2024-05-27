@@ -1,0 +1,123 @@
+.footer{
+    position: relative;
+    .container{
+        border-radius: 3rem;
+        max-width: 141rem;
+        width: 141rem;
+        background: $light-gray;
+        padding: 9rem 2.6rem;
+    }
+    .top-btn{
+        position: absolute;
+        right: 4.3rem;
+        top: -2.7rem;
+        rect{
+            transition: all 0.3s;
+        }
+        &:hover{
+            rect{
+                fill: $hover;
+                transition: all 0.3s;
+            }
+        }
+        svg{
+            width: 5.6rem;
+            height: 5.6rem;
+        }
+    }
+    &__wrapper{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__link{
+        white-space: nowrap;
+    }
+    &__descr{
+        top: 54rem;
+        right: -5rem;
+        position: absolute;
+        transform: rotate(-90deg);
+    }
+    &__info{
+        width: 51.7rem;
+    }
+    &__social-link{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 6rem;
+        height: 6rem;
+        border-radius: 50%;
+        svg{
+          width: 2.4rem;
+          height: 2.4rem;  
+        }
+    }
+    &__info-text{
+        margin-bottom: 5rem;
+    }
+    &__actions{
+        display: flex;
+        align-items: center;
+        gap: 5rem;
+    }
+    &__action{
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+        border-radius: 1rem;
+        padding: 0.5rem 2.5rem 0.5rem 0.5rem;
+        background: $light-middle-gray-50;
+        .label--big{
+            margin-bottom: -0.5rem;
+        }
+    }
+    &__action-img{
+        border-radius: 50%;
+        width: 6rem;
+        height: 6rem;
+        img{
+            border-radius: 50%;
+            width: 6rem;
+            height: 6rem;
+        }
+    }
+    &__socials{
+        display: flex;
+        gap: 1.5rem;
+    }
+    &__form{
+        display: flex;
+        flex-wrap: wrap;
+        width: 52.8rem;
+        gap: 4rem 2rem;
+        input{
+            width: 25.4rem;
+            border: none;
+            outline: none;
+            padding-bottom: 1.5rem;
+            border-bottom: 0.1rem solid  $light-middle-gray;
+            &:nth-child(3){
+                width: 100%;
+            }
+            &::placeholder{
+                color: $middle-gray;
+            }
+        }
+        button{
+            margin-top: -1rem;
+            span{
+                width: 46.9rem;
+            }
+        }
+        p{
+            margin-top: -2rem;
+        }
+    }
+    &__logo{
+        margin-top: 12.3rem;
+        width: 129.2rem;
+        height: 22.1rem;
+        animation-duration: 1.9s;  
+    } 
+}

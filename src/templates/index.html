@@ -1,0 +1,32 @@
+---
+title: Index page
+---
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+
+	{# partial example #}
+	{% include "partials/_header.html" %}
+	{% include "partials/_menubar.html" %}
+    <main class="main">
+		<section class="main-section">
+			<div class="container">
+				<div class="main-section__info">
+					<h1 class="h1 animate__animated animate__fadeInUp">Дизайн, UX проектирование, разработка, арт, 3D, тексты и реклама </h1>
+					<p class="main-section__subtitle h5 animate__animated animate__fadeInUp">для застройщиков, производств, банков и стартапов</p>
+				</div>
+				<p class="main-section__descr text--large animate__animated animate__fadeInUp">
+					Интегрированные решения в области дизайна, UX/UI, разработки, иллюстраций, 3D-моделирования, контент-стратегий и рекламных кампаний
+				</p>
+			</div>
+			<video class="animate__animated animate__zoomIn" src="./img/nxmn-video.mp4" autoplay muted loop></video>
+		</section>
+		{% include "partials/sections/_projects.html" %}
+		{% include "partials/sections/_telegram.html" %}
+		
+
+    </main>
+
+	{% include "partials/_footer.html" %}
+
+{% endblock %}

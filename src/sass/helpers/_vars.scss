@@ -1,0 +1,297 @@
+// Fonts
+
+$font-family: "Racama", sans-serif;
+$second-family: "Inter", sans-serif;
+$third-family: "SF Pro Display", sans-serif;
+
+// Colors
+
+$green: #186d72;
+$hover: #086469;
+$light-gray: #f5f6f6;
+$light-middle-gray: #c4cccc;
+$middle-gray: #aab0b0;
+$dark-gray: #899292;
+$light-middle-gray-50: rgba(196, 204, 204, 0.4);
+$white: #fff;
+$white-30: rgba(255, 255, 255, 0.3);
+$dark: #343f3f;
+$dark-50: rgba(60, 60, 60, 0.45);
+$green-50: rgba(1, 58, 62, 0.5);
+$text: #768484;
+$text-dark: #566565;
+$white-55: rgba(255, 255, 255, 0.55);
+$green-dark: #04555a;
+$white-70: rgba(255, 255, 255, 0.7);
+$attention: #bc4836;
+$white-10: rgba(255, 255, 255, 0.1);
+$black: #1f2c2c;
+$attention-on-black: #f46b55;
+
+// Headings
+
+.large{
+    font-family: $font-family;
+    font-weight: 400;
+    font-size: 8.8rem;
+    line-height: 110%;
+    letter-spacing: -0.05em;
+    color: $dark;
+
+    @media (max-width: 962px){
+        font-size: 4rem;
+        line-height: 130%;
+    }
+}
+
+.standart{
+    font-family: $font-family;
+    font-weight: 400;
+    font-size: 7.4rem;
+    line-height: 110%;
+    letter-spacing: -0.05em;
+    color: $dark;
+
+    @media (max-width: 962px){
+        font-size: 3rem;
+        line-height: 130%;
+    }
+}
+
+.h1{
+    font-family: $font-family;
+    font-weight: 400;
+    font-size: 5.4rem;
+    line-height: 120%;
+    letter-spacing: -0.02em;
+    color: $dark;
+
+    @media (max-width: 962px){
+        font-size: 3.2rem;
+        line-height: 120%;
+    }
+}
+
+.h1--blog{
+    font-family: $font-family;
+    font-weight: 400;
+    font-size: 4.2rem;
+    line-height: 120%;
+    letter-spacing: -0.02em;
+    color: $dark;
+
+    @media (max-width: 962px){
+        font-size: 3.2rem;
+        line-height: 120%;
+    }
+}
+
+.h2{
+    font-family: $font-family;
+    font-weight: 400;
+    font-size: 8.8rem;
+    line-height: 110%;
+    letter-spacing: -0.05em;
+    color: $dark;
+
+    @media (max-width: 962px){
+        font-size: 3.4rem;
+        line-height: 110%;
+    }
+}
+
+.h2--v{
+    font-family: $font-family;
+    font-weight: 400;
+    font-size: 5.2rem;
+    line-height: 110%;
+    letter-spacing: -0.02em;
+    color: $dark;
+
+    @media (max-width: 962px){
+        font-size: 3.4rem;
+        line-height: 110%;
+    }
+}
+
+.h2--blog{
+    font-family: $font-family;
+    font-weight: 400;
+    font-size: 3.4rem;
+    line-height: 110%;
+    letter-spacing: -0.02em;
+    color: $dark;
+
+    @media (max-width: 962px){
+        font-size: 2.6rem;
+        line-height: 110%;
+    }
+}
+
+.h3{
+    font-family: $font-family;
+    font-weight: 400;
+    font-size: 5rem;
+    line-height: 120%;
+    letter-spacing: -0.02em;
+    color: $dark;
+
+    @media (max-width: 962px){
+        font-size: 3rem;
+        line-height: 130%;
+    }
+}
+
+.h4{
+    font-family: $font-family;
+    font-weight: 400;
+    font-size: 4rem;
+    line-height: 130%;
+    letter-spacing: -0.02em;
+    color: $dark; 
+
+    @media (max-width: 962px){
+        font-size: 2.6rem;
+        line-height: 130%
+    }
+}
+
+.h5{
+    font-family: $font-family;
+    font-weight: 400;
+    font-size: 2.8rem;
+    line-height: 130%;
+    color: $dark;
+
+    @media (max-width: 962px){
+        font-size: 2.2rem;
+        line-height: 130%;
+    }
+}
+
+.h6{
+    font-family: $font-family;
+    font-weight: 400;
+    font-size: 2.4rem;
+    line-height: 130%;
+    color: $dark;
+
+    @media (max-width: 962px){
+        font-size: 2rem;
+        line-height: 130%;
+    } 
+}
+
+// Paragraphs
+
+p{
+    a{
+        display: inline;
+        text-decoration: underline !important;
+        text-decoration-color: $green;
+        text-underline-offset: 3px;
+        transition: all 0.3s;
+        color: $dark;
+        &:hover{
+            color: $hover;
+            transition: all 0.3s;
+        }
+    }
+}
+
+.text--large{
+    font-family: $font-family;
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 130%;
+    color: $dark;
+}
+
+.text--big{
+    font-family: $font-family;
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 140%;
+    color: $dark;
+}
+
+.text--medium{
+    font-family: $font-family;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 140%;
+    color: $dark;
+}
+
+.text--small{
+    font-family: $font-family;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 130%;
+    color: $dark;
+}
+
+.text--xsmall{
+    font-family: $font-family;
+    font-weight: 400;
+    font-size: 1.2rem;
+    line-height: 130%;
+    color: $text-dark;
+}
+
+// Labels
+
+.label--large{
+    font-family: $font-family;
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 140%;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    color: $dark;
+}
+
+.label--big{
+    font-family: $font-family;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 140%;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    color: $dark;  
+}
+
+.label--medium{
+    font-family: $font-family;
+    font-weight: 400;
+    font-size: 1.2rem;
+    line-height: 140%;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    color: $dark-gray;
+}
+
+.label--small{
+    font-family: $font-family;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 120%;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    color: $dark-gray;
+}
+
+.label--xsmall{
+    font-family: $font-family;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 120%;
+    letter-spacing: -0.02em;
+    color: $dark-gray;
+}
+
+
+
+
+
+

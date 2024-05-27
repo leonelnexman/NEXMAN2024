@@ -1,0 +1,104 @@
+// Кнопки
+
+.btn{
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+
+    &:hover{
+        span{
+            transition: all 0.3s;
+            background: $hover;
+        }
+
+        svg rect{
+            fill: $hover;
+            transition: all 0.3s;
+        }
+    }
+    span{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 26.6rem;
+        height: 5.6rem;
+        font-size: 1.4rem;
+        letter-spacing: -0.02em;
+        text-transform: uppercase;
+        text-align: center;
+        color: $white;
+        border-radius: 1rem;
+        padding: 0rem 2.8rem;
+        width: 26.6rem;
+        height: 5.6rem;
+        background: $green;
+        transition: all 0.3s;
+    }
+
+    svg{
+        width: 5.6rem;
+        height: 5.6rem;
+        rect{
+            transition: all 0.3s;
+        }
+    }
+}
+
+.btn-link{
+    background: $green;
+    transition: all 0.3s;
+    &:hover{
+        transition: all 0.3s;
+        background: $hover;
+    }
+
+}
+
+.btn--social{
+    span{
+        background: $dark;
+    }
+
+    svg rect{
+        fill: $dark;
+    }
+}
+
+.btn--return{
+    display: flex;
+    flex-direction: row-reverse;
+
+    &:hover{
+        span{
+           color: $white;
+           border-color: transparent;
+        }
+        svg{
+            border-color: transparent;
+            path{
+                stroke: $white;
+            }
+        }
+        
+    }
+
+    span{
+        background: transparent;
+        border: 1px solid $green;
+        color: $dark;
+    }
+
+    svg{
+        border-radius: 1rem;
+
+        rect{
+            fill: transparent;
+        }
+        path{
+            stroke: $green;
+        }
+    }
+}
+
+
+

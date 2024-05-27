@@ -1,0 +1,28 @@
+.menubar{
+    position: fixed;
+    bottom: 1rem;
+    display: flex;
+    align-items: center;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 777;
+    .nav{
+        display: flex;
+        align-items: center;
+        gap: 2.5rem;
+        margin-right: 0.5rem;
+        border-radius: 1rem;
+        padding: 1.8rem 2rem 1.5rem 2rem;
+        backdrop-filter: blur(20px);
+        background: $green-50;
+        a{
+            color: $white;
+        }
+    }
+    .btn{
+        span{
+            white-space: nowrap;
+            width: 16.8rem;
+        }
+    }
+}

@@ -1,0 +1,124 @@
+.main-section{
+    margin-bottom: 12rem;
+    .container{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 9rem;
+    }
+    h1{
+        animation-delay: 0.3s;
+        animation-duration: 1.5s;
+    }
+    &__subtitle{
+        animation-delay: 0.5s;
+        animation-duration: 1.5s;
+    }
+    &__info{
+        width: 78.5rem;
+        width: 78.5rem;
+    }
+    &__descr{
+        width: 39.5rem;
+        animation-duration: 1.5s;
+        animation-delay: 0.4s; 
+    }
+    &__subtitle{
+        color: $dark-gray;
+        max-width: 59.5rem;
+    }
+    video{
+        display: block;
+        border-radius: 3rem;
+        width: 140rem;
+        height: 79rem;
+        margin: auto;
+        animation-delay: 0.3s;
+        animation-duration: 1.7s;
+    }
+}
+
+// Projects
+
+.projects{
+    position: relative;
+    margin-bottom: 9rem;
+    &__subtitle{
+        margin-left: 34.5rem;
+        color: $light-middle-gray;
+    }
+    &__wrapper{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 5rem 0; 
+    }
+    &__top{
+        margin-bottom: 7rem;
+    }
+    &__item{
+        position: relative;
+        width: 65.8rem;
+        animation-duration: 1.5s;
+    }
+    &__labels{
+        top: 1.5rem;
+        left: 1.5rem;
+        position: absolute;
+        z-index: 7;
+        display: flex;
+        gap: 1rem;
+    }
+    &__label{
+        border-radius: 1rem;
+        backdrop-filter: blur(10px);
+        background: $dark-50;
+        padding: 1.1rem 1.2rem 0.8rem;
+        color: $white;
+    }
+    &__text{
+        position: absolute;
+        max-width: 32.3rem;
+        top: 13.5rem;
+        right: 2.3rem;
+    }
+    &__img{
+        width: 100%;
+        position: relative;
+        margin-bottom: 1.5rem;
+        &:hover{
+            .projects__img-second{
+                opacity: 1;
+                visibility: visible;
+                transition: all 0.5s;
+            }
+        }
+        img{
+            border-radius: 3rem;
+            width: 65.8rem;
+            height: 49.3rem 
+        }
+    }
+    &__img-second{
+        top: 0;
+        left: 0;
+        z-index: 1;
+        opacity: 0;
+        visibility: hidden;
+        position: absolute;
+        transition: all 0.5s;
+    }
+    &__descr{
+        color: $text; 
+        margin-bottom: 1rem; 
+    }
+    &__actions{
+        margin-top: 5rem;
+        .btn{
+            margin: auto;
+            span{
+                width: 16.1rem;
+                white-space: nowrap;
+            }
+        }
+    }
+}
