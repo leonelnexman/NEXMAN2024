@@ -124,7 +124,7 @@
 }
 
 .kp{
-    margin-bottom: 9rem;
+    margin-bottom: 17rem;
     .container{
         width: 141rem;
         padding: 9rem 5.7rem;
@@ -135,30 +135,202 @@
     &__title{
         color: $white;
         margin-bottom: 2rem;
-        transition-duration: 3s;
+        animation-duration: 1s;
     }
     &__subtitle{
         color: $white-55;
         margin-left: 16.4rem;
         margin-bottom: 2rem;
-        transition-duration: 3s;
+        animation-duration: 1.5s;
     }
     &__suptitle{
         color: $white; 
         margin-left: 48rem;
         margin-bottom: 2rem;
         white-space: nowrap;
-        transition-duration: 3s;
+        animation-duration: 2s;
     }
     &__btn{
         position: absolute;
         top: 20.3rem;
         right: 5rem;
+        animation-duration: 2.5s;
     }
     &__text{
         position: absolute;
         color: $white;
         max-width: 29.1rem;
         bottom: 8.7rem;
+        animation-duration: 2.5s;
+    }
+}
+
+.create{
+    position: relative;
+    margin-bottom: 17rem;
+    &__title{
+        color: $light-middle-gray;
+    }
+    &__subtitle{
+        margin-left: 11rem;
+    }
+    &__info{
+        margin-bottom: 39.2rem;
+    }
+    &__text{
+        width: 100%;
+        max-width: 33.7rem;
+        margin-bottom: 2.5rem;
+    }
+    &__btn{
+        span{
+            gap: 1rem;
+            align-items: center;
+            width: 20.8rem;
+            svg{
+                width: 1.9rem;
+                height: 1.9rem;
+            }
+        }
+    }
+    &__elem{
+        padding: 1.75rem 3.5rem 1.75rem 1.5rem;
+        backdrop-filter: blur(11.041009902954102px);
+        background: $light-middle-gray-50;
+        display: flex;
+        align-items: center;
+        width: 35rem;
+        border-radius: 2rem;
+        gap: 2.5rem;
+        position: absolute;
+        z-index: 7;
+    }
+    &__elem-value{
+        min-width: 9rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 1.5rem;
+        padding: 1.9rem 1.65rem 1.05rem 1.65rem;
+        background: $white;
+    }
+    .elem1{
+        top: 27rem;
+        left: 33rem;
+    }
+    .elem2{
+        top: 51rem;
+        left: 59rem;
+    }
+    .elem3{
+        top: 25rem;
+        right: 5rem;
+    }
+    .elem4{
+        position: absolute;
+        top: 23rem;
+        left: 49rem;
+        img{
+            border-radius: 3rem;
+            width: 40.4rem;
+            height: 30.6rem;
+        }
+    }
+    .elem5{
+        position: absolute;
+        top: -10rem;
+        left: 95rem;
+        img{
+            border-radius: 3rem;
+            width: 43.6rem;
+            height: 43.6rem;
+        }
+    }
+}
+
+.services{
+    margin-bottom: 15.7rem;
+    &__title{
+        color: $light-middle-gray;   
+    }
+    &__subtitle{
+        margin-left: 29.4rem;
+    }
+    &__wrapper{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__actions{
+        padding-top: 6rem;
+        max-width: 56.5rem;
+        gap: 1rem 2.5rem;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    &__item{
+        border-radius: 1rem;
+        padding: 2.4rem 1.5rem 2rem 1.5rem;
+        width: 27rem;
+        border: 1px solid $light-middle-gray-50;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        cursor: pointer;
+        transition: all 0.3s;
+        svg{
+            width: 0.7rem;
+            height: 0.9rem;
+            transition: all 0.3s;
+        }
+        &:hover{
+            border-color: transparent;
+            background: $hover;
+            color: $white;
+            svg{
+                transform: rotate(-180deg);
+                transition: all 0.3s;
+            }
+            svg path{
+                fill: $white;
+                transition: all 0.3s;
+            }
+        }
+    }
+    &__links{
+        display: flex;
+        flex-direction: column;
+        gap: 0.3rem;
+        width: 44.2rem;
+    }
+    &__lable{
+        border-radius: 1rem;
+        padding: 1.9rem 2rem 1.5rem;
+        background: $light-gray;
+        width: 14.1rem;
+        margin-bottom: 4rem;
+    }
+    &__link{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1.3rem 2rem 0.8rem;
+        margin-left: -2rem;
+        transition: all 0.3s;
+        border-radius: 1rem;
+        &:nth-child(1){
+            margin-top: -1rem;
+        }
+        svg path{
+            transition: all 0.3s;
+        }
+        &:hover{
+            color: #fff;
+            transition: all 0.3s;
+            background: $hover;
+            svg path{
+                stroke: $white;
+                transition: all 0.3s;
+            }
+        }
     }
 }

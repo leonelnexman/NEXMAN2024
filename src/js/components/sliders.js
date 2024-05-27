@@ -39,3 +39,8 @@ doingnow.el.addEventListener('mouseenter', () => {
 doingnow.el.addEventListener('mouseleave', () => {
     doingnow.autoplay.start();
 });
+
+const blogslider = new Swiper('.blog__slider', {
+    spaceBetween: 15,
+    slidesPerView: 3,
+});

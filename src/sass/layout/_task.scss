@@ -1,0 +1,38 @@
+.task{
+    margin-bottom: 11.6rem;
+    &__top{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 9rem;
+    }
+    &__suptitle{
+        margin-bottom: 1rem;
+    }
+    &__subtitle{
+        margin-left: 25.4rem;
+        color: $light-middle-gray;
+    }
+    &__info{
+        padding-top: 5.3rem;
+        width: 32.5rem;
+    }
+    &__text{
+        margin-bottom: 2.5rem;
+    }
+    &__content{
+        width: 110rem;
+        margin: auto;
+        button{
+            span{
+                width: 104.1rem;
+            }
+        }
+    }
+    &__img{
+        display: block;
+        width: 110rem;
+        height: 60.6rem;
+        margin: auto;
+        margin-bottom: 1.5rem;
+    }
+}

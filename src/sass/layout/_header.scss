@@ -5,6 +5,18 @@
     width: 100%;
     padding-top: 2rem;
     z-index: 777777777777777777777;
+    transition: all 0.3s;
+    &.static{
+        position: fixed;
+        top: -9rem;
+        transition: all 0.5s;
+    }
+    &.fixed{
+        top: 0;
+        left: 0;
+        position: fixed;
+        transition: all 0.5s;
+    }
     .container{
         width: 135.8rem;
         display: flex;

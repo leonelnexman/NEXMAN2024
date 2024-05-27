@@ -3,9 +3,9 @@
     bottom: 1rem;
     display: flex;
     align-items: center;
-    left: 50%;
-    transform: translate(-50%);
-    z-index: 777;
+    width: 100%;
+    justify-content: center;
+    z-index: 777; 
     .nav{
         display: flex;
         align-items: center;
