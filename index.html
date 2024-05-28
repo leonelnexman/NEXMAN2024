@@ -13,6 +13,20 @@
     <link rel="stylesheet" media="all" href="css/app.css" />
   </head>
   <body>
+    <!-- Cursor -->
+    <div id="cursor"></div>
+    <div id="aura" class="aura">
+      <div class="slider-cursor text--big">
+        <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0.777329 5.72929C0.356276 5.33426 0.356276 4.66574 0.777328 4.27072L4.31579 0.95095C4.95436 0.351844 6 0.80462 6 1.68024L6 8.31977C6 9.19538 4.95436 9.64815 4.31579 9.04905L0.777329 5.72929Z" fill="white" />
+        </svg>
+        <span>Drag</span>
+        <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M5.22267 5.72929C5.64372 5.33426 5.64372 4.66574 5.22267 4.27072L1.68421 0.95095C1.04564 0.351844 -4.6751e-07 0.80462 -4.29235e-07 1.68024L-1.39012e-07 8.31977C-1.00738e-07 9.19538 1.04564 9.64815 1.68421 9.04905L5.22267 5.72929Z" fill="white" />
+        </svg>
+      </div>
+      <div class="more-info"> Подробнее </div>
+    </div>
     <!-- Content -->
     <div class="wrapper">
       <header class="header animate__animated animate__fadeInDown">
@@ -103,10 +117,17 @@
         <section class="main-section">
           <div class="container">
             <div class="main-section__info">
-              <h1 class="h1 animate__animated animate__fadeInUp">Дизайн, UX проектирование, разработка, арт, 3D, тексты и реклама </h1>
+              <h1 class="h1 animate__animated animate__fadeInUp"><a href="" class="info-title">Дизайн</a>, <a href="" class="info-title">UX проектирование</a>, <a href="" class="info-title">разработка</a>, <a href="" class="info-title">арт</a> , <a href="" class="info-title">3D</a>, <a href="" class="info-title">тексты</a> и <a href="" class="info-title">реклама</a></h1>
               <p class="main-section__subtitle h5 animate__animated animate__fadeInUp">для застройщиков, производств, банков и стартапов</p>
             </div>
             <p class="main-section__descr text--large animate__animated animate__fadeInUp"> Интегрированные решения в области дизайна, UX/UI, разработки, иллюстраций, 3D-моделирования, контент-стратегий и рекламных кампаний </p>
+            <button class="main-section__btn btn animate__animated animate__fadeInUp">
+              <span>Получить консультацию</span>
+              <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="56" height="56" rx="10" fill="#186D72" />
+                <path d="M20.929 35.0711L35.0711 20.929M35.0711 20.929L28.5931 21.7501M35.0711 20.929L34.25 27.407" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </button>
           </div>
           <video class="animate__animated animate__zoomIn" src="./img/nxmn-video.mp4" autoplay muted loop></video>
         </section>
