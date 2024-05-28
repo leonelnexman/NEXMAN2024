@@ -4,10 +4,33 @@
         display: flex;
         justify-content: space-between;
         margin-bottom: 9rem;
+        position: relative;
     }
     h1{
         animation-delay: 0.3s;
         animation-duration: 1.5s;
+        a{
+            display: inline;
+            color: $dark;
+            text-decoration: underline;
+            text-decoration-color: $light-middle-gray-50;
+            text-underline-offset: 19px;
+            text-decoration-thickness: 3px;
+            transition: all 0.3s;
+            &:hover{
+                color: $hover;
+                transition: all 0.3s;
+                text-decoration-style: dotted;
+                text-decoration-color: $hover;
+            }
+        }
+    }
+    &__btn{
+        position: absolute;
+        top: 15rem;
+        right: 7rem;
+        animation-delay: 0.7s;
+        animation-duration: 2.5s;
     }
     &__subtitle{
         animation-delay: 0.5s;
