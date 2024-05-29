@@ -3,6 +3,8 @@ function removeAnimationClasses() {
     const fadeInDownElements = document.querySelectorAll('.animate__fadeInDown');
     const fadeInLeftElements = document.querySelectorAll('.animate__fadeInLeft');
     const WowDelete = document.querySelectorAll('.wow');
+    const ZoomInLeftElements = document.querySelectorAll('.animate__zoomIn');
+    const Animated = document.querySelectorAll('.animate__animated');
 
     if (window.innerWidth < 962) {
         fadeInUpElements.forEach(element => {
@@ -14,8 +16,14 @@ function removeAnimationClasses() {
         fadeInLeftElements.forEach(element => {
             element.classList.remove('animate__fadeInLeft');
         });
+        ZoomInLeftElements.forEach(element => {
+            element.classList.remove('animate__zoomIn');
+        });
         WowDelete.forEach(element => {
             element.classList.remove('wow');
+        });
+        Animated.forEach(element => {
+            element.classList.remove('animate__animated');
         });
     }
 }

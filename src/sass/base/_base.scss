@@ -50,9 +50,8 @@ body{
     .aura{
         display: none !important;
     }
-    .animate__animated {
-        animation: none !important;
-        -webkit-animation: none !important;
+    *{
+        animation-duration: 0 !important;
         animation-delay: 0 !important;
     }
 }
