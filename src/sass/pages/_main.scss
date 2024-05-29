@@ -60,6 +60,11 @@
         animation-delay: 0.7s;
         animation-duration: 2.5s;
         @media (max-width: 962px){
+            top: 23.5rem;
+            left: 0rem;
+            width: 33rem;
+        }
+        @media (max-width: 600px){
             top: 26rem;
             left: 0rem;
             width: 33rem;
@@ -92,6 +97,10 @@
             position: absolute;
             width: 33rem;
             left: 0rem;
+            bottom: -69rem;
+        }
+        @media (max-width: 600px){
+            left: 0rem;
             bottom: -60rem;
         }
     }
@@ -109,9 +118,13 @@
         animation-duration: 1.7s;
         @media (max-width: 962px){
             border-radius: 2.5rem;
+            width: 42rem;
+            height: 42rem;
+            object-fit: cover;
+        }
+        @media (max-width: 600px){
             width: 33rem;
             height: 33rem;
-            object-fit: cover;
         }
     }
 }
@@ -227,6 +240,9 @@
                 width: 16.1rem;
                 white-space: nowrap;
                 @media (max-width: 962px){
+                    width: 35.1rem;
+                }
+                @media (max-width: 600px){
                     width: 27.1rem;
                 }
             }

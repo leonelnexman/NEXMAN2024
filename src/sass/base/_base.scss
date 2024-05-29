@@ -37,6 +37,17 @@ body{
 
 @media (max-width: 962px){
     html{
+        font-size: calc(100vw / 360 * 8);
+    }
+    .container{
+        max-width: 42rem;
+        margin: 0 auto;
+        width: 42rem;
+    }
+}
+
+@media (max-width: 600px){
+    html{
         font-size: calc(100vw / 360 * 10);
     }
     .container{
@@ -44,6 +55,9 @@ body{
         margin: 0 auto;
         width: 33rem;
     }
+}
+
+@media (max-width: 962px){
     *{
         cursor: none;
     }

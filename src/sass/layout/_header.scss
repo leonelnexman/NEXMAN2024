@@ -32,10 +32,13 @@
     }
     &__logo{
         margin-right: 4.3rem;
-
         @media (max-width: 962px){
             order: 0;
-            margin-right: 3.3rem;
+            margin-right: 11.3rem;
+        }
+        @media (max-width: 600px){
+            order: 0;
+            margin-right: 3rem;
         }
         img{
             width: 12.7rem;
