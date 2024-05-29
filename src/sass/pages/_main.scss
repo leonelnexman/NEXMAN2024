@@ -445,13 +445,14 @@
         display: flex;
         flex-wrap: wrap;
         @media (max-width: 962px){
+            flex-direction: column;
             padding-top: 2rem;
             max-width: 100%;
             margin-bottom: 3rem;
             gap: 1rem;
         }
     }
-    &__item{
+    &__item-top{
         border-radius: 1rem;
         padding: 2.4rem 1.5rem 2rem 1.5rem;
         width: 27rem;
@@ -465,6 +466,11 @@
             width: 100%;
             padding: 0;
             border: none;
+            &.active{
+                svg{
+                    transform: rotate(-90deg) !important;
+                }
+            }
         }
         svg{
             width: 0.7rem;
@@ -495,6 +501,67 @@
                 @media (max-width: 962px){
                     fill: $dark;
                 }
+            }
+        }
+    }
+    &__item{
+        position: relative;
+        &:hover{
+            .services__item-content{
+                opacity: 1;
+                visibility: visible;
+            }
+        }
+        &:nth-child(1), &:nth-child(2){
+            .services__item-content{
+                bottom: -22.5rem;
+            }
+        }
+        &:nth-child(3), &:nth-child(4){
+            .services__item-content{
+                bottom: -17.5rem;
+            }
+        }
+        &:nth-child(5), &:nth-child(6){
+            .services__item-content{
+                bottom: -8.5rem;
+            }
+        }
+    }
+    &__item-content{
+        opacity: 0;
+        visibility: hidden;
+        position: absolute;
+        z-index: 7;
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        bottom: 0;
+        background: $white;
+        border: 0.1rem solid $hover;
+        border-radius: 2rem;
+        width: 29rem;
+        right: -30rem;
+        transition: all 0.5s;
+        @media (max-width: 962px){
+            opacity: 1;
+            visibility: visible;
+            position: static;
+            width: 100%;
+            border: none;
+            max-height: 0;
+            overflow: hidden;
+            padding: 0 2rem;
+        }
+        a{
+            text-decoration: underline;
+            text-underline-offset: 0.5rem;
+            text-decoration-color: transparent;
+            transition: all 0.3s;
+            &:hover{
+                color: $hover;
+                text-decoration-color: $hover;
             }
         }
     }
