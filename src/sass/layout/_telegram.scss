@@ -1,20 +1,43 @@
 .telegram{
     margin-bottom: 6.8rem;
+    @media (max-width: 962px){
+        margin-bottom: 5rem;
+    }
     .container{
         display: flex;
         align-items: center;
         padding: 4rem;
         border-radius: 2rem;
         background: $green;
+        @media (max-width: 962px){
+            padding: 2.5rem 1.5rem;
+            flex-direction: column;
+            align-items: flex-start;
+        }
     }
     &__title{
         margin-right: 4rem;
         color: $white-70;
+        @media (max-width: 962px){
+            margin-bottom: 1.2rem;
+            margin-right: 0;
+            color: $white;
+        }
     }
     &__text{
         width: 100%;
         max-width: 45.7rem;
         color: $white-70;
         margin-right: 24.4rem;
+        @media (max-width: 962px){
+            margin-right: 0;
+            font-size: 1.9rem;
+            margin-bottom: 2.5rem;
+        }
+    }
+    .btn span{
+        @media (max-width: 962px){
+            width: 23.7rem;
+        }
     }
 }

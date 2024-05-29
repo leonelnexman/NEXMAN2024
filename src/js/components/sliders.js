@@ -1,5 +1,5 @@
 import Swiper from 'swiper';
-import { Navigation, Pagination, Autoplay } from 'swiper/modules';
+import { Navigation, Pagination, Autoplay, FreeMode } from 'swiper/modules';
 
 const socialsslider = new Swiper('.header__socials-slider', {
     direction: 'vertical',
@@ -41,6 +41,19 @@ doingnow.el.addEventListener('mouseleave', () => {
 });
 
 const blogslider = new Swiper('.blog__slider', {
+    modules: [FreeMode],
     spaceBetween: 15,
     slidesPerView: 3,
+    breakpoints: {
+        260: {
+            initialSlide: 0,
+            centerInsufficientSlides: true,
+            freeMode: true,
+            freeModeSticky: true,
+            slidesPerView: 'auto'
+        },
+        962: {
+            slidesPerView: 3
+        }
+    }
 });

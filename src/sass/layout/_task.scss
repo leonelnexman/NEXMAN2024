@@ -1,9 +1,16 @@
 .task{
     margin-bottom: 11.6rem;
+    @media (max-width: 962px){
+        margin-bottom: 6rem;
+    }
     &__top{
         display: flex;
         justify-content: space-between;
         margin-bottom: 9rem;
+        @media (max-width: 962px){
+            flex-direction: column;
+            margin-bottom: 3rem;
+        }
     }
     &__suptitle{
         margin-bottom: 1rem;
@@ -11,10 +18,16 @@
     &__subtitle{
         margin-left: 25.4rem;
         color: $light-middle-gray;
+        @media (max-width: 962px){
+            margin-left: 3.4rem;
+        }
     }
     &__info{
         padding-top: 5.3rem;
         width: 32.5rem;
+        @media (max-width: 962px){
+            padding-top: 1.9rem;
+        }
     }
     &__text{
         margin-bottom: 2.5rem;
@@ -22,9 +35,15 @@
     &__content{
         width: 110rem;
         margin: auto;
+        @media (max-width: 962px){
+            width: 100%;
+        }
         button{
             span{
                 width: 104.1rem;
+                @media (max-width: 962px){
+                    width: 27.1rem;
+                }
             }
         }
     }
@@ -34,5 +53,9 @@
         height: 60.6rem;
         margin: auto;
         margin-bottom: 1.5rem;
+        @media (max-width: 962px){
+            width: 100%;
+            object-fit: cover;
+        }
     }
 }

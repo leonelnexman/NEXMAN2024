@@ -5,13 +5,7 @@
 	flex-direction: column;
     overflow: hidden;
 }
-.header{
-    overflow: hidden;
-}
 .main{
-    overflow: hidden;
-}
-.footer{
     overflow: hidden;
 }
 html{
@@ -30,9 +24,34 @@ body{
 }
 .main{
     padding-top: 19rem;
+
+    @media (max-width: 962px){
+       padding-top: 9rem;
+    }
 }
 .container{
     max-width: 135.6rem;
     margin: 0 auto;
     width: 135.6rem;
+}
+
+@media (max-width: 962px){
+    html{
+        font-size: calc(100vw / 360 * 10);
+    }
+    .container{
+        max-width: 33rem;
+        margin: 0 auto;
+        width: 33rem;
+    }
+    *{
+        cursor: none;
+    }
+    .aura{
+        display: none !important;
+    }
+    .animate__animated {
+        animation: none !important;
+        -webkit-animation: none !important;
+    }
 }

@@ -13,24 +13,24 @@
     <link rel="stylesheet" media="all" href="css/app.css"/>
   </head>
   <body>
-    <!-- Cursor -->
-    <div id="cursor"></div>
-    <div id="aura" class="aura">
-        <div class="slider-cursor text--big">
-          <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M0.777329 5.72929C0.356276 5.33426 0.356276 4.66574 0.777328 4.27072L4.31579 0.95095C4.95436 0.351844 6 0.80462 6 1.68024L6 8.31977C6 9.19538 4.95436 9.64815 4.31579 9.04905L0.777329 5.72929Z" fill="white" />
-          </svg>
-          <span>Drag</span>
-          <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M5.22267 5.72929C5.64372 5.33426 5.64372 4.66574 5.22267 4.27072L1.68421 0.95095C1.04564 0.351844 -4.6751e-07 0.80462 -4.29235e-07 1.68024L-1.39012e-07 8.31977C-1.00738e-07 9.19538 1.04564 9.64815 1.68421 9.04905L5.22267 5.72929Z" fill="white" />
-          </svg>
-        </div>
-        <div class="more-info">
-            Подробнее
-        </div>
-    </div>
     <!-- Content -->
     <div class="wrapper">
+      <div id="cursor"></div>
+      <div id="aura" class="aura">
+          <div class="slider-cursor text--big">
+            <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M0.777329 5.72929C0.356276 5.33426 0.356276 4.66574 0.777328 4.27072L4.31579 0.95095C4.95436 0.351844 6 0.80462 6 1.68024L6 8.31977C6 9.19538 4.95436 9.64815 4.31579 9.04905L0.777329 5.72929Z" fill="white" />
+            </svg>
+            <span>Drag</span>
+            <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M5.22267 5.72929C5.64372 5.33426 5.64372 4.66574 5.22267 4.27072L1.68421 0.95095C1.04564 0.351844 -4.6751e-07 0.80462 -4.29235e-07 1.68024L-1.39012e-07 8.31977C-1.00738e-07 9.19538 1.04564 9.64815 1.68421 9.04905L5.22267 5.72929Z" fill="white" />
+            </svg>
+          </div>
+          <div class="more-info">
+              Подробнее
+          </div>
+          <div class="open-link">Перейти</div>
+      </div>
       {% block content %}{% endblock %}
     </div>
     <!-- Scripts -->

@@ -1,5 +1,8 @@
 .main-section{
     margin-bottom: 12rem;
+    @media (max-width: 962px){
+        margin-bottom: 22.5rem;
+    }
     .container{
         display: flex;
         justify-content: space-between;
@@ -9,13 +12,18 @@
     h1{
         animation-delay: 0.3s;
         animation-duration: 1.5s;
+        margin-bottom: 1.5rem;
+        @media (max-width: 962px){
+            margin-bottom: 1rem;
+        }
+
         a{
             display: inline;
             color: $dark;
             text-decoration: underline;
             text-decoration-color: $light-middle-gray-50;
-            text-underline-offset: 19px;
-            text-decoration-thickness: 3px;
+            text-underline-offset: 1.5rem;
+            text-decoration-thickness: 0.3rem;
             transition: all 0.3s;
             &:hover{
                 color: $hover;
@@ -23,7 +31,27 @@
                 text-decoration-style: dotted;
                 text-decoration-color: $hover;
             }
+
+            @media (max-width: 962px){
+                text-underline-offset: 0.9rem;
+                text-decoration-thickness: 0.19rem;
+            }
         }
+    }
+    &__subtitle{
+       .link-open{
+            text-decoration: none !important;
+            color: $dark-gray;
+            transition: all 0.3s;
+            text-underline-offset: 9px;
+            &:hover{
+                transition: all 0.3s;
+                color: $hover;
+                text-decoration: underline !important;
+                text-decoration-style: dotted !important;
+             
+            }
+       }
     }
     &__btn{
         position: absolute;
@@ -31,19 +59,41 @@
         right: 7rem;
         animation-delay: 0.7s;
         animation-duration: 2.5s;
+        @media (max-width: 962px){
+            top: 26rem;
+            left: 0rem;
+            width: 33rem;
+        }
     }
     &__subtitle{
         animation-delay: 0.5s;
         animation-duration: 1.5s;
     }
     &__info{
-        width: 78.5rem;
-        width: 78.5rem;
+        width: 79.5rem;
+        @media (max-width: 962px){
+            width: 100%;
+        }
+        .info-title{
+            white-space: nowrap;
+            @media (max-width: 962px){
+                font-size: 3.1rem;
+                &:nth-child(1){
+                    display: block;
+                }
+            }
+        }
     }
     &__descr{
         width: 39.5rem;
         animation-duration: 1.5s;
-        animation-delay: 0.4s; 
+        animation-delay: 0.4s;
+        @media (max-width: 962px){
+            position: absolute;
+            width: 33rem;
+            left: 0rem;
+            bottom: -60rem;
+        }
     }
     &__subtitle{
         color: $dark-gray;
@@ -57,6 +107,12 @@
         margin: auto;
         animation-delay: 0.3s;
         animation-duration: 1.7s;
+        @media (max-width: 962px){
+            border-radius: 2.5rem;
+            width: 33rem;
+            height: 33rem;
+            object-fit: cover;
+        }
     }
 }
 
@@ -65,23 +121,39 @@
 .projects{
     position: relative;
     margin-bottom: 9rem;
+    @media (max-width: 962px){
+        margin-bottom: 5rem;
+    }
     &__subtitle{
         margin-left: 34.5rem;
+        @media (max-width: 962px){
+            margin-left: 12.5rem;
+            margin-bottom: 2rem;
+        }
         color: $light-middle-gray;
     }
     &__wrapper{
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
-        gap: 5rem 0; 
+        gap: 5rem 0;
+        @media (max-width: 962px){
+            gap: 2.7rem;
+         }
     }
     &__top{
         margin-bottom: 7rem;
+        @media (max-width: 962px){
+            margin-bottom: 2.5rem;
+        }
     }
     &__item{
         position: relative;
         width: 65.8rem;
         animation-duration: 1.5s;
+        @media (max-width: 962px){
+           width: 100%;
+        }
     }
     &__labels{
         top: 1.5rem;
@@ -103,6 +175,10 @@
         max-width: 32.3rem;
         top: 13.5rem;
         right: 2.3rem;
+        @media (max-width: 962px){
+            position: static;
+            font-size: 2rem;
+        }
     }
     &__img{
         width: 100%;
@@ -118,7 +194,13 @@
         img{
             border-radius: 3rem;
             width: 65.8rem;
-            height: 49.3rem 
+            height: 49.3rem;
+            object-fit: cover;
+            @media (max-width: 962px){
+                border-radius: 2.5rem;
+                width: 100%;
+                height: 24.5rem;
+             }
         }
     }
     &__img-second{
@@ -136,11 +218,17 @@
     }
     &__actions{
         margin-top: 5rem;
+        @media (max-width: 962px){
+            margin-top: 2.5rem;
+         }
         .btn{
             margin: auto;
             span{
                 width: 16.1rem;
                 white-space: nowrap;
+                @media (max-width: 962px){
+                    width: 27.1rem;
+                }
             }
         }
     }
@@ -148,23 +236,39 @@
 
 .kp{
     margin-bottom: 17rem;
+    @media (max-width: 962px){
+        margin-bottom: 5rem;
+    }
     .container{
         width: 141rem;
         padding: 9rem 5.7rem;
         background: $dark;
         border-radius: 3rem;
         position: relative;
+        @media (max-width: 962px){
+            max-width: 35rem;
+            width: 35rem;
+            padding: 2.5rem 1.5rem;
+            border-radius: 1.9rem;
+        }
     }
     &__title{
         color: $white;
         margin-bottom: 2rem;
         animation-duration: 1s;
+        @media (max-width: 962px){
+            margin-bottom: 0;
+        }
     }
     &__subtitle{
         color: $white-55;
         margin-left: 16.4rem;
         margin-bottom: 2rem;
         animation-duration: 1.5s;
+        @media (max-width: 962px){
+            margin-left: 0;
+            margin-bottom: 0;
+        }
     }
     &__suptitle{
         color: $white; 
@@ -172,12 +276,23 @@
         margin-bottom: 2rem;
         white-space: nowrap;
         animation-duration: 2s;
+        @media (max-width: 962px){
+            white-space: wrap;
+           margin-left: 0;
+           max-width: 90%;
+           margin-bottom: 1.5rem;
+        }
     }
     &__btn{
         position: absolute;
         top: 20.3rem;
         right: 5rem;
         animation-duration: 2.5s;
+        @media (max-width: 962px){
+            top: 26rem;
+            left: 1.5rem;
+            width: 32rem;
+        }
     }
     &__text{
         position: absolute;
@@ -185,12 +300,21 @@
         max-width: 29.1rem;
         bottom: 8.7rem;
         animation-duration: 2.5s;
+        @media (max-width: 962px){
+            position: static;
+            font-size: 1.6rem;
+            max-width: 100%;
+            margin-bottom: 8.1rem;
+        }
     }
 }
 
 .create{
     position: relative;
     margin-bottom: 17rem;
+    @media (max-width: 962px){
+        margin-bottom: 6rem;
+    }
     &__title{
         color: $light-middle-gray;
     }
@@ -199,11 +323,18 @@
     }
     &__info{
         margin-bottom: 39.2rem;
+        @media (max-width: 962px){
+            margin-bottom: 2.8rem;
+        }
     }
     &__text{
         width: 100%;
         max-width: 33.7rem;
         margin-bottom: 2.5rem;
+        @media (max-width: 962px){
+            max-width: 100%;
+            margin-bottom: 1.9rem;
+        }
     }
     &__btn{
         span{
@@ -227,6 +358,12 @@
         gap: 2.5rem;
         position: absolute;
         z-index: 7;
+        @media (max-width: 962px){
+            position: static;
+            width: 100%;
+            margin-bottom: 1rem;
+            padding: 1rem;
+        }
     }
     &__elem-value{
         min-width: 9rem;
@@ -236,6 +373,10 @@
         border-radius: 1.5rem;
         padding: 1.9rem 1.65rem 1.05rem 1.65rem;
         background: $white;
+        @media (max-width: 962px){
+            min-width: 7rem;
+            font-size: 3rem;
+        }
     }
     .elem1{
         top: 27rem;
@@ -269,19 +410,33 @@
             height: 43.6rem;
         }
     }
+    &__descr{
+        @media (max-width: 962px){
+            margin-top: 1.8rem;
+        }
+    }
 }
 
 .services{
     margin-bottom: 15.7rem;
+    @media (max-width: 962px){
+        margin-bottom: 6rem;
+    }
     &__title{
         color: $light-middle-gray;   
     }
     &__subtitle{
         margin-left: 29.4rem;
+        @media (max-width: 962px){
+            margin-left: 13rem;
+        }
     }
     &__wrapper{
         display: flex;
         justify-content: space-between;
+        @media (max-width: 962px){
+            flex-direction: column;
+        }
     }
     &__actions{
         padding-top: 6rem;
@@ -289,6 +444,12 @@
         gap: 1rem 2.5rem;
         display: flex;
         flex-wrap: wrap;
+        @media (max-width: 962px){
+            padding-top: 2rem;
+            max-width: 100%;
+            margin-bottom: 3rem;
+            gap: 1rem;
+        }
     }
     &__item{
         border-radius: 1rem;
@@ -300,22 +461,40 @@
         align-items: center;
         cursor: pointer;
         transition: all 0.3s;
+        @media (max-width: 962px){
+            width: 100%;
+            padding: 0;
+            border: none;
+        }
         svg{
             width: 0.7rem;
             height: 0.9rem;
             transition: all 0.3s;
+            @media (max-width: 962px){
+                transform: rotate(90deg);
+            }
         }
         &:hover{
             border-color: transparent;
             background: $hover;
             color: $white;
+            @media (max-width: 962px){
+                background: transparent;
+                color: $dark;
+            }
             svg{
                 transform: rotate(-180deg);
                 transition: all 0.3s;
+                @media (max-width: 962px){
+                    transform: rotate(90deg);
+                }
             }
             svg path{
                 fill: $white;
                 transition: all 0.3s;
+                @media (max-width: 962px){
+                    fill: $dark;
+                }
             }
         }
     }
@@ -324,6 +503,10 @@
         flex-direction: column;
         gap: 0.3rem;
         width: 44.2rem;
+        @media (max-width: 962px){
+            width: 100%;
+            gap: 1rem;
+        }
     }
     &__lable{
         border-radius: 1rem;
@@ -331,6 +514,11 @@
         background: $light-gray;
         width: 14.1rem;
         margin-bottom: 4rem;
+        @media (max-width: 962px){
+            width: 100%;
+            font-size: 1.4rem;
+            margin-bottom: 2.1rem;
+        }
     }
     &__link{
         display: flex;
@@ -340,6 +528,12 @@
         margin-left: -2rem;
         transition: all 0.3s;
         border-radius: 1rem;
+
+        @media (max-width: 962px){
+            padding: 0;
+            margin-left: 0;
+        }
+
         &:nth-child(1){
             margin-top: -1rem;
         }
@@ -350,9 +544,16 @@
             color: #fff;
             transition: all 0.3s;
             background: $hover;
+            @media (max-width: 962px){
+                background: transparent;
+                color: $dark;
+            }
             svg path{
                 stroke: $white;
                 transition: all 0.3s;
+                @media (max-width: 962px){
+                    stroke: $dark;
+                }
             }
         }
     }

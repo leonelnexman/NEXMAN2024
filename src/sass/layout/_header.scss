@@ -22,6 +22,9 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+        @media (max-width: 962px){
+            justify-content: flex-start;
+        }
     }
     &__info{
         display: flex;
@@ -29,20 +32,65 @@
     }
     &__logo{
         margin-right: 4.3rem;
+
+        @media (max-width: 962px){
+            order: 0;
+            margin-right: 3.3rem;
+        }
         img{
             width: 12.7rem;
             height: 3.1rem;
+
+            @media (max-width: 962px){
+                width: 10.3rem;
+                height: 2.6rem;
+            }
         }
     }
     &__menu-btn{
-        display: flex;
-        align-items: center;
-        gap: 0.6rem;
         padding: 1.95rem 1.5rem 1.5rem;
         border-radius: 1rem;
         backdrop-filter: blur(11.041009902954102px);
         background: $light-middle-gray-50;
         margin-right: 2rem;
+        transition: all 0.3s;
+        .desktop{
+            display: flex;
+            align-items: center;
+            gap: 0.6rem;
+            @media (max-width: 962px){
+                display: none;
+            }
+        }
+        .mobile{
+            display: none;
+        }
+        @media (max-width: 962px){
+            position: absolute;
+            right: -0.5rem;
+            top: 2.7rem;
+            padding: 0;
+            background: none;
+            backdrop-filter: none;
+            .mobile{
+                display: block;
+                svg{
+                    width: 4rem;
+                    height: 4rem;
+                }
+            }
+        }
+
+        svg path{
+            transition: all 0.3s;
+        }
+        &:hover{
+            background: $hover;
+            color: $white;
+            svg path{
+                fill: $white;
+            }
+        }
         svg{
             width: 1.2rem;
             height: 1.7rem;
@@ -56,6 +104,15 @@
         border-radius: 1rem;
         backdrop-filter: blur(11.041009902954102px);
         background: $light-middle-gray-50;
+        transition: all 0.3s;
+
+        @media (max-width: 962px){
+            display: none;
+        }
+        &:hover{
+            background: $hover;
+            color: $white;
+        }
         img{
             border-radius: 0.8rem;
             width: 100%;
@@ -70,12 +127,18 @@
     &__actions{
         display: flex;
         align-items: center;
+        @media (max-width: 962px){
+            
+        }
     }
     &__account{
         border-radius: 50%;
         width: 5.5rem;
         height: 5.5rem;
         margin-right: 1.5rem;
+        @media (max-width: 962px){
+            display: none;
+        }
         img{
             border-radius: 50%;
             width: 100%;
@@ -91,10 +154,34 @@
         backdrop-filter: blur(12px);
         background: $light-middle-gray-50;
         margin-right: 2rem;
+        transition: all 0.3s;
+        @media (max-width: 962px){
+            padding: 1.2rem 1.2rem 1rem;
+            margin-right: 1rem;
+        }
+        &:hover{
+            background: $hover;
+            transition: all 0.3s;
+        }
+        a{
+            svg path{
+                transition: all 0.3s;
+            } 
+            &:hover{
+                svg path{
+                    fill: $white;
+                }  
+            }
+            
+        }
         svg{
             width: 3rem;
             height: 3.1rem;
             margin-bottom: -0.3rem;
+            @media (max-width: 962px){
+                width: 2.5rem;
+                height: 2.5rem;
+            }
         }
     }
     &__socials{
@@ -107,8 +194,26 @@
         border-radius: 1rem;
         backdrop-filter: blur(12px);
         background: $light-middle-gray-50;
-        svg{
-            
+        transition: all 0.3s;
+        cursor: pointer;
+        @media (max-width: 962px){
+            padding: 0rem 1rem;
+        }
+        &:hover{
+            background: $hover;
+            transition: all 0.3s;
+            svg path{
+                fill: $white;
+            }
+            p{
+                color: $white;
+            }
+        }
+
+        p{
+            @media (max-width: 962px){
+                display: none;
+            }
         }
     }
     &__socials-slider{
@@ -120,4 +225,30 @@
             align-items: center;
         }
     }
+    &__socials-list{
+        opacity: 0;
+        visibility: hidden;
+        position: absolute;
+        display: flex;
+        align-items: center;
+        gap: 1.5rem;
+        top: 8rem;
+        right: 3.7rem;
+        padding: 1.5rem 1.5rem 1rem;
+        border: 1px solid $green;
+        backdrop-filter: blur(11.041009902954102px);
+        background: $white;
+        border-radius: 1rem;
+        transition: all 0.3s;
+        &.visible{
+            opacity: 1;
+            visibility: visible;
+            transition: all 0.3s;
+        }
+        svg{
+            width: 2.8rem;
+            height: 2.8rem;
+        }
+    }
 }
+

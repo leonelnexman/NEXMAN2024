@@ -52,6 +52,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const links = document.querySelectorAll('a, button');
     const swiperWrappers = document.querySelectorAll('.swiper');
     const infoTitles = document.querySelectorAll('.info-title');
+    const linkOpens = document.querySelectorAll('.link-open');
 
     mouseX = 0;
     mouseY = 0;
@@ -113,6 +114,16 @@ document.addEventListener('DOMContentLoaded', () => {
 
         infoTitles[i].addEventListener('mouseout', () => {
             if(follower) follower.classList.remove('info');
+        });
+    }
+
+    for (let i = 0; i < linkOpens.length; i++) {
+        linkOpens[i].addEventListener('mouseover', () => {
+            if(follower) follower.classList.add('open');
+        });
+
+        linkOpens[i].addEventListener('mouseout', () => {
+            if(follower) follower.classList.remove('open');
         });
     }
 
