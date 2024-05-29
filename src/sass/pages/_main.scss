@@ -11,7 +11,7 @@
     }
     h1{
         animation-delay: 0.3s;
-        animation-duration: 1.5s;
+        transition-duration: 1.5s !important;
         margin-bottom: 1.5rem;
         @media (max-width: 962px){
             margin-bottom: 1rem;
@@ -58,7 +58,7 @@
         top: 15rem;
         right: 7rem;
         animation-delay: 0.7s;
-        animation-duration: 2.5s;
+        transition-duration: 2.5s !important;
         @media (max-width: 962px){
             top: 23.5rem;
             left: 0rem;
@@ -72,7 +72,7 @@
     }
     &__subtitle{
         animation-delay: 0.5s;
-        animation-duration: 1.5s;
+        transition-duration: 1.5s !important;
     }
     &__info{
         width: 79.5rem;
@@ -91,7 +91,7 @@
     }
     &__descr{
         width: 39.5rem;
-        animation-duration: 1.5s;
+        transition-duration: 1.5s !important;
         animation-delay: 0.4s;
         @media (max-width: 962px){
             position: absolute;
@@ -115,7 +115,7 @@
         height: 79rem;
         margin: auto;
         animation-delay: 0.3s;
-        animation-duration: 1.7s;
+        transition-duration: 1.7s !important;
         @media (max-width: 962px){
             border-radius: 2.5rem;
             width: 42rem;
@@ -163,7 +163,7 @@
     &__item{
         position: relative;
         width: 65.8rem;
-        animation-duration: 1.5s;
+        transition-duration: 1.5s !important;
         @media (max-width: 962px){
            width: 100%;
         }
@@ -271,7 +271,7 @@
     &__title{
         color: $white;
         margin-bottom: 2rem;
-        animation-duration: 1s;
+        transition-duration: 1s !important;
         @media (max-width: 962px){
             margin-bottom: 0;
         }
@@ -280,7 +280,7 @@
         color: $white-55;
         margin-left: 16.4rem;
         margin-bottom: 2rem;
-        animation-duration: 1.5s;
+        transition-duration: 1.5s !important;
         @media (max-width: 962px){
             margin-left: 0;
             margin-bottom: 0;
@@ -291,7 +291,7 @@
         margin-left: 48rem;
         margin-bottom: 2rem;
         white-space: nowrap;
-        animation-duration: 2s;
+        transition-duration: 2s !important;
         @media (max-width: 962px){
             white-space: wrap;
            margin-left: 0;
@@ -303,7 +303,7 @@
         position: absolute;
         top: 20.3rem;
         right: 5rem;
-        animation-duration: 2.5s;
+        transition-duration: 2.5s !important;
         @media (max-width: 962px){
             top: 26rem;
             left: 1.5rem;
@@ -315,7 +315,7 @@
         color: $white;
         max-width: 29.1rem;
         bottom: 8.7rem;
-        animation-duration: 2.5s;
+        transition-duration: 2.5s !important;
         @media (max-width: 962px){
             position: static;
             font-size: 1.6rem;

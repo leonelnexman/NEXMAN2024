@@ -26,6 +26,7 @@
   "dependencies": {
     "animate-scss": "^3.2.1",
     "animate.css": "^4.1.1",
+    "aos": "^2.3.4",
     "gh-pages": "^6.1.1",
     "gsap": "^3.12.5",
     "locomotive-scroll": "^4.1.4",
