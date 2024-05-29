@@ -53,5 +53,6 @@ body{
     .animate__animated {
         animation: none !important;
         -webkit-animation: none !important;
+        animation-delay: 0 !important;
     }
 }
