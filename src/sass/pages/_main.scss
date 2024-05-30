@@ -235,6 +235,8 @@
             margin-top: 2.5rem;
          }
         .btn{
+            width: 23rem;
+            height: 5.7rem;
             margin: auto;
             span{
                 width: 16.1rem;
@@ -476,7 +478,6 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        cursor: pointer;
         transition: all 0.3s;
         @media (max-width: 962px){
             width: 100%;
@@ -506,14 +507,14 @@
             }
             svg{
                 transform: rotate(-180deg);
-                transition: all 0.3s;
+                transition: all 0.5s;
                 @media (max-width: 962px){
                     transform: rotate(90deg);
                 }
             }
             svg path{
                 fill: $white;
-                transition: all 0.3s;
+                transition: all 0.5s;
                 @media (max-width: 962px){
                     fill: $dark;
                 }
@@ -526,6 +527,7 @@
             .services__item-content{
                 opacity: 1;
                 visibility: visible;
+                z-index: 777;
             }
         }
         &:nth-child(1), &:nth-child(2){
@@ -548,7 +550,7 @@
         opacity: 0;
         visibility: hidden;
         position: absolute;
-        z-index: 7;
+        z-index: 777;
         padding: 2rem;
         display: flex;
         flex-direction: column;
@@ -625,7 +627,7 @@
         }
         &:hover{
             color: #fff;
-            transition: all 0.3s;
+            transition: all 0.3s !important;
             background: $hover;
             @media (max-width: 962px){
                 background: transparent;

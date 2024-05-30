@@ -95,8 +95,8 @@
             transition: all 0.3s;
         }
         svg{
-            width: 1.2rem;
-            height: 1.7rem;
+            width: 0.8rem;
+            height: 0.6rem;
         }
     }
     &__projects{
@@ -243,6 +243,18 @@
         background: $white;
         border-radius: 1rem;
         transition: all 0.3s;
+        a{
+            transition: all 0.3s;
+            svg path{
+                transition: all 0.3s;
+                fill: $green;
+            }
+            &:hover{
+                svg path{
+                    fill: $hover;
+                }
+            }
+        }
         &.visible{
             opacity: 1;
             visibility: visible;
