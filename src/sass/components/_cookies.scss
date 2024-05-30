@@ -14,6 +14,13 @@
     visibility: hidden;
     transition: all 0.3s !important;
     transition-delay: 1s;
+    @media (max-width: 962px){
+        left: 1.3rem;
+        width: 33.3rem;
+        p{
+            font-size: 1rem;
+        }
+    }
     &.visible{
         opacity: 1;
         visibility: visible !important;

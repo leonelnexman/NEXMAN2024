@@ -1,0 +1,115 @@
+.promotion{
+    position: fixed;
+    right: 1.3rem;
+    bottom: 0.7rem;
+    z-index: 777;
+    border-radius: 2.5rem;
+    padding: 0.5rem 0.5rem 2rem 0.5rem;
+    background: $black;
+    width: 29.4rem;
+    transform: translateY(150%);
+    transition: all 0.3s;
+    transition-duration: 1.9s;
+    @media (max-width: 962px){
+        padding: 1.9rem 0.5rem;
+        width: 35rem;
+        left: 0.5rem;
+    }
+    &.visible{
+        transform: translateY(0%); 
+    }
+    &__close{
+        top: 1rem;
+        right: 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        width: 3rem;
+        height: 3rem;
+        background: $dark-50;
+        border-radius: 1rem;
+        svg{
+            width: 1.2rem;
+            height: 1.2rem;
+        }
+    }
+    &__img{
+        width: 28.4rem;
+        height: 21.7rem;
+        margin-bottom: 1.9rem;
+        @media (max-width: 962px){
+            display: none;
+        }
+        img{
+            width: 100%;
+            height: 100%;
+            border-radius: 1.9rem;
+        }
+    }
+    &__top{
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        padding: 0 1.5rem;
+        margin-bottom: 1rem;
+    }
+    &__title{
+        color: $attention-on-black;
+    }
+    &__lable{
+        padding: 0.5rem 0.5rem 0.3rem;
+        background: $attention;
+        border-radius: 10rem;
+        color: $white;
+    }
+    &__prices{
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        padding: 0 1.5rem;
+        margin-bottom: 1.9rem;
+    }
+    &__price{
+        font-weight: 400;
+        font-size: 2.6rem;
+        line-height: 130%;
+        letter-spacing: -0.02em;
+        color: $white;
+    }
+    &__price--old{
+        color: $light-middle-gray-50;
+    }
+    &__form{
+        display: flex;
+        flex-direction: column;
+        padding: 0 1.5rem;
+        input{
+          border: none;
+          padding-bottom: 1rem;
+          border-bottom: 0.1rem solid $white-30;
+          margin-bottom: 1.9rem; 
+        }
+        button{
+            color: $white;
+            border-radius: 1rem;
+            padding: 1.6rem 1.8rem 1.2rem 1.8rem;
+            background: $green;
+            margin-bottom: 2rem;
+            transition: all 0.3s;
+            &:hover{
+                background: $hover;
+            }
+        }
+    }
+    &__descr{
+        color: $white-55;
+        max-width: 85%;
+        @media (max-width: 962px){
+            max-width: 100%;
+        }
+        a{
+            color: $white;
+        }
+    }
+}

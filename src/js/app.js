@@ -8,4 +8,5 @@ import "./components/hover"
 import "./components/dropdown"
 import "./components/scrolltop"
 import "./components/cookie"
+import "./components/promotion"
 
