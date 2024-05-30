@@ -57,6 +57,13 @@
         background: $light-middle-gray-50;
         margin-right: 2rem;
         transition: all 0.3s;
+        &:hover{
+            background: $hover;
+            color: $white;
+            svg path{
+                fill: $white !important;
+            }
+        }
         .desktop{
             display: flex;
             align-items: center;
@@ -86,13 +93,6 @@
 
         svg path{
             transition: all 0.3s;
-        }
-        &:hover{
-            background: $hover;
-            color: $white;
-            svg path{
-                fill: $white;
-            }
         }
         svg{
             width: 1.2rem;
