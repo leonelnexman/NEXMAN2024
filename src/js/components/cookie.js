@@ -26,6 +26,7 @@ window.onload = function() {
 };
 
 document.querySelector('.cookies__btn').addEventListener('click', () => {
+    const cookiesBanner = document.querySelector('.cookies');
+    cookiesBanner.classList.add('hidden');
     setCookie('cookiesAccepted', 'true', 365);
-    document.querySelector('.cookies').classList.add('hidden');
 });
