@@ -9,4 +9,5 @@ import "./components/dropdown"
 import "./components/scrolltop"
 import "./components/cookie"
 import "./components/promotion"
+import "./components/navbar"
 
