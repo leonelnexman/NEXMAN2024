@@ -238,6 +238,9 @@
             width: 23rem;
             height: 5.7rem;
             margin: auto;
+            @media (max-width: 962px){
+                width: 100%;
+            }
             span{
                 width: 16.1rem;
                 white-space: nowrap;

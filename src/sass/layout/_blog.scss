@@ -1,7 +1,8 @@
 .blog{
     margin-bottom: 9rem;
     @media (max-width: 962px){
-       margin-bottom: 5.6rem;
+        position: relative;
+       margin-bottom: 15.6rem;
     }
     &__top{
         display: flex;
@@ -33,7 +34,8 @@
     }
     .btn{
         @media (max-width: 962px){
-            display: none;
+            position: absolute;
+            top: 60rem;
         }
     }
     .tab{
