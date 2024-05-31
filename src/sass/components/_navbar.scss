@@ -82,6 +82,9 @@
     &__block{
         width: 23rem;
     }
+    &__link{
+        font-size: 2.1rem;
+    }
     &__block-title{
         margin-bottom: 1rem;
     }
@@ -118,7 +121,7 @@
         width: 43.2rem;
         border-radius: 2.5rem;
         padding: 3rem;  
-        bottom: 1.9rem;
+        bottom: 4.9rem;
         background: $light-gray;
     }
 }
