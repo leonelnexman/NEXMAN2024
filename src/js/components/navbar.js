@@ -7,3 +7,4 @@ menuBtn.addEventListener('click', function() {
     // Добавление/удаление класса 'visible' для навигационного меню
     navbar.classList.toggle('visible');
 });
+

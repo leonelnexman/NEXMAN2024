@@ -36,6 +36,14 @@
         @media (max-width: 962px){
             position: absolute;
             top: 60rem;
+            span{
+                width: 35.5rem;
+            }
+        }
+        @media (max-width: 600px){
+            span{
+                width: 27.1rem;
+            }
         }
     }
     .tab{

@@ -37,6 +37,9 @@
     }
     .btn span{
         @media (max-width: 962px){
+            width: 32.7rem;
+        }
+        @media (max-width: 600px){
             width: 23.7rem;
         }
     }

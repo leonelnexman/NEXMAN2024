@@ -47,6 +47,18 @@
             }
         }
     }
+    .btn{
+        @media (max-width: 962px){
+            span{
+                width: 35.5rem;
+            }
+        }
+        @media (max-width: 600px){
+            span{
+                width: 27.1rem;
+            }
+        } 
+    }
     &__img{
         display: block;
         width: 110rem;

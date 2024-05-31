@@ -10,4 +10,5 @@ import "./components/scrolltop"
 import "./components/cookie"
 import "./components/promotion"
 import "./components/navbar"
+import "./components/phone-mask"
 

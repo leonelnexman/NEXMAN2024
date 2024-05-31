@@ -60,6 +60,9 @@
         &:hover{
             background: $hover;
             color: $white;
+            @media (max-width: 962px){
+                background: transparent;
+            }
             svg path{
                 fill: $white !important;
             }

@@ -267,10 +267,14 @@
         border-radius: 3rem;
         position: relative;
         @media (max-width: 962px){
-            max-width: 35rem;
-            width: 35rem;
+            max-width: 42rem;
+            width: 42rem;
             padding: 2.5rem 1.5rem;
             border-radius: 1.9rem;
+        }
+        @media (max-width: 600px){
+            max-width: 35rem;
+            width: 35rem;
         }
     }
     &__title{
@@ -310,6 +314,11 @@
         right: 5rem;
         transition-duration: 2.5s !important;
         @media (max-width: 962px){
+            top: 21.9rem;
+            left: 1.5rem;
+            width: 32rem;
+        }
+        @media (max-width: 600px){
             top: 26rem;
             left: 1.5rem;
             width: 32rem;
@@ -326,6 +335,8 @@
             font-size: 1.6rem;
             max-width: 100%;
             margin-bottom: 8.1rem;
+            max-width: 35rem;
+            width: 35rem;
         }
     }
 }
@@ -362,6 +373,12 @@
             gap: 1rem;
             align-items: center;
             width: 20.8rem;
+            @media (max-width: 962px){
+                width: 35.5rem;
+            }
+            @media (max-width: 600px){
+                width: 27.1rem;
+            }
             svg{
                 width: 1.9rem;
                 height: 1.9rem;
