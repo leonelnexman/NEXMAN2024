@@ -9,7 +9,7 @@
     z-index: 777777777;
     background: $white;
     padding-top: 10.5rem;
-    transition: all 0.1s;
+    transition: all 0.9s;
     &.visible{
         opacity: 1;
         visibility: visible;
@@ -121,7 +121,7 @@
         width: 43.2rem;
         border-radius: 2.5rem;
         padding: 3rem;  
-        bottom: 4.9rem;
+        top: 41rem;
         background: $light-gray;
     }
 }
