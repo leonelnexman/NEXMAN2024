@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    if (window.innerWidth > 962) return; // Проверка разрешения экрана
+    if (window.innerWidth > 962) return;
 
     const serviceTops = document.querySelectorAll('.services__item-top');
     let previouslyOpenedContent = null;
@@ -34,19 +34,17 @@ document.addEventListener('DOMContentLoaded', () => {
     const items = document.querySelectorAll('.navbar__item-top');
 
     function handleItemClick(event) {
-        event.preventDefault(); // предотвращает переход по ссылке
+        event.preventDefault();
 
         const content = this.nextElementSibling;
         const isActive = this.classList.contains('active');
 
-        // Убираем активный класс у всех элементов и их контента
         items.forEach(i => i.classList.remove('active'));
         document.querySelectorAll('.navbar__item-content').forEach(c => {
             c.classList.remove('active');
             c.style.maxHeight = null;
         });
 
-        // Если элемент не был активным, добавляем активный класс
         if (!isActive) {
             this.classList.add('active');
             if (content) {
@@ -74,9 +72,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    // Initial check
     handleResize();
 
-    // Check on resize
     window.addEventListener('resize', handleResize);
 });

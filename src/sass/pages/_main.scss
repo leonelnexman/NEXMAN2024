@@ -266,6 +266,10 @@
         background: $dark;
         border-radius: 3rem;
         position: relative;
+        transition: all 0.3s;
+        &:hover{
+            
+        }
         @media (max-width: 962px){
             max-width: 42rem;
             width: 42rem;
