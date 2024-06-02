@@ -18,9 +18,23 @@
         display: flex;
         justify-content: space-between;
         align-items: flex-start;
+        @media (max-width: 962px){
+            flex-direction: column;
+            max-height: 90rem;
+            overflow: auto;
+            padding-bottom: 25rem;
+            &::-webkit-scrollbar{
+                display: none;
+            }
+        }
     }
     &__categories{
         border-right: 0.1rem solid $light-middle-gray;
+        @media (max-width: 962px){
+            width: 100%;
+            border: none;
+            margin-bottom: 3rem;
+        }
     }
     &__dropdowns{
         display: flex;
@@ -29,6 +43,15 @@
         padding-right: 1.9rem;
         padding-bottom: 1.9rem;
         border-bottom: 0.1rem solid $light-middle-gray;
+        @media (max-width: 962px){
+            gap: 1rem;
+            padding-right: 0;
+         }
+        @media (max-width: 962px){
+            border: none;
+            margin-bottom: 3rem;
+            padding-bottom: 0;
+        }
         a{
             text-decoration: underline;
             text-underline-offset: 0.9rem;
@@ -46,6 +69,9 @@
         flex-direction: column;
         gap: 1rem;
         padding-top: 1.9rem;
+        @media (max-width: 962px){
+            padding-top: 0;
+        }
         a{
             text-decoration: underline;
             text-underline-offset: 0.9rem;
@@ -67,6 +93,9 @@
         gap: 2.5rem 3.6rem;
         flex-wrap: wrap;
         max-height: 95vh;
+        @media (max-width: 962px){
+            display: none;
+        }
         a{
             text-decoration: underline;
             text-underline-offset: 0.5rem;
@@ -103,8 +132,16 @@
         width: 43.2rem;
         margin-left: 6.2rem;
         height: auto;
+        @media (max-width: 962px){
+            width: 100%;
+            margin-left: 0;
+            padding: 2.5rem 1.5rem;
+        }
         button span{
             width: 31.3rem;
+            @media (max-width: 962px){
+                width: 24rem;
+            }
         }
     }
     &__promo-title{
@@ -114,6 +151,9 @@
     &__promo-text{
         color: $white-55;
         margin-bottom: 1.9rem;
+        @media (max-width: 962px){
+            font-size: 1.6rem;
+        }
     }
     &__links{
         position: absolute;
@@ -123,5 +163,74 @@
         padding: 3rem;  
         top: 41rem;
         background: $light-gray;
+        @media (max-width: 962px){
+            position: static;
+            padding: 0;
+            background: transparent;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem 7.2rem;
+            padding-bottom: 2rem;
+            border-bottom: 0.1rem solid $light-middle-gray;
+            border-radius: 0;
+            margin-bottom: 2.5rem;
+        }
+    }
+    &__link{
+        @media (max-width: 962px){
+           width: 10rem; 
+        }
+    }
+    &__item .navbar__item-content{
+        @media (max-width: 962px){
+            max-height: 0;
+            overflow: hidden;
+            transition: all 0.3s;
+            &.active{
+                margin-top: 1rem;
+            }
+         }
+    }
+    &__item-top{
+        svg{
+            display: none;
+        }
+        @media (max-width: 962px){
+            display: flex;
+            justify-content: space-between;
+            font-size: 2rem;
+            align-items: center;
+            &.active{
+                svg{
+                    transform: rotate(-180deg);
+                }
+            }
+            &:hover{
+                text-decoration: none;
+                color: inherit !important;
+            }
+            svg{
+                transition: all 0.3s;
+                display: block;
+                width: 1rem;
+                height: 0.7rem;
+            }
+         }
+    }
+    &__whom-title{
+        display: none;
+        @media (max-width: 962px){
+            display: block;
+            border-radius: 1rem;
+            padding: 1.65rem 1.5rem 0.125rem;
+            background: $light-gray;
+            width: 100%;
+            font-size: 1.4rem;
+            letter-spacing: -0.02em;
+            text-transform: uppercase;
+            color: $dark;
+            height: 4.9rem;
+            margin-bottom: 1rem;
+        }
     }
 }

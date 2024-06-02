@@ -29,3 +29,54 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+    const items = document.querySelectorAll('.navbar__item-top');
+
+    function handleItemClick(event) {
+        event.preventDefault(); // предотвращает переход по ссылке
+
+        const content = this.nextElementSibling;
+        const isActive = this.classList.contains('active');
+
+        // Убираем активный класс у всех элементов и их контента
+        items.forEach(i => i.classList.remove('active'));
+        document.querySelectorAll('.navbar__item-content').forEach(c => {
+            c.classList.remove('active');
+            c.style.maxHeight = null;
+        });
+
+        // Если элемент не был активным, добавляем активный класс
+        if (!isActive) {
+            this.classList.add('active');
+            if (content) {
+                content.classList.add('active');
+                content.style.maxHeight = `${content.scrollHeight}px`;
+            }
+        }
+    }
+
+    function handleResize() {
+        if (window.innerWidth < 962) {
+            items.forEach(item => {
+                item.addEventListener('click', handleItemClick);
+            });
+        } else {
+            items.forEach(item => {
+                item.removeEventListener('click', handleItemClick);
+                const content = item.nextElementSibling;
+                if (content) {
+                    content.classList.remove('active');
+                    content.style.maxHeight = null;
+                }
+                item.classList.remove('active');
+            });
+        }
+    }
+
+    // Initial check
+    handleResize();
+
+    // Check on resize
+    window.addEventListener('resize', handleResize);
+});
