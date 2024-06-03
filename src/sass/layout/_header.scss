@@ -63,7 +63,7 @@
                     span{
                         &:nth-child(1){
                             width: 2.9rem;
-                            transform: rotate(45deg) translate(5px, 5px);
+                            transform: rotate(45deg) translate(10px, 9px);
                             
                         }
                         &:nth-child(2){
@@ -94,6 +94,26 @@
                     }
                     &:nth-child(3){
                         width: 1.3rem;
+                    }
+                }
+            }
+        }
+        @media (max-width: 600px){
+            &.active{
+                .mobile{
+                    span{
+                        &:nth-child(1){
+                            width: 2.9rem;
+                            transform: rotate(45deg) translate(5px, 5px);
+                            
+                        }
+                        &:nth-child(2){
+                            opacity: 0;
+                        }
+                        &:nth-child(3){
+                            width: 2.9rem;
+                            transform: rotate(-45deg) translate(7px, -8px);
+                        }
                     }
                 }
             }

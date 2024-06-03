@@ -22,10 +22,13 @@
             flex-direction: column;
             max-height: 90rem;
             overflow: auto;
-            padding-bottom: 25rem;
+            padding-bottom: 39rem;
             &::-webkit-scrollbar{
                 display: none;
             }
+        }
+        @media (max-width: 600px){
+            padding-bottom: 25rem;
         }
     }
     &__categories{
@@ -43,6 +46,12 @@
         padding-right: 1.9rem;
         padding-bottom: 1.9rem;
         border-bottom: 0.1rem solid $light-middle-gray;
+        .navbar__item-content{
+            display: none;
+            @media (max-width: 962px){
+                display: flex;
+             }
+        }
         @media (max-width: 962px){
             gap: 1rem;
             padding-right: 0;

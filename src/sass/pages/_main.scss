@@ -62,12 +62,18 @@
         @media (max-width: 962px){
             top: 23.5rem;
             left: 0rem;
-            width: 33rem;
+            width: 100%;
+            span{
+                width: 37rem;
+            }
         }
         @media (max-width: 600px){
             top: 26rem;
             left: 0rem;
             width: 33rem;
+            span{
+                width: 27rem;
+            }
         }
     }
     &__subtitle{
@@ -665,5 +671,27 @@
                 }
             }
         }
+    }
+}
+
+@media (max-height: 819px){
+    .navbar{
+        padding-top: 12.3rem;
+    }
+    .navbar__promo-text{
+        margin-bottom: 4.9rem;
+    }
+    .navbar__links{
+        top: auto;
+        bottom: 2.5rem;
+        display: flex;
+        flex-direction: column;
+        gap: 0.7rem;
+    }
+    .navbar__promo-title{
+        margin-bottom: 1.9rem;
+    }
+    .navbar__whoms{
+        margin-top: 1.9rem;
     }
 }
