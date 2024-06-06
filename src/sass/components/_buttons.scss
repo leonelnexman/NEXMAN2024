@@ -101,5 +101,37 @@
     }
 }
 
+.btn--stroke{
+    &:hover{
+        span{
+            color: $white;
+            border-color: transparent;
+        }
+        svg rect{
+            transition: all 0.3s;
+            stroke: transparent;
+        }
+        svg path{
+            transition: all 0.3s;
+            stroke: $white;
+        }
+    }
+    svg rect{
+        transition: all 0.3s;
+        stroke-width: 0.06rem;
+        @media (max-width: 962px){
+            stroke-width: 0.1rem;
+        }
+    }
+    svg path{
+        transition: all 0.3s;
+    }
+    span{
+        background: transparent;
+        border: 0.1rem solid $green;
+        color: $dark;
+    }
+}
+
 
 

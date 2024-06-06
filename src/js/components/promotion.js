@@ -1,8 +1,17 @@
 setTimeout(() => {
-    document.querySelector('.promotion').classList.add('visible');
+    const promotionElement = document.querySelector('.promotion');
+    if (promotionElement) {
+        promotionElement.classList.add('visible');
+    }
 }, 5000);
 
 // Обработчик нажатия на кнопку закрытия
-document.querySelector('.promotion__close').addEventListener('click', () => {
-    document.querySelector('.promotion').classList.remove('visible');
-});
+const closeButton = document.querySelector('.promotion__close');
+if (closeButton) {
+    closeButton.addEventListener('click', () => {
+        const promotionElement = document.querySelector('.promotion');
+        if (promotionElement) {
+            promotionElement.classList.remove('visible');
+        }
+    });
+}

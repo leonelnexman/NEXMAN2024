@@ -2,6 +2,12 @@
 @import "base/index";
 @import "lib/index";
 @import "layout/index";
-@import "pages/index";
 @import "components/index";
+
+// Страницы
+
+@import "pages/index";
+@import "pages/service";
+@import "pages/error";
+
 

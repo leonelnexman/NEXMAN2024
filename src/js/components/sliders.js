@@ -32,13 +32,32 @@ const doingnow = new Swiper('.doingnow__slider', {
     slidesPerView: "auto",
 });
 
-doingnow.el.addEventListener('mouseenter', () => {
-    doingnow.autoplay.stop(); 
+// doingnow.el.addEventListener('mouseenter', () => {
+//     doingnow.autoplay.stop(); 
+// });
+
+// doingnow.el.addEventListener('mouseleave', () => {
+//     doingnow.autoplay.start();
+// });
+
+const stages = new Swiper('.stages-slider', {
+    modules: [FreeMode],
+    spaceBetween: 15,
+    slidesPerView: "auto",
+    breakpoints: {
+        260: {
+            initialSlide: 0,
+            centerInsufficientSlides: true,
+            freeMode: true,
+            freeModeSticky: true,
+            slidesPerView: 'auto'
+        },
+        962: {
+            slidesPerView: "auto",
+        }
+    }
 });
 
-doingnow.el.addEventListener('mouseleave', () => {
-    doingnow.autoplay.start();
-});
 
 const blogslider = new Swiper('.blog__slider', {
     modules: [FreeMode],
@@ -57,3 +76,25 @@ const blogslider = new Swiper('.blog__slider', {
         }
     }
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+    function initSwiper() {
+      if (window.innerWidth < 962) {
+        const cases = new Swiper('.cases__slider', {
+            modules: [FreeMode],
+            spaceBetween: 15,
+            slidesPerView: "auto",
+        });
+      }
+    }
+
+    // Initialize Swiper on load
+    initSwiper();
+
+    // Re-initialize Swiper on window resize if necessary
+    window.addEventListener('resize', () => {
+      // Optionally, destroy the swiper instance and reinitialize if necessary
+      // if (swiperInstance) swiperInstance.destroy();
+      initSwiper();
+    });
+  });

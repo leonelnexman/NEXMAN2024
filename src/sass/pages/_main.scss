@@ -356,6 +356,7 @@
     margin-bottom: 17rem;
     @media (max-width: 962px){
         margin-bottom: 6rem;
+        overflow: hidden;
     }
     &__title{
         color: $light-middle-gray;
@@ -442,6 +443,9 @@
         position: absolute;
         top: 23rem;
         left: 49rem;
+        @media (max-width: 962px){
+            display: none;
+        }
         img{
             border-radius: 3rem;
             width: 40.4rem;
@@ -452,6 +456,9 @@
         position: absolute;
         top: -10rem;
         left: 95rem;
+        @media (max-width: 962px){
+            display: none;
+        }
         img{
             border-radius: 3rem;
             width: 43.6rem;
@@ -674,7 +681,7 @@
     }
 }
 
-@media (max-height: 819px){
+@media (max-height: 800px){
     .navbar{
         padding-top: 12.3rem;
     }
@@ -695,3 +702,4 @@
         margin-top: 1.9rem;
     }
 }
+

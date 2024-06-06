@@ -8,3 +8,11 @@ menuBtn.addEventListener('click', function() {
     body.classList.toggle('no-scroll');
 });
 
+document.addEventListener("DOMContentLoaded", () => {
+    const menubar = document.querySelector('.menubar');
+    const isHomePage = window.location.pathname === '/' || window.location.pathname === '/index.html';
+
+    if (isHomePage) {
+        menubar.classList.add('main');
+    }
+});

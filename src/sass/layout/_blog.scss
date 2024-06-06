@@ -1,8 +1,10 @@
 .blog{
+    overflow: hidden;
     margin-bottom: 9rem;
     @media (max-width: 962px){
         position: relative;
-       margin-bottom: 15.6rem;
+       padding-bottom: 15.6rem;
+       margin: 0;
     }
     &__top{
         display: flex;

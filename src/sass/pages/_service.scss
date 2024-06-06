@@ -1,0 +1,196 @@
+.service{
+    .task{
+        padding: 9rem 0;
+        background: $light-gray;
+    }
+}
+
+.service-main{
+    margin-bottom: 12rem;
+    @media (max-width: 962px){
+        margin-bottom: 5rem;
+    }
+    &__wrapper{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 9.5rem;
+        @media (max-width: 962px){
+            flex-direction: column;
+            margin-bottom: 4rem;
+        }
+    }
+    &__title{
+        max-width: 55rem;
+        @media (max-width: 962px){
+            max-width: 100%;
+            margin-bottom: 2rem;
+        }
+    }
+    &__info{
+        max-width: 66.9rem;
+    }
+    &__text{
+        margin-bottom: 3rem;
+        @media (max-width: 962px){
+            color: $text-dark;
+        }
+    }
+    .btn{
+        span{
+            @media (max-width: 962px){
+                width: 35.1rem !important;
+            }
+            @media (max-width: 600px){
+                width: 27.1rem !important;
+            }
+        }
+    }
+    &__img{
+        width: 100%;
+        height: 83.2rem;
+        @media (max-width: 962px){
+            height: 20rem;
+        }
+        img{
+            border-radius: 3rem;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            @media (max-width: 962px){
+                border-radius: 1.5rem;
+            }
+        }
+    }
+}
+
+.similar-services{
+    margin-bottom: 7rem;
+    &__title{
+        margin-bottom: 4.3rem;
+        @media (max-width: 962px){
+            margin-bottom: 2.1rem;
+        }
+    }
+    &__wrapper{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1.5rem;
+        width: 100%;
+        @media (max-width: 962px){
+            gap: 0.5rem;
+        }
+    }
+    &__link{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border: 0.1rem solid $light-middle-gray-50;
+        border-radius: 1rem;
+        padding: 2.4rem 2rem 2rem 2rem;
+        width: 32.7rem;
+        transition: all 0.3s;
+        @media (max-width: 962px){
+            padding: 1.5rem 1.5rem 1.3rem;
+            font-size: 1.6rem;
+            width: 100%;
+        }
+        &:hover{
+            background: $hover;
+            border-color: transparent;
+            color: $white;
+            svg path{
+                stroke: $white;
+            }
+        }
+        span{
+            max-width: 17.9rem;
+        }
+        svg{
+            transition: all 0.3s;
+            width: 2.4rem;
+            height: 2.2rem;
+        }
+    }
+}
+
+.stages{
+    margin-bottom: 9rem;
+    @media (max-width: 962px){
+        margin-bottom: 5rem;
+    }
+    &__title{
+        color: $light-middle-gray;
+    }
+    &__text{
+        padding-bottom: 2.5rem;
+        border-bottom: 0.1rem solid $light-middle-gray-50;
+        @media (max-width: 962px){
+            font-size: 1.4rem;
+        } 
+    }
+    &__subtitle{
+       margin-left: 9.7rem;
+       margin-bottom: 4rem;
+       @media (max-width: 962px){
+        margin-bottom: 2rem;
+        }  
+    }
+    .swiper-slide{
+        padding: 4rem 3rem;
+        border: 1px solid $light-middle-gray;
+        border-radius: 3rem;
+        width: 73.1rem;
+        height: auto;
+        @media (max-width: 962px){
+            width: 30rem;
+            padding: 2rem 1.5rem;
+        } 
+    }
+    &__top{
+        display: flex;
+        gap: 0.9rem;
+        margin-bottom: 1.2rem;
+        span{
+            font-family: $font-family;
+            font-weight: 400;
+            font-size: 1.4rem;
+            line-height: 140%;
+            letter-spacing: -0.02em;
+            text-transform: uppercase;
+            color: $dark;
+        }
+    }
+    &__list{
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        margin-top: 2.5rem;
+    }
+    &__item{
+        display: flex;
+        gap: 4rem;
+        padding-bottom: 1.5rem;
+        border-bottom: 0.1rem solid $light-middle-gray-50;
+        @media (max-width: 962px){
+            flex-direction: column;
+            gap: 0.5rem;
+            color: $text;
+            font-size: 1.3rem;
+        } 
+        &:last-child{
+            border: none;
+        }
+        span{
+            display: block;
+            font-family: $font-family;
+            font-weight: 400;
+            font-size: 1.4rem;
+            line-height: 130%;
+            color: $dark;  
+            min-width: 20.3rem;
+            @media (max-width: 962px){
+                width: auto;
+            } 
+        }
+    }
+}

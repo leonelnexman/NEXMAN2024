@@ -1,0 +1,52 @@
+.error-page{
+    padding-top: 21.7rem !important;
+    @media (max-width: 962px){
+        padding-top: 11rem !important;
+    }
+}
+.error{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 12.2rem;
+    @media (max-width: 962px){
+        padding-bottom: 6rem;
+    }
+    &__number{
+        font-family: $font-family;
+        font-weight: 400;
+        font-size: 20rem;
+        line-height: 120%;
+        letter-spacing: -0.02em;
+        color: $dark;
+        @media (max-width: 962px){
+            font-size: 10rem;
+            margin-bottom: 3rem;
+        }
+    }
+    &__title{
+        margin-top: -3rem;
+        margin-bottom: 0.5rem;
+    }
+    &__text{
+        max-width: 72.3rem;
+        text-align: center;
+        color: $text-dark;
+        margin-bottom: 3rem;
+    }
+    &__btn{
+        span{
+            background: transparent;
+            border: 0.1rem solid $green;
+            color: $dark !important;
+        }
+    }
+    &__btns{
+        display: flex;
+        gap: 2rem;
+        @media (max-width: 962px){
+            flex-direction: column;
+        }
+    }
+}

@@ -1,0 +1,44 @@
+---
+title: Ошибка 403
+---
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+
+	{# partial example #}
+	{% include "partials/_header.html" %}
+	{% include "partials/_navbar.html" %}
+	{% include "partials/_menubar.html" %}
+
+    <main class="main error-page">
+		<section class="error">
+            <div class="error__number">403</div>
+            <div class="error__title h4">Доступ ограничен</div>
+            <p class="error__text text--big">
+                Но не отчаивайтесь! Мы готовы помочь вам создать ваш собственный проект и преуспеть
+            </p>
+            <div class="error__btns">
+                <button class="btn btn--stroke">
+                    <svg width="57" height="56" viewBox="0 0 57 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="-0.5" y="0.5" width="55" height="55" rx="9.5" transform="matrix(-1 0 0 1 55.5 0)" stroke="#186D72" />
+                        <path d="M38.5 28H18.5M18.5 28L23.6613 24M18.5 28L23.6613 32" stroke="#186D72" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                    <span>Вернуться на главную</span>
+                </button>
+                <button class="btn">
+                    <span>Оставить заявку</span>
+                    <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="56" height="56" rx="10" fill="#186D72" />
+                        <path d="M20.93 35.0711L35.0721 20.929M35.0721 20.929L28.5941 21.7501M35.0721 20.929L34.251 27.407" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                      </svg>
+                </button>
+            </div>
+            
+        </section>
+    </main>
+
+	{% include "partials/_footer.html" %}
+	{% include "partials/_cookies.html" %}
+	<!-- {% include "partials/_promotion.html" %} -->
+
+{% endblock %}
