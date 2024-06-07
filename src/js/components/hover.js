@@ -29,5 +29,10 @@ document.addEventListener('DOMContentLoaded', () => {
                 }, 300);
             }
         });
+
+        window.addEventListener('scroll', () => {
+            clearTimeout(hideTimeout);
+            socialsList.classList.remove('visible');
+        });
     }
 });

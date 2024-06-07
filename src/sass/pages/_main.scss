@@ -262,6 +262,7 @@
 }
 
 .kp{
+    overflow: hidden;
     margin-bottom: 17rem;
     @media (max-width: 962px){
         margin-bottom: 5rem;
@@ -681,25 +682,4 @@
     }
 }
 
-@media (max-height: 800px){
-    .navbar{
-        padding-top: 12.3rem;
-    }
-    .navbar__promo-text{
-        margin-bottom: 4.9rem;
-    }
-    .navbar__links{
-        top: auto;
-        bottom: 2.5rem;
-        display: flex;
-        flex-direction: column;
-        gap: 0.7rem;
-    }
-    .navbar__promo-title{
-        margin-bottom: 1.9rem;
-    }
-    .navbar__whoms{
-        margin-top: 1.9rem;
-    }
-}
 

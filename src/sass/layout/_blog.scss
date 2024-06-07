@@ -5,6 +5,11 @@
         position: relative;
        padding-bottom: 15.6rem;
        margin: 0;
+       .container{
+            max-width: 100%;
+            width: 100%;
+            padding-left: 1.5rem;
+       }
     }
     &__top{
         display: flex;
@@ -102,6 +107,9 @@
     &__item-date{
         color: $dark-gray !important;
         margin-bottom: 1.5rem;
+        @media (max-width: 962px){
+            font-size: 1.4rem;
+        }
     }
     &__item-text{
         display: -webkit-box;       

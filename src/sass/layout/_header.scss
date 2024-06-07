@@ -57,7 +57,20 @@
         backdrop-filter: blur(11.041009902954102px);
         background: $light-middle-gray-50;
         margin-right: 2rem;
-        transition: all 0.3s;
+        transition: all 0.7s;
+        svg{
+            transition: all 0.7s;
+        }
+        &.active{
+            background: $hover;
+            color: $white;
+            svg{
+                transform: rotate(-180deg);
+            }
+            svg path{
+                fill: $white;
+            }
+        }
         @media (max-width: 962px){
             &.active{
                 .mobile{

@@ -1,7 +1,9 @@
 .navbar{
+    max-height: 0;
+    overflow: hidden;
+    position: fixed;
     opacity: 0;
     visibility: hidden;
-    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -9,10 +11,12 @@
     z-index: 777777777;
     background: $white;
     padding-top: 10.5rem;
-    transition: all 0.9s;
+    transition: all 0.7s;
     &.visible{
         opacity: 1;
         visibility: visible;
+        padding-top: 10.5rem;
+        max-height: 100%;
     }
     .container{
         display: flex;
@@ -241,5 +245,28 @@
             height: 4.9rem;
             margin-bottom: 1rem;
         }
+    }
+}
+
+
+@media (max-height: 800px){
+    .navbar.visible{
+        padding-top: 12.3rem;
+    }
+    .navbar__promo-text{
+        margin-bottom: 4.9rem;
+    }
+    .navbar__links{
+        top: auto;
+        bottom: 2.5rem;
+        display: flex;
+        flex-direction: column;
+        gap: 0.7rem;
+    }
+    .navbar__promo-title{
+        margin-bottom: 1.9rem;
+    }
+    .navbar__whoms{
+        margin-top: 1.9rem;
     }
 }
