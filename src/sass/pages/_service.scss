@@ -2,6 +2,10 @@
     .task{
         padding: 9rem 0;
         background: $light-gray;
+        @media (max-width: 962px){
+            padding-top: 3rem;
+            border-radius: 2.5rem;
+        }
     }
 }
 
@@ -65,6 +69,9 @@
 
 .similar-services{
     margin-bottom: 7rem;
+    @media (max-width: 962px){
+        margin-bottom: 4rem;
+    }
     &__title{
         margin-bottom: 4.3rem;
         @media (max-width: 962px){
@@ -104,6 +111,9 @@
         }
         span{
             max-width: 17.9rem;
+            @media (max-width: 962px){
+                max-width: 90%;
+            }
         }
         svg{
             transition: all 0.3s;
