@@ -72,6 +72,9 @@
             }
         }
         @media (max-width: 962px){
+            &:hover{
+                background: transparent;
+            }
             &.active{
                 .mobile{
                     span{

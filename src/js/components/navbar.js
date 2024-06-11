@@ -1,24 +1,7 @@
-function preventScroll(event) {
-    event.preventDefault();
-    event.stopPropagation();
-    return false;
-}
-
 const menuBtn = document.querySelector('.header__menu-btn');
 const navbar = document.querySelector('.navbar');
+const {body} = document; // Select the body element
 let scrollPosition = 0;
-
-function disableScroll() {
-    window.addEventListener('scroll', preventScroll, { passive: false });
-    window.addEventListener('wheel', preventScroll, { passive: false });
-    window.addEventListener('touchmove', preventScroll, { passive: false });
-}
-
-function enableScroll() {
-    window.removeEventListener('scroll', preventScroll, { passive: false });
-    window.removeEventListener('wheel', preventScroll, { passive: false });
-    window.removeEventListener('touchmove', preventScroll, { passive: false });
-}
 
 menuBtn.addEventListener('click', function() {
     this.classList.toggle('active');
@@ -27,18 +10,15 @@ menuBtn.addEventListener('click', function() {
     if (navbar.classList.contains('visible')) {
         // Save the current scroll position
         scrollPosition = window.scrollY;
-
-        // Disable scroll
-        disableScroll();
+        // Add overflow: hidden to the body
+        body.style.overflow = 'hidden';
     } else {
-        // Enable scroll
-        enableScroll();
-
         // Restore the scroll position
         window.scrollTo(0, scrollPosition);
+        // Remove overflow: hidden from the body
+        body.style.overflow = '';
     }
 });
-
 
 document.addEventListener("DOMContentLoaded", () => {
     const menubar = document.querySelector('.menubar');

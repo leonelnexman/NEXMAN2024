@@ -13,6 +13,9 @@ body{
     font-family: $font-family;
     font-size: 1.6rem;
     margin: 0;
+    &::-webkit-scrollbar{
+        display: none;
+    }
     &.no-scroll{
         overflow: hidden;
     }
