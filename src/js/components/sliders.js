@@ -77,10 +77,49 @@ const blogslider = new Swiper('.blog__slider', {
     }
 });
 
+const service = new Swiper('.service__slider', {
+    slidesPerView: 'auto',
+    spaceBetween: 10,
+    initialSlide: 1,
+    watchSlidesVisibility: true,
+    centeredSlides: false,
+    breakpoints: {
+        320: {
+            centeredSlides: true,
+            initialSlide: 2,
+        },
+        962: {
+            centeredSlides: false,
+        },
+    }
+   
+  });
+
+  const blogs = new Swiper('.blog-section__slider', {
+    slidesPerView: '4',
+    spaceBetween: 10,
+    breakpoints: {
+        320: {
+            slidesPerView: 'auto',
+        },
+        962: {
+            slidesPerView: '4',
+        },
+    }
+  });
+
 document.addEventListener('DOMContentLoaded', () => {
     function initSwiper() {
       if (window.innerWidth < 962) {
         const cases = new Swiper('.cases__slider', {
+            modules: [FreeMode],
+            spaceBetween: 15,
+            slidesPerView: "auto",
+        });
+      }
+
+      if (window.innerWidth < 962) {
+        const services = new Swiper('.service-main__developers', {
             modules: [FreeMode],
             spaceBetween: 15,
             slidesPerView: "auto",

@@ -27,6 +27,12 @@ body{
        padding-top: 9rem;
     }
 }
+.page{
+    padding-top: 16.5rem;
+    @media (max-width: 962px){
+        padding-top: 9rem;
+     }
+}
 .container{
     max-width: 135.6rem;
     margin: 0 auto;

@@ -7,9 +7,51 @@
             border-radius: 2.5rem;
         }
     }
+    &__slider{
+        overflow: visible;
+        .swiper-wrapper{
+            overflow: visible;
+        }
+        .swiper-slide{
+            background: #E7ECEC;
+            border-radius: 3rem;
+            @media (max-width: 962px){
+                &:nth-child(1){
+                    border-radius: 1.5rem;
+                    width: 19.6rem !important;
+                    height: 14.7rem !important;   
+                }
+                &:nth-child(2){
+                    border-radius: 1.5rem;
+                    width: 19.6rem !important;
+                    height: 14.7rem !important;   
+                }
+                &:nth-child(3){
+                    border-radius: 1.5rem;
+                    width: 12.7rem !important;
+                    height: 17.2rem !important;   
+                }
+                &:nth-child(4){
+                    border-radius: 1.5rem;
+                    width: 12.8rem !important;
+                    height: 12.9rem !important;   
+                }
+                &:nth-child(5){
+                    border-radius: 1.5rem;
+                    width: 19.6rem !important;
+                    height: 14.7rem !important;    
+                }
+            }
+        }
+    }
+}
+
+.slider-section{
+    height: auto !important;
 }
 
 .service-main{
+    overflow: hidden;
     margin-bottom: 12rem;
     @media (max-width: 962px){
         margin-bottom: 5rem;
@@ -65,6 +107,62 @@
             }
         }
     }
+    &__developers{
+        margin-bottom: 12rem;
+        @media (max-width: 962px){
+           margin-bottom: 6rem;
+        }
+        .swiper-wrapper{
+            display: flex;
+            justify-content: space-between;
+        }
+        .swiper-slide{
+            width: 32.8rem;
+            @media (max-width: 962px){
+                width: 29rem;
+            }
+        }
+        .developers__img{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: $light-gray;
+            border-radius: 2.5rem;
+            width: 32.8rem;
+            height: 32.8rem;
+            margin-bottom: 2.5rem;
+            @media (max-width: 962px){
+                width: 29rem;
+                height: 29rem;
+            }
+            img{
+                width: 26rem;
+                height: 26rem;
+                @media (max-width: 962px){
+                    width: 22rem;
+                    height: 22rem;
+                }
+            }
+        }
+        .developers__title{
+            font-size: 2.8rem;
+            line-height: 130%;
+            color: $dark;
+            margin-bottom: 0.5rem;
+            @media (max-width: 962px){
+                font-size: 2.2rem;
+                margin-bottom: 1rem;
+             }
+            }
+        }
+        .developers__text{
+            font-size: 1.8rem;
+            line-height: 140%;
+            color: $text; 
+            @media (max-width: 962px){
+                font-size: 1.8rem;
+             }
+        }
 }
 
 .similar-services{
@@ -204,3 +302,59 @@
         }
     }
 }
+
+.services.service-page{
+    overflow: hidden;
+    margin: 0;
+    padding-bottom: 15rem;
+    @media (max-width: 962px){
+        padding-bottom: 3rem;
+    } 
+    .services__subtitle{
+        font-family: var(--font-family);
+        font-weight: 400;
+        font-size: 5.2rem;
+        line-height: 110%;
+        letter-spacing: -0.02em;
+        color: var(--dark);
+        margin-left: 0;
+        margin-bottom: 4rem;
+    }
+    .services__actions{
+        padding-top: 0;
+    }
+    .services__actions{
+        max-width: 100%;
+        @media (max-width: 962px){
+            gap: 0.5rem;
+        }  
+    }
+    .services__item{
+        width: 31.7rem;
+    }
+    .services__item-top{
+        width: 100%;
+    }
+    .services__item {
+        @media (max-width: 962px){
+            padding: 1.4rem 1.5rem 1.1rem;
+            border: 0.1rem solid $light-middle-gray-50;
+            border-radius: 1rem;
+        }  
+    }
+    .services__item-content{
+        @media (max-width: 962px){
+            padding: 0;
+            border-radius: 0;
+            gap: 0;
+            .services__item-link{
+                font-size: 1.8rem;
+                color: $dark-gray;
+                margin-top: 0.7rem;
+            }
+        }   
+    }
+}
+
+
+
