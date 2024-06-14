@@ -132,12 +132,29 @@
          }
     }
 
+    &__ready-item{
+        &:nth-child(1){
+            width: 13rem;
+        }
+        &:nth-child(2){
+            width: 16rem;
+        }
+        @media (max-width: 962px){
+            &:nth-child(1){
+                width: 12rem;
+            }
+            &:nth-child(2){
+                width: auto;
+            }
+         } 
+    }
+
     &__ready {
         display: flex;
         padding: 4rem 4.3rem;
         background: $light-gray;
         border-radius: 2.5rem;
-        gap: 4rem;
+        gap: 7rem;
         @media (max-width: 962px){
            padding: 2rem 1.5rem;
            gap: 1.7rem;

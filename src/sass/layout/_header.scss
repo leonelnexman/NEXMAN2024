@@ -72,10 +72,8 @@
             }
         }
         @media (max-width: 962px){
-            &:hover{
-                background: transparent;
-            }
             &.active{
+                background: transparent;
                 .mobile{
                     span{
                         &:nth-child(1){
@@ -307,6 +305,10 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            svg{
+                width: 2.3rem;
+                height: 2.3rem;
+            }
         }
     }
     &__socials-list{

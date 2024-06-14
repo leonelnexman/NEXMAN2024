@@ -78,21 +78,17 @@ const blogslider = new Swiper('.blog__slider', {
 });
 
 const service = new Swiper('.service__slider', {
-    slidesPerView: 'auto',
-    spaceBetween: 10,
-    initialSlide: 1,
-    watchSlidesVisibility: true,
-    centeredSlides: false,
-    breakpoints: {
-        320: {
-            centeredSlides: true,
-            initialSlide: 2,
-        },
-        962: {
-            centeredSlides: false,
-        },
-    }
-   
+    modules: [Autoplay],
+    spaceBetween: 15,
+    centeredSlides: true,
+    loop: true,
+    speed: 5900,
+    freeMode: true,
+    autoplay: {
+        delay: 30,
+        disableOnInteraction: false
+    },
+    slidesPerView: "auto",
   });
 
   const blogs = new Swiper('.blog-section__slider', {
@@ -121,7 +117,7 @@ document.addEventListener('DOMContentLoaded', () => {
       if (window.innerWidth < 962) {
         const services = new Swiper('.service-main__developers', {
             modules: [FreeMode],
-            spaceBetween: 15,
+            spaceBetween: 25,
             slidesPerView: "auto",
         });
       }
