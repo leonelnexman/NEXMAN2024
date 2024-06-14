@@ -301,6 +301,9 @@
     &__socials-slider{
         width: 3rem;
         height: 5rem;
+        .swiper-wrapper{
+            transition-timing-function: linear !important
+        }
         .swiper-slide{
             display: flex;
             justify-content: center;
