@@ -1,0 +1,139 @@
+---
+title: Контакты
+---
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+
+	{# partial example #}
+	{% include "partials/_header.html" %}
+	{% include "partials/_navbar.html" %}
+	{% include "partials/_menubar.html" %}
+
+    <main class="main service">
+		<section class="contacts">
+            <div class="container">
+                <div class="contacts__actions">
+                    <h1 class="contacts__title h1">Контакты</h1>
+                    <button class="btn">
+                        <span>получить консультацию</span>
+                        <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="56" height="56" rx="10" fill="#186D72" />
+                            <path d="M20.929 35.0711L35.0711 20.929M35.0711 20.929L28.5931 21.7501M35.0711 20.929L34.25 27.407" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="contacts__content">
+                    <p class="contacts__descr h6">Самый быстрый способ связаться с нами - написать в <a href="">телеграм</a>. Мы можем начать работу над вашим проектом уже через 24 часа!
+                    </p>
+                    <div class="contacts__inner">
+                        <div class="contacts__block label--big">
+                            <div class="contacts__label">E-mail</div>
+                            <a href="mailto:hi@nexman.org" class="contacts__link text--large">hi@nexman.org</a>
+                        </div>
+                        <div class="contacts__block">
+                            <div class="contacts__label label--big">Telegram</div>
+                            <a href="@nexman_design" class="contacts__link text--large">nexman_design</a>
+                        </div>
+                    </div>
+                    <div class="contacts__btns">
+                        <a href="#" class="contacts__btn">
+                            <div class="contacts__img-block">
+                                <div class="contacts__img-wrap">
+                                    <img src="./img/img1.png" alt="">
+                                </div>
+                                <div class="contacts__img-wrap">
+                                    <img src="./img/img2.png" alt="">
+                                </div>
+                                <div class="contacts__img-wrap">
+                                    <img src="./img/img3.png" alt="">
+                                </div>
+                            </div>
+                            <div class="contacts__comand">
+                                <div class="contacts__btn-text text--large">Узнать больше о нашей команде</div>
+                                <svg width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 11H23M23 11L17.3226 6M23 11L17.3226 16" stroke="#343F3F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                        </a>
+                        <a href="#" class="contacts__btn">
+                            <div class="contacts__btn-text text--large">Посмотреть открытые вакансии</div>
+                            <svg class="work" width="114" height="26" viewBox="0 0 114 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M93.9434 1.1001H97.1734V13.5101L109.243 1.1001H113.493L101.933 13.0001H104.143L113.663 24.9001H109.413L100.811 14.1561L99.3494 15.6521H97.1734V24.9001H93.9434V1.1001Z" fill="#343F3F" />
+                                <path d="M69.1235 24.9001V1.1001H78.6775C85.2735 1.1001 87.4835 2.8001 87.4835 7.8661C87.4835 11.9121 86.0895 13.8501 82.1795 14.4621L88.6735 24.9001H84.7635L78.4055 14.7001H72.3535V24.9001H69.1235ZM72.3535 3.9901V11.8101H77.4535C82.4855 11.8101 84.0835 10.8581 84.0835 7.9001C84.0835 4.9421 82.4855 3.9901 77.4535 3.9901H72.3535Z" fill="#343F3F" />
+                                <path d="M39.3696 12.9659C39.3696 5.45192 44.2996 0.419922 51.6096 0.419922C58.9196 0.419922 63.8496 5.45192 63.8496 12.9659C63.8496 20.5139 58.9196 25.5799 51.6096 25.5799C44.2996 25.5799 39.3696 20.5139 39.3696 12.9659ZM50.6916 3.81992C46.1696 3.81992 43.0416 6.84592 43.0416 11.2999V14.6999C43.0416 19.1539 46.1696 22.1799 50.6916 22.1799H52.5276C57.0836 22.1799 60.1776 19.1539 60.1776 14.6999V11.2999C60.1776 6.84592 57.0836 3.81992 52.5276 3.81992H50.6916Z" fill="#343F3F" />
+                                <path d="M6.97 24.9001L0 1.1001H3.468L9.588 22.0101L15.708 1.1001H20.944L27.064 22.0101L33.184 1.1001H36.652L29.682 24.9001H24.446L18.326 3.9901L12.206 24.9001H6.97Z" fill="#343F3F" />
+                            </svg>
+                            <svg width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 11H23M23 11L17.3226 6M23 11L17.3226 16" stroke="#343F3F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </a>
+                        <a href="#" class="contacts__btn">
+                            <div class="contacts__btn-title h4">Стать клиентом</div>
+                            <p class="contacts__btn-descr text--large">Оставьте заявку для вашего проекта</p>
+                            <svg class="absolute" width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 11H23M23 11L17.3226 6M23 11L17.3226 16" stroke="#343F3F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="requisites">
+                        <div class="requisites__title">Реквизиты</div>
+                        <div class="requisites__inner">
+                            <div class="requisites__item">
+                                <div class="requisites__label text--big">Полное наименование организации</div>
+                                <div class="requisites__info text--big">НЭКСМАН</div>
+                            </div>
+                            <div class="requisites__item">
+                                <div class="requisites__label text--big">Юридический и фактический адрес</div>
+                                <div class="requisites__info text--big">100000, г. Москва, Проспект Андропова, д.22</div>
+                            </div>
+                            <div class="requisites__item">
+                                <div class="requisites__label text--big">Телефон</div>
+                                <div class="requisites__info text--big">24242536</div>
+                            </div>
+                            <div class="requisites__item">
+                                <div class="requisites__label text--big">ОГРН</div>
+                                <div class="requisites__info text--big">1313232323 </div>
+                            </div>
+                            <div class="requisites__item">
+                                <div class="requisites__label text--big">ИНН</div>
+                                <div class="requisites__info text--big">313131331</div>
+                            </div>
+                            <div class="requisites__item">
+                                <div class="requisites__label text--big">КПП</div>
+                                <div class="requisites__info text--big">1212121</div>
+                            </div>
+                            <div class="requisites__item">
+                                <div class="requisites__label text--big">Р/С</div>
+                                <div class="requisites__info text--big">113131313</div>
+                            </div>
+                            <div class="requisites__item">
+                                <div class="requisites__label text--big">БИК</div>
+                                <div class="requisites__info text--big">004525988 </div>
+                            </div>
+                            <div class="requisites__item">
+                                <div class="requisites__label text--big">ОКТМО</div>
+                                <div class="requisites__info text--big">131333</div>
+                            </div>
+                            <div class="requisites__item">
+                                <div class="requisites__label text--big">Адрес электронной почты</div>
+                                <div class="requisites__info text--big">hi@nexman.org</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+		{% include "partials/sections/_telegram.html" %}
+        <div class="contacts__img">
+            <div class="container">
+                <img src="./img/cImage.jpg" alt="">
+            </div>
+        </div>
+    </main>
+
+	{% include "partials/_footer.html" %}
+	{% include "partials/_cookies.html" %}
+	<!-- {% include "partials/_promotion.html" %} -->
+
+{% endblock %}

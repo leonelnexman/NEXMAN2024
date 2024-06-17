@@ -1,0 +1,243 @@
+.contacts{
+    position: relative;
+    margin-bottom: 12rem;
+    @media (max-width: 962px){
+        margin-bottom: 3rem;
+    }
+    .container{
+        display: flex;
+        align-items: flex-start;
+        gap: 18.8rem;
+        @media (max-width: 962px){
+            flex-direction: column;
+            gap: 0;
+        }
+    }
+    &__actions{
+        position: sticky;
+        top: 5rem;
+        height: auto;
+        @media (max-width: 962px){
+            position: static;
+            flex-direction: column;
+            button{
+                position: absolute;
+                top: 81.5rem;
+            }
+        }
+    }
+    &__title{
+        margin-bottom: 3rem;
+        @media (max-width: 962px){
+           margin-bottom: 2rem;
+        }
+    }
+    &__content{
+        width: 84.2rem;
+        @media (max-width: 962px){
+            width: 100%;
+         }
+    }
+    &__descr{
+        margin-bottom: 3rem;
+    }
+    &__inner{
+        display: flex;
+        gap: 6rem;
+        margin-bottom: 6rem;
+        @media (max-width: 962px){
+           gap: 4.5rem;
+           margin-bottom: 5rem;
+         }
+    }
+    &__label{
+        color: $middle-gray;
+        margin-bottom: 0.5rem;
+        @media (max-width: 962px){
+            font-size: 1.4rem;
+          }
+    }
+    &__link{
+        text-transform: lowercase;
+        @media (max-width: 962px){
+            font-size: 1.8rem;
+          }
+    }
+    &__btns{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2rem;
+    }
+    &__btn{
+        position: relative;
+        width: 41.1rem;
+        border-radius: 2rem;
+        padding: 2.4rem 2rem;
+        background: $light-gray;
+        &:nth-child(1){
+            display: flex;
+            gap: 4.5rem;
+            @media (max-width: 962px){
+                flex-direction: row-reverse;
+                gap: 2.5rem;
+            }
+        }
+        &:nth-child(2){
+            .contacts__btn-text{
+                margin-bottom: 2.3rem;
+            }
+        }
+        svg{
+            display: block;
+            width: 2.4rem;
+            height: 2.2rem;
+        }
+        .work{
+            width: 11.4rem !important;
+            height: 2.6rem !important;
+            margin-bottom: 2.2rem;
+            @media (max-width: 962px){
+                font-size: 1.6rem;
+                margin-bottom: 1.5rem;
+            }
+        }
+        &:nth-child(3){
+            width: 100%;
+            padding: 4rem;
+            background: $green;
+            @media (max-width: 962px){
+                padding: 2rem 1.5rem;
+            }
+            .contacts__btn-title{
+                color: $white;
+                margin-bottom: 0.5rem; 
+            }
+            .contacts__btn-descr{
+                color: $white-70;
+                @media (max-width: 962px){
+                    font-size: 1.6rem;
+                    margin-bottom: 1.5rem;
+                }
+            }
+            svg path{
+                stroke: $white;
+            }
+        }
+        .absolute{
+            position: absolute;
+            top: 7rem;
+            right: 4rem;
+            @media (max-width: 962px){
+                position: static;
+            }
+        }
+    }
+    &__img-block{
+        min-width: 14.3rem;
+        @media (max-width: 962px){
+            min-width: 9.7rem;
+        }
+        .contacts__img-wrap{
+            position: absolute;
+            img{
+                width: 100%;
+                height: 100%;
+            }
+            &:nth-child(1){
+                width: 5.5rem;
+                height: 5.5rem;
+                top: 4.7rem;
+                left: 2rem;
+                @media (max-width: 962px){
+                    width: 3.9rem;
+                    height: 4.2rem;
+                    top: 3.6rem;
+                    left: 21.8rem;
+                }
+            }
+            &:nth-child(2){
+                width: 5.9rem;
+                height: 5.9rem;
+                top: 2.4rem;
+                left: 10.4rem;
+                @media (max-width: 962px){
+                    width: 4.3rem;
+                    height: 4.3rem;
+                    top: 2rem;
+                    left: 27.2rem;
+                }
+            }
+            &:nth-child(3){
+                width: 4rem;
+                height: 4rem;
+                top: 10.2rem;
+                left: 7.4rem;
+                @media (max-width: 962px){
+                    width: 3rem;
+                    height: 3rem;
+                    top: 7.8rem;
+                    left: 25.7rem;
+                }
+            }
+        }
+    }
+    &__btn-text{
+        margin-bottom: 4.4rem;
+        @media (max-width: 962px){
+            font-size: 1.6rem;
+            margin-bottom: 1.5rem;
+        }
+    }
+    &__img{
+        margin-bottom: 6rem;
+        img{
+            border-radius: 3rem;
+            width: 135.6rem;
+            height: 76.5rem;
+            @media (max-width: 962px){
+                border-radius: 2rem;
+                width: 33rem;
+                height: 18.6rem;
+              }
+        }
+    }
+}
+
+.requisites{
+    margin-top: 9rem;
+    @media (max-width: 962px){
+        margin-top: 11rem;
+    }
+    &__title{
+        margin-bottom: 2rem;
+    }
+    &__item{
+        display: flex;
+        gap: 5rem;
+        @media (max-width: 962px){
+            gap: 1.5rem;
+        }
+    }
+    &__info{
+        @media (max-width: 962px){
+            font-size: 1.2rem;
+        }
+    }
+    &__inner{
+        display: flex;
+        flex-direction: column;
+        gap: 1.2rem;
+        @media (max-width: 962px){
+            gap: 0.5rem;
+        }
+    }
+    &__label{
+        width: 33.5rem;
+        color: $dark-gray;
+        @media (max-width: 962px){
+            width: 15.8rem;
+            min-width: 15.8rem;
+            font-size: 1.2rem;
+        }
+    }
+}
