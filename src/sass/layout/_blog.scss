@@ -15,11 +15,11 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        margin-bottom: 3rem;
     }
     .tabs{
         display: flex;
         gap: 1rem;
-        margin-bottom: 3rem;
         @media (max-width: 962px){
             gap: 0.5rem;
             width: 100%;
