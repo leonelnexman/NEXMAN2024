@@ -140,12 +140,20 @@
         }
         @media (max-width: 962px){
             &:nth-child(1){
+                width: 8.5rem;
+            }
+            &:nth-child(2){
+                width: auto;
+            }
+         }
+         @media (max-width: 600px){
+            &:nth-child(1){
                 width: 12rem;
             }
             &:nth-child(2){
                 width: auto;
             }
-         } 
+         }
     }
 
     &__ready {

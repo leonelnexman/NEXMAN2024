@@ -139,7 +139,7 @@
                 width: 29rem;
                 height: 29rem;
             }
-            img{
+            svg{
                 width: 26rem;
                 height: 26rem;
                 @media (max-width: 962px){
@@ -165,6 +165,7 @@
             color: $text; 
             @media (max-width: 962px){
                 font-size: 1.8rem;
+                max-width: 99%;
              }
         }
 }
@@ -365,4 +366,10 @@
     padding-bottom: 0.5rem;
 }
 
+.stages{
+    overflow: hidden;
+}
+.stages .swiper{
+    overflow: visible;
+}
 

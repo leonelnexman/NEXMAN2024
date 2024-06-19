@@ -110,12 +110,27 @@
         padding: 0.5rem 2.5rem 0.5rem 0.5rem;
         background: $light-middle-gray-50;
         width: 100%;
+        transition: all 0.3s;
+        animation: swing 2s ease-in-out infinite;
+        &:hover{
+            background: $hover;
+            .label--big{
+                color: $white;
+            }
+        }
         .label--big{
+            transition: all 0.3s;
             margin-bottom: -0.5rem;
         }
         @media (max-width: 962px){
             width: 100%;
         }
+        @keyframes swing {
+            0% { transform: rotate(0deg); }
+            40% { transform: rotate(5deg); }
+            80% { transform: rotate(-5deg); }
+            100% { transform: rotate(0deg); }
+          }
     }
     &__action-img{
         border-radius: 50%;
