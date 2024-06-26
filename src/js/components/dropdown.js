@@ -76,3 +76,21 @@ document.addEventListener('DOMContentLoaded', () => {
 
     window.addEventListener('resize', handleResize);
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+    document.querySelectorAll('.position__top').forEach((topElement) => {
+        topElement.addEventListener('click', function() {
+            const item = this.closest('.position__item');
+            const content = item.querySelector('.position__content');
+
+            if (item.classList.contains('open')) {
+                item.classList.remove('open');
+                content.style.maxHeight = '';
+            } else {
+                const contentHeight = content.scrollHeight;
+                item.classList.add('open');
+                content.style.maxHeight = `${contentHeight  }px`;
+            }
+        });
+    });
+});

@@ -1,0 +1,126 @@
+---
+title: О нас
+---
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+
+	{# partial example #}
+	{% include "partials/_header.html" %}
+	{% include "partials/_navbar.html" %}
+	{% include "partials/_menubar.html" %}
+    <main class="main page">
+		<section class="about">
+            <div class="container">
+                <div class="about__wrapper">
+                    <h1 class="about__title h1">О нас</h1>
+                    <div class="about__content">
+                        <p class="about__text h4">Наша команда – это опытные дизайнеры, разработчики, аналитики, иллюстраторы, копирайтеры, маркетологи, SEO-специалисты</p>
+                        <p class="about__text-light text--large">Нам доверяют проектирование и дизайн стартапов, CRM/ERP, сайтов и корпоративных продуктов. Мы ценим понятность и прозрачность как в дизайне, так и в нашей с вами работе</p>
+                    </div>
+                </div>
+                <div class="about__list">
+                    <div class="about__item">
+                        <div class="about__number h3">15</div>
+                        <div class="about__descr text--big">выполненных проектов</div>
+                    </div>
+                    <div class="about__item">
+                        <div class="about__number h3">3 400</div>
+                        <div class="about__descr text--big">рабочих часов</div>
+                    </div>
+                    <div class="about__item">
+                        <div class="about__number h3">137</div>
+                        <div class="about__descr text--big">выполненных проектов</div>
+                    </div>
+                    <div class="about__item">
+                        <div class="about__number h3">137</div>
+                        <div class="about__descr text--big">выполненных проектов</div>
+                    </div>
+                    <div class="about__item">
+                        <div class="about__number h3">137</div>
+                        <div class="about__descr text--big">выполненных проектов</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="how">
+            <div class="container">
+                <div class="how__top">
+                    <div class="how__title h3">Как <span>Мы работаем</span></div>
+                    <div class="how__top-text h5">
+                        Мы используем подход, который делает процесс работы понятным и прозрачным. Основные этапы сотрудничества:
+                    </div>
+                </div>
+                <div class="swiper how__slider">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="how__name">1. Бриф</div>
+                            <p class="how__text">Бриф – основа будущего тех.задания. Вы можете заполнить его сами или наш менеджер сделает это по результатам созвона. Обсудим как саму идею и цели, так и конкретику: стиль, цвета, разрешения. Для сайтов – количество страниц, разделы, платформу разработки и другие детали.</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="how__name">2. Аналитика</div>
+                            <p class="how__text">Анализ метрик, конкурентов. Опрос потенциальных и фактических пользователей. Создание Customer Journey Map. Помним, что CJM – это не только путь клиента на вашем сайте, но и вся его история взаимодействия с вами. От осознания потребности до повторных контактов.</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="how__name">3. Прототипирование</div>
+                            <p class="how__text">Дизайнер, аналитик и UX-копирайтер собирают “скелет” сайта. Почему этот этап так важен? Нельзя ли просто взять за основу некий “шаблон хорошего сайта” и потом раскрасить в свои цвета? Можно. Но мы так не делаем. Взгляните на наше портфолио и вы поймёте, почему :)</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="how__name">4. Прототипирование</div>
+                            <p class="how__text">Бриф – основа будущего тех.задания. Вы можете заполнить его сами или наш менеджер сделает это по результатам созвона. Обсудим как саму идею и цели, так и конкретику: стиль, цвета, разрешения. Для сайтов – количество страниц, разделы, платформу разработки и другие детали.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="comand">
+            <div class="container">
+                <div class="comand__title h4">Команда</div>
+                <div class="comand__wrapper">
+                    <div class="comand__item">
+                        <img src="./img/peple.jpg" class="comand__img" >
+                        <div class="comand__name h6">Виктор</div>
+                        <div class="comand__text-light text--medium">Руководитель проектов. UX-engeneer</div>
+                        <p class="comand__text text--big">Спроектирует ваш ресурс и возьмет под контроль его реализацию</p>
+                    </div>
+                    <div class="comand__item">
+                        <img src="./img/peple.jpg" class="comand__img" >
+                        <div class="comand__name h6">Виктор</div>
+                        <div class="comand__text-light text--medium">Руководитель проектов. UX-engeneer</div>
+                        <p class="comand__text text--big">Спроектирует ваш ресурс и возьмет под контроль его реализацию</p>
+                    </div>
+                    <div class="comand__item">
+                        <img src="./img/peple.jpg" class="comand__img" >
+                        <div class="comand__name h6">Виктор</div>
+                        <div class="comand__text-light text--medium">Руководитель проектов. UX-engeneer</div>
+                        <p class="comand__text text--big">Спроектирует ваш ресурс и возьмет под контроль его реализацию</p>
+                    </div>
+                    <div class="comand__item">
+                        <img src="./img/peple.jpg" class="comand__img" >
+                        <div class="comand__name h6">Виктор</div>
+                        <div class="comand__text-light text--medium">Руководитель проектов. UX-engeneer</div>
+                        <p class="comand__text text--big">Спроектирует ваш ресурс и возьмет под контроль его реализацию</p>
+                    </div>
+                    <div class="comand__item">
+                        <img src="./img/peple.jpg" class="comand__img" >
+                        <div class="comand__name h6">Виктор</div>
+                        <div class="comand__text-light text--medium">Руководитель проектов. UX-engeneer</div>
+                        <p class="comand__text text--big">Спроектирует ваш ресурс и возьмет под контроль его реализацию</p>
+                    </div>
+                    <div class="comand__item">
+                        <img src="./img/peple.jpg" class="comand__img" >
+                        <div class="comand__name h6">Виктор</div>
+                        <div class="comand__text-light text--medium">Руководитель проектов. UX-engeneer</div>
+                        <p class="comand__text text--big">Спроектирует ваш ресурс и возьмет под контроль его реализацию</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    {% include "partials/sections/_telegram.html" %}
+    </main>
+
+	{% include "partials/_footer.html" %}
+	{% include "partials/_cookies.html" %}
+	<!-- {% include "partials/_promotion.html" %} -->
+
+{% endblock %}

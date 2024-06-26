@@ -104,6 +104,10 @@ const service = new Swiper('.service__slider', {
     }
   });
 
+  const how = new Swiper('.how__slider', {
+    slidesPerView: 'auto',
+  });
+
 document.addEventListener('DOMContentLoaded', () => {
     function initSwiper() {
       if (window.innerWidth < 962) {
