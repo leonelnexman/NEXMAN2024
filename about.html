@@ -10,6 +10,7 @@
     <meta name="format-detection" content="telephone=no" />
     <link rel="profile" href="https://gmpg.org/xfn/11" />
     <link rel="icon" href="/icon/favicon.svg">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
     <link rel="stylesheet" media="all" href="css/app.css" />
   </head>
   <body>
@@ -365,7 +366,7 @@
           </div>
         </div>
       </div>
-      <div class="menubar" data-aos="fade-up">
+      <div class="menubar">
         <nav class="nav">
           <a href="#" class="nav__link label--big">о нас</a>
           <a href="#" class="nav__link label--big"><span>Онлайн-</span>чат</a>
@@ -447,7 +448,7 @@
           <div class="container">
             <div class="comand__title h4">Команда</div>
             <div class="comand__wrapper">
-              <div class="comand__item">
+              <div class="comand__item" data-aos="zoom-in">
                 <picture>
                   <source srcset="./img/peple.webp" type="image/webp"><img src="./img/peple.jpg" class="comand__img">
                 </picture>
@@ -455,7 +456,7 @@
                 <div class="comand__text-light text--medium">Руководитель проектов. UX-engeneer</div>
                 <p class="comand__text text--big">Спроектирует ваш ресурс и возьмет под контроль его реализацию</p>
               </div>
-              <div class="comand__item">
+              <div class="comand__item" data-aos="zoom-in">
                 <picture>
                   <source srcset="./img/peple.webp" type="image/webp"><img src="./img/peple.jpg" class="comand__img">
                 </picture>
@@ -463,7 +464,7 @@
                 <div class="comand__text-light text--medium">Руководитель проектов. UX-engeneer</div>
                 <p class="comand__text text--big">Спроектирует ваш ресурс и возьмет под контроль его реализацию</p>
               </div>
-              <div class="comand__item">
+              <div class="comand__item" data-aos="zoom-in">
                 <picture>
                   <source srcset="./img/peple.webp" type="image/webp"><img src="./img/peple.jpg" class="comand__img">
                 </picture>
@@ -471,7 +472,7 @@
                 <div class="comand__text-light text--medium">Руководитель проектов. UX-engeneer</div>
                 <p class="comand__text text--big">Спроектирует ваш ресурс и возьмет под контроль его реализацию</p>
               </div>
-              <div class="comand__item">
+              <div class="comand__item" data-aos="zoom-in">
                 <picture>
                   <source srcset="./img/peple.webp" type="image/webp"><img src="./img/peple.jpg" class="comand__img">
                 </picture>
@@ -479,7 +480,7 @@
                 <div class="comand__text-light text--medium">Руководитель проектов. UX-engeneer</div>
                 <p class="comand__text text--big">Спроектирует ваш ресурс и возьмет под контроль его реализацию</p>
               </div>
-              <div class="comand__item">
+              <div class="comand__item" data-aos="zoom-in">
                 <picture>
                   <source srcset="./img/peple.webp" type="image/webp"><img src="./img/peple.jpg" class="comand__img">
                 </picture>
@@ -487,7 +488,7 @@
                 <div class="comand__text-light text--medium">Руководитель проектов. UX-engeneer</div>
                 <p class="comand__text text--big">Спроектирует ваш ресурс и возьмет под контроль его реализацию</p>
               </div>
-              <div class="comand__item">
+              <div class="comand__item" data-aos="zoom-in">
                 <picture>
                   <source srcset="./img/peple.webp" type="image/webp"><img src="./img/peple.jpg" class="comand__img">
                 </picture>
@@ -498,12 +499,14 @@
             </div>
           </div>
         </section>
-        <section class="telegram wow animate__animated animate__fadeInUp">
+        <section class="telegram telegram-flex wow animate__animated animate__fadeInUp">
           <div class="container">
-            <div class="telegram__title h3">Telegram</div>
-            <div class="telegram__text text--large">Рассказываем о проектах, как увеличить продажи и сделать удобным сложное</div>
+            <div class="telegram__inner">
+              <div class="telegram__title h4">Хотите стать частью нашей команды?</div>
+              <div class="telegram__text text--large">Ознакомьтесь с открытыми позициями</div>
+            </div>
             <button class="btn btn--social">
-              <span>Перейти в телеграм</span>
+              <span>ознакомиться с вакансиями</span>
               <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <rect width="56" height="56" rx="10" fill="#343F3F" />
                 <path d="M23.3997 22.3202L31.8897 19.4902C35.6997 18.2202 37.7697 20.3002 36.5097 24.1102L33.6797 32.6002C31.7797 38.3102 28.6597 38.3102 26.7597 32.6002L25.9197 30.0802L23.3997 29.2402C17.6897 27.3402 17.6897 24.2302 23.3997 22.3202Z" stroke="white" stroke-miterlimit="10" stroke-linecap="round" />
@@ -557,9 +560,18 @@
               </div>
             </div>
             <form class="footer__form">
-              <input class="label--big" type="text" placeholder="Ваше имя">
-              <input class="label--big tel" type="text" placeholder="Ваш Телефон">
-              <input class="label--big" type="text" placeholder="Пару слов о проекте (по желанию)">
+              <div class="user-box">
+                <input class="label--big" type="text" required>
+                <label>Ваше имя</label>
+              </div>
+              <div class="user-box">
+                <input class="label--big tel" type="text" required>
+                <label>Ваш Телефон</label>
+              </div>
+              <div class="user-box">
+                <input class="label--big" type="text" required>
+                <label>Пару слов о проекте (по желанию)</label>
+              </div>
               <button class="btn">
                 <span>Получить предложение</span>
                 <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">

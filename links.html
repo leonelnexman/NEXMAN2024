@@ -10,6 +10,7 @@
     <meta name="format-detection" content="telephone=no" />
     <link rel="profile" href="https://gmpg.org/xfn/11" />
     <link rel="icon" href="/icon/favicon.svg">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
     <link rel="stylesheet" media="all" href="css/app.css" />
   </head>
   <body>
@@ -426,9 +427,18 @@
               </div>
             </div>
             <form class="footer__form">
-              <input class="label--big" type="text" placeholder="Ваше имя">
-              <input class="label--big tel" type="text" placeholder="Ваш Телефон">
-              <input class="label--big" type="text" placeholder="Пару слов о проекте (по желанию)">
+              <div class="user-box">
+                <input class="label--big" type="text" required>
+                <label>Ваше имя</label>
+              </div>
+              <div class="user-box">
+                <input class="label--big tel" type="text" required>
+                <label>Ваш Телефон</label>
+              </div>
+              <div class="user-box">
+                <input class="label--big" type="text" required>
+                <label>Пару слов о проекте (по желанию)</label>
+              </div>
               <button class="btn">
                 <span>Получить предложение</span>
                 <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
