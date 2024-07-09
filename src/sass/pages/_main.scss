@@ -2,6 +2,7 @@
     margin-bottom: 12rem;
     @media (max-width: 962px){
         margin-bottom: 22.5rem;
+        overflow: visible;
     }
     .container{
         display: flex;
@@ -104,6 +105,8 @@
             width: 33rem;
             left: 0rem;
             bottom: -69rem;
+            animation-delay: 0s;
+            opacity: 1 !important;
         }
         @media (max-width: 600px){
             left: 0rem;

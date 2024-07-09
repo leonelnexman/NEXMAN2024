@@ -1,5 +1,5 @@
 import Swiper from 'swiper';
-import { Navigation, Pagination, Autoplay, FreeMode } from 'swiper/modules';
+import { Navigation, Pagination, Autoplay, FreeMode, Thumbs } from 'swiper/modules';
 
 const socialsslider = new Swiper('.header__socials-slider', {
     direction: 'vertical',
@@ -91,6 +91,12 @@ const service = new Swiper('.service__slider', {
     slidesPerView: "auto",
   });
 
+  const similar = new Swiper('.similar-projects__slider', {
+    modules: [Autoplay],
+    spaceBetween: 15,
+    slidesPerView: "auto",
+  });
+
   const blogs = new Swiper('.blog-section__slider', {
     slidesPerView: '4',
     spaceBetween: 10,
@@ -102,6 +108,92 @@ const service = new Swiper('.service__slider', {
             slidesPerView: '4',
         },
     }
+  });
+
+  const swiper1 = new Swiper(".mySwiper", {
+    modules: [Thumbs],
+    spaceBetween: 6,
+    slidesPerView: 'auto',
+    freeMode: true,
+    watchSlidesProgress: true,
+    breakpoints: {
+        320: {
+            spaceBetween: 1,
+            slidesPerView: 'auto',
+        },
+        962: {
+            spaceBetween: 1,
+            slidesPerView: 'auto',
+        },
+    },
+    on: {
+        init() {
+            const { slides } = this;
+            slides.forEach((slide, index) => {
+                if (index >= 6) {
+                    slide.style.display = 'none';
+                    slide.style.pointerEvents = 'none'; // Disable interaction
+                }
+            });
+        },
+        slideChange() {
+            const { slides } = this;
+            slides.forEach((slide, index) => {
+                if (index >= 6) {
+                    slide.style.display = 'none';
+                    slide.style.pointerEvents = 'none'; // Disable interaction
+                }
+            });
+        }
+    }
+});
+
+
+const line = new Swiper('.marqee-line__slider', {
+    modules: [Autoplay],
+    spaceBetween: 50,
+    centeredSlides: true,
+    loop: true,
+    speed: 7900,
+    freeMode: true,
+    autoplay: {
+        delay: 30,
+        disableOnInteraction: false
+    },
+    slidesPerView: "auto",
+  });
+
+  const swiper2 = new Swiper(".mySwiper2", {
+    modules: [Thumbs, Navigation],
+    spaceBetween: 6,
+    slidesPerView: 1,
+    navigation: {
+      nextEl: "#next-slide",
+      prevEl: "#prev-slide",
+    },
+    thumbs: {
+      swiper: swiper1,
+    },
+    on: {
+      init() {
+          const { slides } = this;
+          slides.forEach((slide, index) => {
+              if (index >= 6) {
+                  slide.style.display = 'none';
+                  slide.style.pointerEvents = 'none'; // Disable interaction
+              }
+          });
+      },
+      slideChange() {
+          const { slides } = this;
+          slides.forEach((slide, index) => {
+              if (index >= 6) {
+                  slide.style.display = 'none';
+                  slide.style.pointerEvents = 'none'; // Disable interaction
+              }
+          });
+      }
+  }
   });
 
   const how = new Swiper('.how__slider', {
@@ -122,6 +214,14 @@ document.addEventListener('DOMContentLoaded', () => {
         const services = new Swiper('.service-main__developers', {
             modules: [FreeMode],
             spaceBetween: 25,
+            slidesPerView: "auto",
+        });
+      }
+
+      if (window.innerWidth < 962) {
+        const services = new Swiper('.imgs-sliders', {
+            modules: [FreeMode],
+            spaceBetween: 15,
             slidesPerView: "auto",
         });
       }

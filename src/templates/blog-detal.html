@@ -1,0 +1,365 @@
+---
+title: Index page
+---
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+
+	{# partial example #}
+	{% include "partials/_header.html" %}
+	{% include "partials/_navbar.html" %}
+    <main class="main blog-detal-page display-menubar">
+        {% include "partials/_menubar.html" %}
+		<section class="blog-detal">
+            <div class="container">
+                <div class="blog-detal__date label--large">декабрь 7, 2021   |  12:45</div>
+                <div class="blog-detal__title h1--blog">Фриланс: что делать если кушать хочется, а заказов нет?</div>
+                <img src="./img/nigga.png" alt="">
+                <div class="blog-detal__wrapper">
+                    <div class="blog-detal__content">
+                        <div class="blog-detal__block">
+                            <div class="blog-detal__letter h5">
+                                Нет, не корить себя. Нет, не делать бесплатные тестовые. Нет, не менять профессию, если душа лежит к этой. А что делать? Действовать! Как именно? Описала в статье.
+                            </div>
+                            <div class="blog-detal__text text--big">Практически в каждой моей статье про дизайн, деньги, договоры я вижу отклики в стиле «Моя подруга/друг/сын собаки тещи отличный дизайнер уже N лет, последние N лет не может найти работу, в дизайне денег нет, как вообще жить?» Эти же люди с трудом верят, что дизайн лендинга может стоить 250.000 рублей и что у меня кто-то заказывает по таким ценам. Но не всегда было так, да и речь сейчас не обо мне…
+                                Итак, вы –специалист, дизайнер, у вас нет заказов, и перед вами два вопроса:
+                            </div>
+                            <div class="blog-detal__list">
+                                <div class="blog-detal__li">Почему так сложилось?</div>
+                                <div class="blog-detal__li">Что делать в этой ситуации?</div>
+                            </div>
+                        </div>
+                        <div class="blog-detal__block">
+                            <div class="blog-detal__letter h5">
+                                Самое очевидное - вас не видят
+                            </div>
+                            <div class="blog-detal__text text--big">Заказчикам нужно где-то вас находить, и если в привычных ареалах обитания потенциальных клиентов (соцсети, тематические блоги, форумы, фриланс-площадки) вы не мелькаете – значит, у вас не будет заказов.
+                            </div>
+                            <div class="blog-detal__list">
+                                <div class="blog-detal__li-title">Однозначно стоит попробовать:</div>
+                                <div class="blog-detal__li">Хорошо вести инстаграм. Этому можно достаточно быстро научиться при наличии свободного времени.</div>
+                                <div class="blog-detal__li">Создать и поддерживать Биханс, Дриббл и иные площадки, качественно оформляя работы. Указывать ключевые слова, отвечать на комментарии и так далее.</div>
+                                <div class="blog-detal__li">Оформить профили и уделять ограниченное время поиску заказов на множестве фриланс-площадок. Ловушка этого канала в том, что на него может уйти весь день, поэтому и время на это стоит ограничивать.</div>
+                                <div class="blog-detal__li">Писать статьи на различные площадки или хотя бы переводить их с иностранных источников</div>
+                                <div class="blog-detal__li">Посмотреть, как другие дизайнеры ведут ютуб, тик ток или иную площадку и начать ее вести, поддерживая каждый день.</div>
+                                <div class="blog-detal__li">Создать себе сайт на Тильде или ином хорошем (!) конструкторе, или нарисовать и сверстать его самостоятельно.</div>
+                            </div>
+                            <div class="blog-detal__quote h5">
+                                <svg width="41" height="30" viewBox="0 0 41 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0.445312 28.6232C1.34131 23.8988 2.84822 19.5817 4.96604 15.6719C7.16531 11.7621 10.0977 7.56719 13.7631 3.08719C15.3922 1.4581 17.2657 0.643555 19.3835 0.643555C19.302 5.85665 18.9355 10.3774 18.2839 14.2057C17.7137 17.9526 16.4919 22.0254 14.6184 26.4239C10.953 28.3788 8.02059 29.3563 5.82131 29.3563C4.43659 29.3563 2.64459 29.1119 0.445312 28.6232ZM21.2162 28.6232C22.1122 23.8988 23.6191 19.5817 25.737 15.6719C27.9362 11.7621 30.8686 7.56719 34.534 3.08719C36.1631 1.4581 38.0366 0.643555 40.1544 0.643555C40.073 5.85665 39.7064 10.3774 39.0548 14.2057C38.4846 17.9526 37.2628 22.0254 35.3893 26.4239C31.7239 28.3788 28.7915 29.3563 26.5922 29.3563C25.2075 29.3563 23.4155 29.1119 21.2162 28.6232Z" fill="#23262B" />
+                                </svg>
+                                Каждому – по способностям. Умеете краситься, писать, кривляться или хорошо говорить на камеру?
+                            </div>
+                        </div>
+                        <div class="blog-detal__block">
+                            <div class="blog-detal__letter h5">
+                                Ваши работы не нравятся заказчикам
+                            </div>
+                            <div class="blog-detal__text text--big">Если у вас уже есть аудитория, а заказов все равно нет… хотя, кого я обманываю. В среднем, заказчики не так хорошо разбираются в дизайне, чтобы отличать работу уровня колхоза им. Ильича от хорошей, добротной работы. Часто заметен или совсем плохой дизайн, или нечто совершенно необыкновенное и достойное места на AWWWARDS. Отсюда, если у вас есть аудитория – у вас есть заказы, даже если вы в среднем делаете не самые лучшие работы, что особенно хорошо видно в топ100 дизайнеров fl.ru.
+                                <br><br>
+                                Если вы все равно считаете, что ваши дела совсем плохи – спросите совета у нескольких арт-директоров, создайте опросы в профильных группах, поищите наставника на Фейсбуке, попросите говорить только правду и ничего кроме правды. Там же подскажут в какую сторону развиваться – не оскудела благодетелями еще земля Русская. И это бесплатно.
+                            </div>
+                            <div class="blog-detal__list">
+                                <div class="blog-detal__li-title">Однозначно стоит попробовать:</div>
+                                <div class="blog-detal__li">Хорошо вести инстаграм. Этому можно достаточно быстро научиться при наличии свободного времени.</div>
+                                <div class="blog-detal__li">Создать и поддерживать Биханс, Дриббл и иные площадки, качественно оформляя работы. Указывать ключевые слова, отвечать на комментарии и так далее.</div>
+                                <div class="blog-detal__li">Оформить профили и уделять ограниченное время поиску заказов на множестве фриланс-площадок. Ловушка этого канала в том, что на него может уйти весь день, поэтому и время на это стоит ограничивать.</div>
+                                <div class="blog-detal__li">Писать статьи на различные площадки или хотя бы переводить их с иностранных источников</div>
+                                <div class="blog-detal__li">Посмотреть, как другие дизайнеры ведут ютуб, тик ток или иную площадку и начать ее вести, поддерживая каждый день.</div>
+                                <div class="blog-detal__li">Создать себе сайт на Тильде или ином хорошем (!) конструкторе, или нарисовать и сверстать его самостоятельно.</div>
+                            </div>
+                            <img src="./img/blog-img.jpg" class="blog-detal__img">
+                        </div>
+                        <div class="blog-detal__block">
+                            <div class="blog-detal__letter h5">
+                                Ваши работы сосредоточены в одной узкой нише
+                            </div>
+                            <div class="blog-detal__text text--big">Например: вы работаете только с Тильдой или делаете дизайн шаблонов на Opencart. Если работы значительно не выделяются на фоне конкурентов, или вы не умеете продавать себя – вполне можно остаться без заказов на продолжительный период времени. <br><br>
+                                Выход - смотреть шире, сделать несколько промо-сайтов, может – интернет-магазин для себя. Переделать Победу, которая постоянно выдает сомнительные UX-решения, или любой другой известный сайт. И вернуться к п.1 - растить аудиторию и рассказывать о своей работе.
+                            </div>
+                            <div class="swiper-thumnails">
+                                <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="mySwiper2">
+                                <div class="swiper-wrapper">
+                                  <a href="./img/thumb.jpg" class="swiper-slide" data-fancybox="gallery">
+                                    <img src="./img/thumb.jpg" />
+                                  </a>
+                                  <a href="./img/thumb.jpg" class="swiper-slide" data-fancybox="gallery">
+                                    <img src="./img/thumb.jpg" />
+                                  </a>
+                                  <a href="./img/thumb.jpg" class="swiper-slide" data-fancybox="gallery">
+                                    <img src="./img/thumb.jpg" />
+                                  </a>
+                                  <a href="./img/thumb.jpg" class="swiper-slide" data-fancybox="gallery">
+                                    <img src="./img/thumb.jpg" />
+                                  </a>
+                                  <a href="./img/thumb.jpg" class="swiper-slide" data-fancybox="gallery">
+                                    <img src="./img/thumb.jpg" />
+                                  </a>
+                                  <a href="./img/thumb.jpg" class="swiper-slide" data-fancybox="gallery">
+                                    <img src="./img/thumb.jpg" />
+                                  </a>
+                                  <a href="./img/thumb.jpg" class="swiper-slide" data-fancybox="gallery">
+                                    <img src="./img/thumb.jpg" />
+                                  </a>
+                                  <a href="./img/thumb.jpg" class="swiper-slide" data-fancybox="gallery">
+                                    <img src="./img/thumb.jpg" />
+                                  </a>
+                                  <a href="./img/thumb.jpg" class="swiper-slide" data-fancybox="gallery">
+                                    <img src="./img/thumb.jpg" />
+                                  </a>
+                                  <a href="./img/thumb.jpg" class="swiper-slide" data-fancybox="gallery">
+                                    <img src="./img/thumb.jpg" />
+                                  </a>
+                                 
+                                </div>
+                                <div class="swiper-button-next" id="next-slide">
+                                    <svg width="20" height="11" viewBox="0 0 20 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1.04688 5.40003H18.6469M18.6469 5.40003L14.1049 1.40002M18.6469 5.40003L14.1049 9.40003" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </div>
+                                <div class="swiper-button-prev" id="prev-slide">
+                                    <svg width="20" height="11" viewBox="0 0 20 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M18.8438 5.40003H1.24375M1.24375 5.40003L5.78568 1.40002M1.24375 5.40003L5.78568 9.40003" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                      </svg>
+                                </div>
+                              </div>
+                              <div thumbsSlider="" class="mySwiper">
+                                <a href="./img/thumb.jpg" class="more-btn text--big" data-fancybox="gallery">+5</a>
+                                <div class="swiper-wrapper">
+                                    <a class="swiper-slide">
+                                        <img src="./img/thumb.jpg" />
+                                      </a>
+                                      <a class="swiper-slide">
+                                        <img src="./img/thumb.jpg" />
+                                      </a>
+                                      <a class="swiper-slide">
+                                        <img src="./img/thumb.jpg" />
+                                      </a>
+                                      <a class="swiper-slide">
+                                        <img src="./img/thumb.jpg" />
+                                      </a>
+                                      <a class="swiper-slide">
+                                        <img src="./img/thumb.jpg" />
+                                      </a>
+                                      <a class="swiper-slide">
+                                        <img src="./img/thumb.jpg" />
+                                      </a>
+                                      <a  class="swiper-slide">
+                                        <img src="./img/thumb.jpg" />
+                                      </a>
+                                      <a class="swiper-slide">
+                                        <img src="./img/thumb.jpg" />
+                                      </a>
+                                      <a class="swiper-slide">
+                                        <img src="./img/thumb.jpg" />
+                                      </a>
+                                      <a class="swiper-slide">
+                                        <img src="./img/thumb.jpg" />
+                                      </a>
+                                </div>
+                              </div>
+                            </div>
+                            
+                        </div>
+                        <div class="blog-detal__imgs">
+                            <div class="imgs-sliders">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <img src="./img/blogimg.jpg" alt="">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="./img/blogimg.jpg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="blog-detal__imgs">
+                            <div class="imgs-sliders">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <img src="./img/blogimg.jpg" alt="">
+                                        <div class="blog-detal__imgs-name label--big">Хелло</div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="./img/blogimg.jpg" alt="">
+                                        <div class="blog-detal__imgs-name label--big">Хелло</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="blog-detal__imgs">
+                            <div class="imgs-sliders min-img">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <img src="./img/blogimg.jpg" alt="">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="./img/blogimg.jpg" alt="">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="./img/blogimg.jpg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="blog-detal__imgs">
+                            <div class="imgs-sliders min-img">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <img src="./img/blogimg.jpg" alt="">
+                                        <div class="blog-detal__imgs-name label--big">Хелло</div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="./img/blogimg.jpg" alt="">
+                                        <div class="blog-detal__imgs-name label--big">Хелло</div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="./img/blogimg.jpg" alt="">
+                                        <div class="blog-detal__imgs-name label--big">Хелло</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="blog-detal__imgs">
+                            <div class="imgs-sliders two-img">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <img src="./img/blogimg.jpg" alt="">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="./img/blogimg.jpg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="blog-detal__imgs">
+                            <div class="imgs-sliders two-img">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <img src="./img/blogimg.jpg" alt="">
+                                        <div class="blog-detal__imgs-name label--big">Хелло</div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="./img/blogimg.jpg" alt="">
+                                        <div class="blog-detal__imgs-name label--big">Хелло</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="blog-detal__imgs">
+                            <div class="imgs-sliders min-three-img">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <img src="./img/blogimg.jpg" alt="">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="./img/blogimg.jpg" alt="">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="./img/blogimg.jpg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="blog-detal__imgs">
+                            <div class="imgs-sliders min-three-img">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <img src="./img/blogimg.jpg" alt="">
+                                        <div class="blog-detal__imgs-name label--big">Хелло</div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="./img/blogimg.jpg" alt="">
+                                        <div class="blog-detal__imgs-name label--big">Хелло</div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="./img/blogimg.jpg" alt="">
+                                        <div class="blog-detal__imgs-name label--big">Хелло</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blog-detal__nav">
+                        <div class="blog-detal__nav-title">В этой статье</div>
+                        <div class="blog-detal__nav-list">
+                            <a href="#" class="blog-detal__nav-link active text--medium">Самое очевидное - вас не видят</a>
+                            <a href="#" class="blog-detal__nav-link text--medium">Ваши работы не нравятся заказчикам</a>
+                            <a href="#" class="blog-detal__nav-link text--medium">Ваши работы сосредоточены в одной узкой нише</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="similar-projects similar-articles">
+            <div class="container">
+                <div class="similar-projects__title h6 ">Похожие статьи
+                    <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M15.9453 13.65H13.7753C11.9953 13.65 10.5453 12.21 10.5453 10.42V8.25C10.5453 7.84 10.2153 7.5 9.79531 7.5H6.62531C4.31531 7.5 2.44531 9 2.44531 11.68V18.32C2.44531 21 4.31531 22.5 6.62531 22.5H12.5153C14.8253 22.5 16.6953 21 16.6953 18.32V14.4C16.6953 13.98 16.3553 13.65 15.9453 13.65Z" fill="#186D72" />
+                        <path d="M18.267 2.5H16.297H15.207H12.377C10.117 2.5 8.28703 3.94 8.20703 6.51C8.26703 6.51 8.31703 6.5 8.37703 6.5H11.207H12.297H14.267C16.577 6.5 18.447 8 18.447 10.68V12.65V15.36V17.33C18.447 17.39 18.437 17.44 18.437 17.49C20.667 17.42 22.447 15.94 22.447 13.33V11.36V8.65V6.68C22.447 4 20.577 2.5 18.267 2.5Z" fill="#186D72" />
+                        <path d="M12.4259 7.64999C12.1159 7.33999 11.5859 7.54999 11.5859 7.97999V10.6C11.5859 11.7 12.5159 12.6 13.6559 12.6C14.3659 12.61 15.3559 12.61 16.2059 12.61C16.6359 12.61 16.8559 12.11 16.5559 11.81C15.4659 10.72 13.5259 8.76999 12.4259 7.64999Z" fill="#186D72" />
+                      </svg>
+                </div>
+                <div class="swiper similar-projects__slider">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide projects__item">
+                            <div class="projects__img"  data-aos="zoom-in">
+                                <div class="projects__labels">
+                                    <div class="projects__label label--big">Дизайн</div>
+                                </div>
+                                <img src="./img/art.jpg" alt="">
+                            </div>
+                            <div class="projects__descr label--big">декабрь 7, 2021   |  12:45</div>
+                            <div class="projects__name text--large">Регламенты: упрощаем работу с заказами в 5 раз</div>
+                        </div>
+                        <div class="swiper-slide projects__item">
+                            <div class="projects__img"  data-aos="zoom-in">
+                                <div class="projects__labels">
+                                    <div class="projects__label label--big">Дизайн</div>
+                                </div>
+                                <img src="./img/art.jpg" alt="">
+                            </div>
+                            <div class="projects__descr label--big">декабрь 7, 2021   |  12:45</div>
+                            <div class="projects__name text--large">Регламенты: упрощаем работу с заказами в 5 раз</div>
+                        </div>
+                        <div class="swiper-slide projects__item">
+                            <div class="projects__img"  data-aos="zoom-in">
+                                <div class="projects__labels">
+                                    <div class="projects__label label--big">Дизайн</div>
+                                </div>
+                                <img src="./img/art.jpg" alt="">
+                            </div>
+                            <div class="projects__descr label--big">декабрь 7, 2021   |  12:45</div>
+                            <div class="projects__name text--large">Регламенты: упрощаем работу с заказами в 5 раз</div>
+                        </div>
+                        <div class="swiper-slide projects__item">
+                            <div class="projects__img"  data-aos="zoom-in">
+                                <div class="projects__labels">
+                                    <div class="projects__label label--big">Дизайн</div>
+                                </div>
+                                <img src="./img/art.jpg" alt="">
+                            </div>
+                            <div class="projects__descr label--big">декабрь 7, 2021   |  12:45</div>
+                            <div class="projects__name text--large">Регламенты: упрощаем работу с заказами в 5 раз</div>
+                        </div>
+                        <div class="swiper-slide projects__item">
+                            <div class="projects__img"  data-aos="zoom-in">
+                                <div class="projects__labels">
+                                    <div class="projects__label label--big">Дизайн</div>
+                                </div>
+                                <img src="./img/art.jpg" alt="">
+                            </div>
+                            <div class="projects__descr label--big">декабрь 7, 2021   |  12:45</div>
+                            <div class="projects__name text--large">Регламенты: упрощаем работу с заказами в 5 раз</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+	{% include "partials/_footer.html" %}
+	{% include "partials/_cookies.html" %}
+	{% include "partials/_promotion.html" %}
+
+{% endblock %}

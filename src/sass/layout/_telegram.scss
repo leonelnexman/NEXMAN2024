@@ -3,6 +3,18 @@
     @media (max-width: 962px){
         margin-bottom: 5rem;
     }
+    &.telegram-flex{
+        .container{
+            justify-content: space-between;
+        }
+        .telegram__title{
+            margin-bottom: 1rem;
+        }
+        .btn--social span{
+            width: 29.6rem;
+            white-space: nowrap;
+        }
+    }
     .container{
         display: flex;
         align-items: center;

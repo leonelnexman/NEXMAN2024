@@ -19,7 +19,7 @@ title: Index page
 				<p class="main-section__descr text--large" data-aos="fade-up">
 					Интегрированные решения в области дизайна, UX/UI, разработки, иллюстраций, 3D-моделирования, контент-стратегий и рекламных кампаний
 				</p>
-				<button class="main-section__btn btn" data-aos="fade-up">
+				<button class="main-section__btn btn open-modal" data-aos="fade-up">
 					<span>Получить консультацию</span>
 					<svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
 						<rect width="56" height="56" rx="10" fill="#186D72" />
@@ -273,6 +273,8 @@ title: Index page
 		{% include "partials/sections/_blog.html" %}
 		{% include "partials/sections/_telegram.html" %}
     </main>
+
+	{% include "partials/sections/_modal.html" %}
 
 	{% include "partials/_footer.html" %}
 	{% include "partials/_cookies.html" %}

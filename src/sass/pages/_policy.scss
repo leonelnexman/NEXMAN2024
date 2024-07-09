@@ -1,0 +1,109 @@
+.policy{
+    .container{
+        display: flex;
+        justify-content: space-between;
+        @media (max-width: 962px){
+            flex-direction: column;
+        }
+    }
+    &__content{
+        max-width: 101.1rem;
+        @media (max-width: 962px){
+            max-width: 100%;
+        }
+    }
+    &__title{
+        font-weight: 400;
+        font-size: 4.2rem;
+        line-height: 120%;
+        letter-spacing: -0.02em;
+        color: $dark;
+        margin-bottom: 2rem; 
+    }
+    &__block-inner{
+        margin-bottom: 3rem;
+    }
+    &__block-title{
+        font-weight: 400;
+        font-size: 1.8rem;
+        line-height: 140%;
+        color: $dark;
+        margin-bottom: 1rem;
+        @media (max-width: 962px){
+            text-transform: uppercase;
+        }
+    }
+    &__block-list{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+    &__block-li{
+        font-weight: 400;
+        font-size: 1.6rem;
+        line-height: 140%;
+        color: $text-dark;
+    }
+    &__aside-inner{
+        position: sticky;
+        top: 3rem;
+        width: 100%;
+        overflow: auto;
+        &::-webkit-scrollbar{
+            display: none;
+        }
+        @media (max-width: 962px){
+            width: 100%;
+            display: flex;
+            position: static;
+        } 
+    }
+    &__aside{
+        @media (max-width: 962px){
+            position: fixed;
+            bottom: 0;
+            background: $white;
+            width: 100%;
+            padding: 0;
+            left: 0;
+        }  
+    }
+    &__aside-link{
+        padding-left: 1.5rem;
+        margin-bottom: 1.5rem;
+        transition: all 0.3s;
+        @media (max-width: 962px){
+            white-space: nowrap;
+            padding: 0;
+            border-top: 0.1rem solid $green;
+            border-right: 0.1rem solid $green;
+            padding: 1.5rem;
+            border-radius: 1rem 1rem 0 0;
+            margin-bottom: 0;
+            font-size: 1.2rem;
+            white-space: nowrap;
+            padding-bottom: 7.7rem;
+            br{
+                display: none;
+            }
+        } 
+        &:hover{
+            color: $hover;
+        }
+        &.active{
+            border-left: 0.1rem solid $green;
+            color: $green;
+        }
+    }
+}
+
+.display-menubar{
+    @media (max-width: 962px){
+        .menubar .btn{
+            display: flex;
+            span{
+                width: 28.7rem;
+            }
+        }
+    } 
+}

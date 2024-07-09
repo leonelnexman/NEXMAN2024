@@ -1,0 +1,61 @@
+---
+title: Index page
+---
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+
+	{# partial example #}
+	{% include "partials/_header.html" %}
+	{% include "partials/_navbar.html" %}
+    <main class="main projects-detal-page">
+		{% include "partials/_menubar.html" %}
+		<div class="project-page">
+			<div class="container">
+				<div class="projects-hero__title">Наши проекты</div>
+				<div class="projects-hero__illustrations">
+							<div class="projects-hero__illustration" style="z-index: 5; transform: translate(0px, 0px);">
+					  <img width="768" height="608" src="./img/project-animate.png" class="attachment-medium_large size-medium_large wp-post-image" alt="USMALL" decoding="async" fetchpriority="high">          </div>
+							<div class="projects-hero__illustration" style="z-index: 4; transform: rotate(3.9deg);">
+					  <img width="768" height="600" src="https://nexman.org/wp-content/uploads/2022/07/p-bh-4.webp" class="attachment-medium_large size-medium_large not-transparent wp-post-image" alt="Mainstreet" decoding="async" data-has-transparency="false" data-dominant-color="27202e" style="--dominant-color: #27202e;">          </div>
+							<div class="projects-hero__illustration" style="z-index: 3; transform: rotate(7.8deg);">
+					  <img width="768" height="598" src="https://nexman.org/wp-content/uploads/2022/08/frame-103-768x598.webp" class="attachment-medium_large size-medium_large not-transparent wp-post-image" alt="REM PRO" decoding="async" srcset="https://nexman.org/wp-content/uploads/2022/08/frame-103-768x598.webp 768w, https://nexman.org/wp-content/uploads/2022/08/frame-103.webp 1900w" sizes="(max-width: 768px) 100vw, 768px" data-has-transparency="false" data-dominant-color="314920" style="--dominant-color: #314920;">          </div>
+							<div class="projects-hero__illustration" style="z-index: 2; transform: rotate(11.7deg);">
+					  <img width="768" height="598" src="https://nexman.org/wp-content/uploads/2022/09/prev-768x598.webp" class="attachment-medium_large size-medium_large not-transparent wp-post-image" alt="ModBay" decoding="async" srcset="https://nexman.org/wp-content/uploads/2022/09/prev-768x598.webp 768w, https://nexman.org/wp-content/uploads/2022/09/prev.webp 1900w" sizes="(max-width: 768px) 100vw, 768px" data-has-transparency="false" data-dominant-color="608c61" style="--dominant-color: #608c61;">          </div>
+							<div class="projects-hero__illustration" style="z-index: 1; transform: rotate(15.6deg);">
+					  <img width="768" height="611" src="https://nexman.org/wp-content/uploads/2022/07/eng-b-1.webp" class="attachment-medium_large size-medium_large wp-post-image" alt="Ballet" decoding="async">          </div>
+						</div>
+			  </div>
+		</div>
+        {% include "partials/sections/_doingnow.html" %}
+        {% include "partials/sections/_projects-page.html" %}
+		<section class="marqee-line">
+			<div class="marqee-line__slider" data-aos="fade-up">
+				<div class="swiper-wrapper">
+				  <div class="swiper-slide h2">Получить</div>
+				  <div class="swiper-slide h2 white">Индивидуальное</div>
+				  <div class="swiper-slide h2">Коммерческое</div>
+				  <div class="swiper-slide h2 white">Предложение</div>
+				  <div class="swiper-slide h2">Получить</div>
+				  <div class="swiper-slide h2 white">Индивидуальное</div>
+				  <div class="swiper-slide h2">Коммерческое</div>
+				  <div class="swiper-slide h2 white">Предложение</div>
+				</div>
+			  </div>
+			  <button class="btn btn--social" data-aos="fade-up">
+				<span>Перейти в телеграм</span>
+				<svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<rect width="56" height="56" rx="10" fill="#343F3F"/>
+					<path d="M23.3997 22.3202L31.8897 19.4902C35.6997 18.2202 37.7697 20.3002 36.5097 24.1102L33.6797 32.6002C31.7797 38.3102 28.6597 38.3102 26.7597 32.6002L25.9197 30.0802L23.3997 29.2402C17.6897 27.3402 17.6897 24.2302 23.3997 22.3202Z" stroke="white" stroke-miterlimit="10" stroke-linecap="round"/>
+					<path d="M26.1094 29.6501L29.6894 26.0601" stroke="white" stroke-miterlimit="10" stroke-linecap="round"/>
+				</svg>                
+			</button>
+		</section>
+		{% include "partials/sections/_task.html" %}
+    </main>
+
+	{% include "partials/_footer.html" %}
+	{% include "partials/_cookies.html" %}
+	{% include "partials/_promotion.html" %}
+
+{% endblock %}

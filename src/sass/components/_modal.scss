@@ -1,0 +1,277 @@
+.modal {
+    display: flex;
+    position: fixed;
+    z-index: 7777777777777777777777777777777;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: all 0.3s;
+    visibility: hidden;
+    @media (max-width: 962px){
+        width: 100% !important;
+        overflow: hidden;
+    }
+    &__content{
+        position: relative;
+       background: #fff;
+       width: 122.8rem;
+       padding: 7.9rem;
+       border-radius: 3rem;
+       display: flex;
+       justify-content: space-between;
+       @media (max-width: 962px){
+        width: 100% !important;
+        padding: 4rem 1.5rem;
+        margin-top: 11rem;
+        &.error{
+            margin-top: 0;
+            padding: 6rem 1.5rem 3rem;
+        }
+        &.done{
+            margin-top: 0;
+            padding: 6rem 1.5rem 3rem;
+        }
+        }
+       .modal-default{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        @media (max-width: 962px){
+            flex-direction: column;
+            align-items: flex-start;
+            width: 100% !important;
+            max-height: 101dvh;
+            overflow: auto;
+            padding-bottom: 9rem;
+            &::-webkit-scrollbar{
+                display: none;
+            }
+        }
+       }
+       &.done{
+            .modal-default{
+                display: none;
+            }
+            .modal__done{
+                display: flex;
+            }
+            .modal__error{
+                display: none;
+            }
+       }
+       &.error{
+            .modal-default{
+                display: none;
+            }
+            .modal__done{
+                display: none;
+            }
+            .modal__error{
+                display: flex;
+            }
+        }
+    }
+    &__services-title{
+        text-transform: uppercase;
+        margin-bottom: 1.7rem;
+        
+    }
+    .thumb-stroke{
+        .thumb.active{
+            background: #fff !important;
+            color: $dark !important;
+            border: 0.1rem solid $green;
+        }
+        .thumb:hover{
+            background: #fff !important;
+            color: $dark !important;
+            border: 0.1rem solid $green;
+        }
+    }
+    form{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 4rem 2rem;
+        @media (max-width: 962px){
+            gap: 3rem;
+        }
+    }
+    .user-box{
+        @media (max-width: 962px){
+            width: 100% !important;
+         }
+        &:nth-child(1){
+            width: 100%;
+        }
+        &:nth-child(3){
+            width: 25.4rem;
+        }
+    }
+    &__info{
+        width: 45rem;
+        @media (max-width: 962px){
+           width: 100%;
+        }
+    }
+    &__descr{
+        @media (max-width: 962px){
+            font-size: 1.6rem;
+            margin-bottom: 5rem;
+        }
+    }
+    &__lable{
+        font-size: 1.8rem;
+        line-height: 140%;
+        letter-spacing: -0.02em;
+        text-transform: uppercase;
+        color: $dark; 
+        margin-bottom: 2.5rem;
+        @media (max-width: 962px){
+            font-size: 1.4rem;
+            margin-bottom: 1rem;
+         }
+    }
+    &__title{
+        font-size: 7.4rem;
+        line-height: 110%;
+        letter-spacing: -0.05em;
+        color: $dark;  
+        margin-bottom: 2.5rem;
+        @media (max-width: 962px){
+            font-size: 3.2rem;
+            margin-bottom: 1rem;
+        }
+    }
+    .thumbs{
+        flex-wrap: wrap;
+    }
+    .close{
+        top: 1.5rem;
+        right: 1.5rem;
+        position: absolute;
+        border-radius: 1rem;
+        width: 5rem;
+        height: 5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: $light-gray;
+        svg{
+            width: 1.7rem;
+            height: 1.7rem;   
+        }
+    }
+    &__form{
+        width: 52.8rem;
+        @media (max-width: 962px){
+            width: 100%;
+         }
+    }
+    .file{
+        display: flex;
+        align-items: flex-start;
+        gap: 1.9rem;
+        margin-top: -1.5rem;
+        span{
+            text-underline-offset: 0.5rem;
+            text-decoration: underline;
+        }
+        label{
+            color: $middle-gray;
+            margin-top: -0.5rem;  
+        }
+    }
+    .text--xsmall{
+        margin-top: -1.5rem;
+        @media (max-width: 962px){
+            margin-top: -0.5rem;
+        }
+    }
+    .btn{
+        margin-top: -1.5rem;
+        @media (max-width: 962px){
+            margin-top: -0.5rem;
+        }
+        span{
+            width: 47.8rem;
+            @media (max-width: 962px){
+                width: 25rem;
+            }
+        }
+    }
+    .button__file{
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        svg{
+            width: 1.9rem;
+            height: 1.9rem; 
+        }
+    }
+    .modal-icon{
+       width: 8.1rem;
+       height: 8.1rem;
+       margin-bottom: 1.9rem;
+    }
+    .modal__center-title{
+        font-size: 7.4rem;
+        line-height: 110%;
+        letter-spacing: -0.05em;
+        text-align: center;
+        color: $dark;
+        margin-bottom: 1.1rem;
+        @media (max-width: 962px){
+            font-size: 3rem;
+        }  
+    }
+    .modal__center-descr{
+        font-size: 1.8rem;
+        line-height: 140%;
+        text-align: center;
+        color: $text-dark; 
+        margin-bottom: 3rem;
+    }
+    .modal__center-btn{
+        padding: 1.9rem 3.9rem 1.7rem;
+        background: $green;
+        color: $white;
+        border-radius: 1rem;
+    }
+    .modal__done{
+        display: none;
+    }
+    .modal__error{
+        display: none;
+    }
+}
+
+.modal__block{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal.visible {
+    opacity: 1;
+    visibility: visible;
+    transition: all 0.3s;
+}
+
+
+
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+

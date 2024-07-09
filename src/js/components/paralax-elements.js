@@ -12,14 +12,14 @@ ScrollTrigger.matchMedia({
             gsap.from(elem, {
                 scrollTrigger: {
                     trigger: elem,
-                    start: "top 150%",  // Start animation when the top of the element is 80% from the top of the viewport
-                    end: "bottom 10%", // End animation when the bottom of the element is 10% from the top of the viewport
-                    scrub: 1,          // Smooth scrubbing
+                    start: "top 150%",  
+                    end: "bottom 10%", 
+                    scrub: 1,          
                 },
-                y: 350,                // Move the element further up
+                y: 350,                
                 opacity: 0,
-                ease: "power2.out",    // Ease for smooth animation
-                duration: 1            // Default duration for most elements
+                ease: "power2.out",    
+                duration: 1            
             });
         });
 
@@ -27,14 +27,14 @@ ScrollTrigger.matchMedia({
             gsap.from(elem, {
                 scrollTrigger: {
                     trigger: elem,
-                    start: "top 250%",  // Start animation when the top of the element is 70% from the top of the viewport
-                    end: "bottom 10%", // End animation when the bottom of the element is 10% from the top of the viewport
-                    scrub: 1,          // Smooth scrubbing
+                    start: "top 250%",  
+                    end: "bottom 10%",
+                    scrub: 1,          
                 },
-                y: 800,                // Move the element further up
+                y: 800,                
                 opacity: 0,
-                ease: "power3.out",    // Ease for faster and sharper animation
-                duration: 0.3         // Shorter duration for faster animation
+                ease: "power3.out",    
+                duration: 0.3         
             });
         });
     }

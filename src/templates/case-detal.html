@@ -1,0 +1,156 @@
+---
+title: Index page
+---
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+
+	{# partial example #}
+	{% include "partials/_header.html" %}
+	{% include "partials/_navbar.html" %}
+	{% include "partials/_menubar.html" %}
+    <main class="main">
+		<section class="detal">
+            <div class="container">
+                <div class="detal__top">
+                    <div class="detal__top-info">
+                        <div class="detal__top-lebel label--large">ПРОМО-САЙТ</div>
+                        <div class="detal__top-title h1">Scarlet SAILS Theater</div>
+                        <div class="detal__top-text h6">Доработка системы для управления внутренними процессами судовладельца и оператора оффшорного флота</div>
+                    </div>
+                    <div class="detal__top-labels">
+                        <div class="detal__top-chip lable--big">Аудит</div>
+                        <div class="detal__top-chip lable--big">Дизайн</div>
+                        <div class="detal__top-chip lable--big">Контент</div>
+                        <div class="detal__top-chip lable--big">Аудит</div>
+                        <div class="detal__top-chip lable--big">Дизайн</div>
+                        <div class="detal__top-chip lable--big">Контент</div>
+                    </div>
+                </div>
+                <div class="detal__img">
+                    <img src="./img/detal.jpg" alt="">
+                </div>
+            </div>
+        </section>
+        <section class="detal-sticky">
+            <div class="container">
+                <div class="detal-sticky__title label--large">О компании</div>
+                <p class="detal-sticky__text">Xavier Van Lil is a Belgian Designer who marries simplicity with elegance to offer refined furniture collections for both interiors and exteriors. Creating contemporary furniture for a discerning international market, XVL also provides bespoke interior design services through its design studio.</p>
+            </div>
+        </section>
+        <section class="detal-sticky">
+            <div class="container">
+                <div class="detal-sticky__title label--large">Задачи</div>
+                <div class="detal-sticky__items">
+                    <div class="detal-sticky__item">Сделать сайт конверсионным, более посещаемым</div>
+                    <div class="detal-sticky__item">Создать стилистику, свойственную загадками и тайнам. Выполнить ребрендинг</div>
+                    <div class="detal-sticky__item">Сайт должен соответствоать тенденциям UX/UI и быть анимированным</div>
+                </div>
+            </div>
+        </section>
+        <section class="case-img">
+            <img src="./img/case.jpg" alt="">
+        </section>
+        <section class="detal-sticky">
+            <div class="container">
+                <div class="detal-sticky__title label--large">Результат</div>
+                <p class="detal-sticky__text">Xavier Van Lil is a Belgian Designer who marries simplicity with elegance to offer refined furniture collections for both interiors and exteriors. Creating contemporary furniture for a discerning international market, XVL also provides bespoke interior design services through its design studio.</p>
+            </div>
+        </section>
+        <section class="telegram poz case-telegram wow animate__animated animate__fadeInUp">
+            <div class="container">
+                <div class="poz__inner">
+                    <div class="telegram__title h4">Не знаешь, стоит ли обновлять текущий сайт?</div>
+                <div class="telegram__text text--large">Напиши нам и мы сделаем аудит сайта и подскажем, нужно ли Вам что-то менять сейчас или отложить это на потом</div>
+                </div>
+                <button class="btn btn--social">
+                    <span>Перейти в телеграм</span>
+                    <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="56" height="56" rx="10" fill="#343F3F"/>
+                        <path d="M23.3997 22.3202L31.8897 19.4902C35.6997 18.2202 37.7697 20.3002 36.5097 24.1102L33.6797 32.6002C31.7797 38.3102 28.6597 38.3102 26.7597 32.6002L25.9197 30.0802L23.3997 29.2402C17.6897 27.3402 17.6897 24.2302 23.3997 22.3202Z" stroke="white" stroke-miterlimit="10" stroke-linecap="round"/>
+                        <path d="M26.1094 29.6501L29.6894 26.0601" stroke="white" stroke-miterlimit="10" stroke-linecap="round"/>
+                    </svg>                
+                </button>
+            </div>
+        </section>
+        <section class="similar-projects">
+            <div class="container">
+                <div class="similar-projects__title h4">Похожие проекты</div>
+                <div class="swiper similar-projects__slider">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide projects__item">
+                            <div class="projects__img"  data-aos="zoom-in">
+                                <div class="projects__labels">
+                                    <div class="projects__label label--big">Аудит</div>
+                                    <div class="projects__label label--big">Дизайн</div>
+                                    <div class="projects__label label--big">Контент</div>
+                                </div>
+                                <img src="./img/project.jpg" alt="">
+                                <img src="./img/project2.jpg" alt="" class="projects__img-second">
+                            </div>
+                            <div class="projects__descr label--medium">ПРОМО-САЙТ</div>
+                            <div class="projects__name h5">ЖК Дельвиг</div>
+                        </div>
+                        <div class="swiper-slide projects__item">
+                            <div class="projects__img"  data-aos="zoom-in">
+                                <div class="projects__labels">
+                                    <div class="projects__label label--big">Аудит</div>
+                                    <div class="projects__label label--big">Дизайн</div>
+                                    <div class="projects__label label--big">Контент</div>
+                                </div>
+                                <img src="./img/project.jpg" alt="">
+                                <img src="./img/project2.jpg" alt="" class="projects__img-second">
+                            </div>
+                            <div class="projects__descr label--medium">ПРОМО-САЙТ</div>
+                            <div class="projects__name h5">ЖК Дельвиг</div>
+                        </div>
+                        <div class="swiper-slide projects__item">
+                            <div class="projects__img"  data-aos="zoom-in">
+                                <div class="projects__labels">
+                                    <div class="projects__label label--big">Аудит</div>
+                                    <div class="projects__label label--big">Дизайн</div>
+                                    <div class="projects__label label--big">Контент</div>
+                                </div>
+                                <img src="./img/project.jpg" alt="">
+                                <img src="./img/project2.jpg" alt="" class="projects__img-second">
+                            </div>
+                            <div class="projects__descr label--medium">ПРОМО-САЙТ</div>
+                            <div class="projects__name h5">ЖК Дельвиг</div>
+                        </div>
+                        <div class="swiper-slide projects__item">
+                            <div class="projects__img"  data-aos="zoom-in">
+                                <div class="projects__labels">
+                                    <div class="projects__label label--big">Аудит</div>
+                                    <div class="projects__label label--big">Дизайн</div>
+                                    <div class="projects__label label--big">Контент</div>
+                                </div>
+                                <img src="./img/project.jpg" alt="">
+                                <img src="./img/project2.jpg" alt="" class="projects__img-second">
+                            </div>
+                            <div class="projects__descr label--medium">ПРОМО-САЙТ</div>
+                            <div class="projects__name h5">ЖК Дельвиг</div>
+                        </div>
+                        <div class="swiper-slide projects__item">
+                            <div class="projects__img"  data-aos="zoom-in">
+                                <div class="projects__labels">
+                                    <div class="projects__label label--big">Аудит</div>
+                                    <div class="projects__label label--big">Дизайн</div>
+                                    <div class="projects__label label--big">Контент</div>
+                                </div>
+                                <img src="./img/project.jpg" alt="">
+                                <img src="./img/project2.jpg" alt="" class="projects__img-second">
+                            </div>
+                            <div class="projects__descr label--medium">ПРОМО-САЙТ</div>
+                            <div class="projects__name h5">ЖК Дельвиг</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+	{% include "partials/_footer.html" %}
+	{% include "partials/_cookies.html" %}
+	{% include "partials/_promotion.html" %}
+
+{% endblock %}

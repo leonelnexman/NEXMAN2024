@@ -22,7 +22,19 @@
             flex-direction: column;
             button{
                 position: absolute;
+                top: 77rem;
+                span{
+                  width: 35.5rem;  
+                }
+            }
+        }
+        @media (max-width: 500px){
+            button{
+                position: absolute;
                 top: 81.5rem;
+                span{
+                    width: 27.5rem;  
+                  }
             }
         }
     }
@@ -74,6 +86,17 @@
         border-radius: 2rem;
         padding: 2.4rem 2rem;
         background: $light-gray;
+        transition: all 0.3s;
+        &:hover{
+            background: $hover;
+            .contacts__btn-text{
+                color: $white;
+            }
+            svg path{
+                fill: $white;
+                stroke: $white;
+            }
+        }
         &:nth-child(1){
             display: flex;
             gap: 4.5rem;
@@ -91,11 +114,13 @@
             display: block;
             width: 2.4rem;
             height: 2.2rem;
+            transition: all 0.3s;
         }
         .work{
             width: 11.4rem !important;
             height: 2.6rem !important;
             margin-bottom: 2.2rem;
+            transition: all 0.3s;
             @media (max-width: 962px){
                 font-size: 1.6rem;
                 margin-bottom: 1.5rem;
@@ -105,6 +130,9 @@
             width: 100%;
             padding: 4rem;
             background: $green;
+            &:hover{
+                background: $hover;
+            }
             @media (max-width: 962px){
                 padding: 2rem 1.5rem;
             }
@@ -152,6 +180,12 @@
                     width: 3.9rem;
                     height: 4.2rem;
                     top: 3.6rem;
+                    left: 29.8rem;
+                }
+                @media (max-width: 500px){
+                    width: 3.9rem;
+                    height: 4.2rem;
+                    top: 3.6rem;
                     left: 21.8rem;
                 }
             }
@@ -164,6 +198,12 @@
                     width: 4.3rem;
                     height: 4.3rem;
                     top: 2rem;
+                    left: 35.2rem;
+                }
+                @media (max-width: 500px){
+                    width: 4.3rem;
+                    height: 4.3rem;
+                    top: 2rem;
                     left: 27.2rem;
                 }
             }
@@ -173,6 +213,12 @@
                 top: 10.2rem;
                 left: 7.4rem;
                 @media (max-width: 962px){
+                    width: 3rem;
+                    height: 3rem;
+                    top: 7.8rem;
+                    left: 33.7rem;
+                }
+                @media (max-width: 500px){
                     width: 3rem;
                     height: 3rem;
                     top: 7.8rem;
@@ -194,11 +240,16 @@
             border-radius: 3rem;
             width: 135.6rem;
             height: 76.5rem;
+            object-fit: covers;
             @media (max-width: 962px){
                 border-radius: 2rem;
-                width: 33rem;
-                height: 18.6rem;
+                width: 100%;
+                height: 23.6rem;
               }
+            @media (max-width: 500px){
+                border-radius: 2rem;
+                height: 18.6rem;
+            }
         }
     }
 }
