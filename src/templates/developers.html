@@ -18,14 +18,15 @@ title: Услуга
                         <div class="service-main__text text--large"  data-aos="fade-up">Мы закрываем все digital потребности застройщиков: эффективно заменяем внутренний отдел дизайна, веб-разработки, контент-маркетинга, экономя средства и действуя слаженно</div>
                         <button class="btn"  data-aos="fade-up">
                             <span>получить консультацию</span>
-                            <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <rect width="56" height="56" rx="10" fill="#186D72" />
-                                <path d="M20.929 35.0711L35.0711 20.929M35.0711 20.929L28.5931 21.7501M35.0711 20.929L34.25 27.407" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                            </svg>
+                            <div class="icon">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0.928036 15.0711L15.0702 0.928968M15.0702 0.928968L8.59216 1.75012M15.0702 0.928968L14.249 7.40698" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </div>
                         </button>
                     </div>
                 </div>
-                <div class="service-main__developers">
+                <div class="service-main__developers developers">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <div class="developers__img">
@@ -223,84 +224,69 @@ title: Услуга
 				</div>
 			</div>
 		</section>
-        <section class="stages">
+        {% include "partials/sections/_cases.html" %}
+        <section class="cases-developers">
             <div class="container">
-                <div class="stages__title h3">Этапы</div>
-                <div class="stages__subtitle h3">Работы</div>
-                <div class="swiper stages-slider">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <div class="stages__top h4">
-                                <span>01</span>
-                                Исследование
-                            </div>
-                            <div class="stages__text text--medium">Исследования помогут нам понять, что пользователи хотят и как взаимодействуют с продуктом, чтобы мы могли сделать интерфейс еще удобнее и привлекательнее</div>
-                            <div class="stages__list">
-                                <div class="stages__item text--small">
-                                    <span>Анализ бизнеса</span>
-                                    Глубокое погружение в операционные процессы и задачи вашей компании
-                                </div>
-                                <div class="stages__item text--small">
-                                    <span>Анализ целевой аудитории</span>
-                                    Разбираемся, кто составляет вашу аудиторию и как мы можем подстроиться под их ожидания и потребности
-                                </div>
-                                <div class="stages__item text--small">
-                                    <span>Конкурентный анализ</span>
-                                    Обширное исследование лучших практик в отрасли с целью выявления уникальных возможностей для вашего бизнеса
-                                </div>
-                                <div class="stages__item text--small">
-                                    <span>Сценарии пользовательского взаимодействия</span>
-                                    Мы создадим сценарии, описывающие, как ваши пользователи будут взаимодействовать с вашим продуктом, где возникнут сложности и как их избежать
-                                </div>
-                            </div>
+                <div class="cases-developers__headings">
+                    <div class="cases-developers__title">Работы</div>
+                    <div class="cases-developers__suptitle">для</div>
+                    <div class="cases-developers__subtitle h2_v">застройщиков</div>
+                </div>
+                <div class="specialization__list">
+                    <div class="specialization__item">
+                        <div class="specialization__top h6">
+                            <span>01</span>
+                            Исследование
                         </div>
-                        <div class="swiper-slide">
-                            <div class="stages__top h4">
-                                <span>02</span>
-                                Прототипирование
-                            </div>
-                            <div class="stages__text text--medium">Мы составим структуру проекта, а также проверим его понятность для пользователя. Это позволит нам обеспечить более эффективное использование ресурсов, повысить вероятность успеха проекта на рынке и сократить стоимость разработки</div>
-                            <div class="stages__list">
-                                <div class="stages__item text--small">
-                                    <span>Анализ бизнеса</span>
-                                    Глубокое погружение в операционные процессы и задачи вашей компании
-                                </div>
-                                <div class="stages__item text--small">
-                                    <span>Анализ целевой аудитории</span>
-                                    Разбираемся, кто составляет вашу аудиторию и как мы можем подстроиться под их ожидания и потребности
-                                </div>
-                                <div class="stages__item text--small">
-                                    <span>Конкурентный анализ</span>
-                                    Обширное исследование лучших практик в отрасли с целью выявления уникальных возможностей для вашего бизнеса
-                                </div>
-                            </div>
+                        <p class="specialization__content">
+                            Исследования помогут нам понять, что пользователи хотят и как взаимодействуют с продуктом, чтобы мы могли сделать интерфейс еще удобнее и привлекательнее
+                        </p>
+                    </div>
+                    <div class="specialization__item">
+                        <div class="specialization__top h6">
+                            <span>02</span>
+                            Прототипирование
                         </div>
-                        <div class="swiper-slide">
-                            <div class="stages__top h4">
-                                <span>03</span>
-                                Исследование
-                            </div>
-                            <div class="stages__text text--medium">Исследования помогут нам понять, что пользователи хотят и как взаимодействуют с продуктом, чтобы мы могли сделать интерфейс еще удобнее и привлекательнее</div>
-                            <div class="stages__list">
-                                <div class="stages__item text--small">
-                                    <span>Анализ бизнеса</span>
-                                    Глубокое погружение в операционные процессы и задачи вашей компании
-                                </div>
-                                <div class="stages__item text--small">
-                                    <span>Анализ целевой аудитории</span>
-                                    Разбираемся, кто составляет вашу аудиторию и как мы можем подстроиться под их ожидания и потребности
-                                </div>
-                                <div class="stages__item text--small">
-                                    <span>Конкурентный анализ</span>
-                                    Мы создадим сценарии, описывающие, как ваши пользователи будут взаимодействовать с вашим продуктом, где возникнут сложности и как их избежать
-                                </div>
-                            </div>
+                        <p class="specialization__content">
+                            Мы составим структуру проекта, а также проверим его понятность для пользователя. Это позволит нам обеспечить более эффективное использование ресурсов, повысить вероятность успеха проекта на рынке и сократить стоимость разработки
+                        </p>
+                    </div>
+                    <div class="specialization__item">
+                        <div class="specialization__top h6">
+                            <span>03</span>
+                            Концепции и дизайн
                         </div>
+                        <p class="specialization__content">
+                            Мы составим структуру проекта, а также проверим его понятность для пользователя. Это позволит нам обеспечить более эффективное использование ресурсов, повысить вероятность успеха проекта на рынке и сократить стоимость разработки
+                        </p>
+                    </div>
+                    <div class="specialization__item">
+                        <div class="specialization__top h6">
+                            <span>04</span>
+                            Разработка
+                        </div>
+                        <p class="specialization__content">
+                            Это позволит нам обеспечить более эффективное использование ресурсов, повысить вероятность успеха проекта на рынке и сократить стоимость разработки</p>
+                    </div>
+                    <div class="specialization__item">
+                        <div class="specialization__top h6">
+                            <span>05</span>
+                            Тестирование и улучшение
+                        </div>
+                        <p class="specialization__content">
+                            Мы составим структуру проекта, а также проверим его понятность для пользователя. Это позволит нам обеспечить более эффективное использование ресурсов, повысить вероятность успеха проекта на рынке и сократить стоимость разработки</p>
+                    </div>
+                    <div class="specialization__item">
+                        <div class="specialization__top h6">
+                            <span>06</span>
+                            Поддержка
+                        </div>
+                        <p class="specialization__content">
+                            Мы составим структуру проекта, а также проверим его понятность для пользователя. Это позволит нам обеспечить более эффективное использование ресурсов, повысить вероятность успеха проекта на рынке и сократить стоимость разработки</p>
                     </div>
                 </div>
             </div>
         </section>
-       {% include "partials/sections/_cases.html" %}
         {% include "partials/sections/_specialists.html" %}
         {% include "partials/sections/_specialization.html" %}
         <!-- <section class="similar-services">

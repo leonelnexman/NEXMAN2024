@@ -10,9 +10,8 @@
             transition: all 0.3s;
             background: $hover;
         }
-
-        svg rect{
-            fill: $hover;
+        .icon{
+            background: $hover;
             transition: all 0.3s;
         }
     }
@@ -33,12 +32,18 @@
         background: $green;
         transition: all 0.3s;
     }
-
-    svg{
+    .icon{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 1rem;
+        background: $green;
         width: 5.6rem;
         height: 5.6rem;
-        rect{
-            transition: all 0.3s;
+        transition: all 0.3s;
+        svg{
+           width: 1.6rem;
+           height: 1.6rem; 
         }
     }
 }
@@ -57,50 +62,95 @@
     span{
         background: $dark;
     }
+    .icon{
+        background: $dark;
+        svg{
+            width: 2.4rem;
+            height: 2.4rem;
+        }
+    }
+}
+
+.btn--dark{
+    span{
+        background: $dark;
+    }
 
     svg rect{
         fill: $dark;
     }
 }
 
-.btn--return{
-    display: flex;
-    flex-direction: row-reverse;
-
+.btn-stroke{
     &:hover{
         span{
            color: $white;
            border-color: transparent;
         }
-        svg{
+        .icon{
             border-color: transparent;
-            path{
-                stroke: $white;
+            svg path{
+                stroke: $white
             }
         }
-        
     }
-
+    .icon{
+        border: 0.1rem solid $green;
+        background: transparent;
+        svg{
+            width: 2.2rem;
+            height: 1rem;
+        }
+    }
     span{
         background: transparent;
         border: 0.1rem solid $green;
         color: $dark;
     }
-
-    svg{
-        border-radius: 1rem;
-        rect{
-            stroke-width: 0.05rem;
-            fill: transparent;
-            @media (max-width: 962px){
-                 stroke-width: 0.1rem;
-            }
-        }
-        path{
-            stroke: $green;
-        }
+    svg path{
+        transition: all 0.3s;
+        stroke: $green;
     }
 }
+
+// .btn--return{
+//     display: flex;
+//     flex-direction: row-reverse;
+
+//     &:hover{
+//         span{
+//            color: $white;
+//            border-color: transparent;
+//         }
+//         svg{
+//             border-color: transparent;
+//             path{
+//                 stroke: $white;
+//             }
+//         }
+        
+//     }
+
+//     span{
+//         background: transparent;
+//         border: 0.1rem solid $green;
+//         color: $dark;
+//     }
+
+//     svg{
+//         border-radius: 1rem;
+//         rect{
+//             stroke-width: 0.05rem;
+//             fill: transparent;
+//             @media (max-width: 962px){
+//                  stroke-width: 0.1rem;
+//             }
+//         }
+//         path{
+//             stroke: $green;
+//         }
+//     }
+// }
 
 
 

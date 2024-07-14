@@ -1,22 +1,21 @@
 #cursor {
     position: absolute;
     border-radius: 100%;
-    transition: .5s cubic-bezier(.75, -1.27, .3, 2.33) transform, .2s cubic-bezier(.75, -1.27, .3, 2.33) opacity;
+    // transition: .3s cubic-bezier(.75, -1.27, .3, 2.33) transform, .2s cubic-bezier(.75, -1.27, .3, 2.33) opacity;
     user-select: none;
     pointer-events: none;
     z-index: 86581640561045608460954089504165634589123695349859465;
-    transform: scale(0.00001);
+    scale: 0.00001;
 }
 
 #aura {
     position: absolute;
     border-radius: 100%;
-    transition: .5s cubic-bezier(.75, -1.27, .3, 2.33) transform, .2s cubic-bezier(.75, -1.27, .3, 2.33) opacity;
+    // transition: .3s cubic-bezier(.75, -1.27, .3, 2.33) transform, .2s cubic-bezier(.75, -1.27, .3, 2.33) opacity;
     user-select: none;
     pointer-events: none;
     z-index: 86581640561045608460954089504165634589123695349859465;
-    transform: scale(0.00001);
-    display: none;
+    scale: 0.00001;
 }
 
 // #cursor {
@@ -57,7 +56,7 @@
 .aura{
     opacity: 0;
     z-index: 77777777777777;
-    transform: scale(0.3);
+    scale: 0.3;
     &.slider{
         width: 13rem;
         height: 13rem;
@@ -69,7 +68,7 @@
 .aura{
     opacity: 0;
     z-index: 77777777777777;
-    transform: scale(0.3);
+    scale: 0.3;
     &.info{
         display: block;
         opacity: 1;
@@ -110,11 +109,11 @@
 }
 
 #aura{
-    transition: transform  0.5s !important;
+    // transition: transform  0.5s !important;
     &.info{
         display: block;
         opacity: 1;
-        transform: scale(1);
+        scale: 1;
         margin-left: 3rem;
         .open-link{
             display: none;
@@ -141,7 +140,7 @@
     &.open{
         display: block;
         opacity: 1;
-        transform: scale(1);
+        scale: 1;
         margin-left: 3rem;
         .more-info{
             display: none;

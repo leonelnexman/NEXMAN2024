@@ -1,5 +1,5 @@
 import Swiper from 'swiper';
-import { Navigation, Pagination, Autoplay, FreeMode, Thumbs } from 'swiper/modules';
+import { Navigation, Pagination, Autoplay, FreeMode, Thumbs, EffectFade } from 'swiper/modules';
 
 const socialsslider = new Swiper('.header__socials-slider', {
     direction: 'vertical',
@@ -9,7 +9,7 @@ const socialsslider = new Swiper('.header__socials-slider', {
         disableOnInteraction: false,
         pauseOnMouseEnter: true,
     },
-    slidesPerView: 1,
+    slidesPerView: "auto",
     speed: 2500, 
     spaceBetween: 1,
     resistance: true,
@@ -17,6 +17,31 @@ const socialsslider = new Swiper('.header__socials-slider', {
     loop: true,
     allowTouchMove: false,
 });
+
+const imgSlider = new Swiper('.img-slider', {
+    modules: [EffectFade, Pagination],
+    spaceBetween: 1,
+    loop: true,
+    slidesPerView: 1,
+    effect: 'fade',
+    fadeEffect: {
+        crossFade: true,
+    },
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
+});
+
+// const sliderElement = document.querySelector('.img-slider');
+
+// sliderElement.addEventListener('mouseenter', () => {
+//     imgSlider.slideTo(1, 600); // Slide to the second slide with a smooth transition
+// });
+
+// sliderElement.addEventListener('mouseleave', () => {
+//     imgSlider.slideTo(0, 600); // Slide back to the first slide with a smooth transition
+// });
 
 const doingnow = new Swiper('.doingnow__slider', {
     modules: [Autoplay],

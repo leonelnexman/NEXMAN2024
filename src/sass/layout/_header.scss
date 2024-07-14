@@ -4,7 +4,7 @@
     left: 0;
     width: 100%;
     padding-top: 2rem;
-    z-index: 777;
+    z-index: 7777777777777777;
     transition: all 0.3s;
     &.static{
         position: fixed;
@@ -16,6 +16,7 @@
         left: 0;
         position: fixed;
         transition: all 0.5s;
+        mix-blend-mode: difference;
     }
     .container{
         width: 135.8rem;
@@ -44,7 +45,7 @@
         img{
             width: 12.7rem;
             height: 3.1rem;
-
+            mix-blend-mode: difference;
             @media (max-width: 962px){
                 width: 10.3rem;
                 height: 2.6rem;
@@ -308,6 +309,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            height: 3.3rem !important;
             svg{
                 width: 2.3rem;
                 height: 2.3rem;

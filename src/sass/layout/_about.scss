@@ -216,6 +216,7 @@
         }                             
     }
     &__item{
+        width: 32.8rem;
         @media (max-width: 962px){
             width: 100%;
         } 
@@ -246,4 +247,8 @@
             max-width: 100%;
         } 
     }
+}
+
+.blogs .tabs{
+    margin-bottom: 3rem;
 }

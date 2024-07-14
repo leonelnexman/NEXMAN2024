@@ -25,6 +25,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const isHomePage = window.location.pathname === '/' || window.location.pathname === '/index.html';
 
     if (isHomePage) {
-        menubar.classList.add('main');
+        menubar.classList.add('main-menubar');
     }
 });
