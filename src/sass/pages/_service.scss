@@ -339,6 +339,30 @@
     }
     .services__item{
         width: 31.7rem;
+        &:nth-child(3){
+            .services__item-content{
+              right: -30rem;
+              bottom: -22.5rem;
+            }  
+          }
+        &:nth-child(4){
+          .services__item-content{
+            right: 34rem;
+            bottom: -22.5rem;
+          }  
+        }
+        &:nth-child(7){
+            .services__item-content{
+              right: -30rem;
+              bottom: -13.5rem;
+            }  
+          }
+        &:nth-child(8){
+            .services__item-content{
+              right: 34rem;
+              bottom: -13.5rem;
+            }  
+          }
     }
     .services__item-top{
         width: 100%;
