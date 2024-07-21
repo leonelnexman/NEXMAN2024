@@ -113,6 +113,25 @@
     }
 }
 
+.btn-up .icon svg{
+    width: 1rem;
+    height: 2.3rem;
+}
+
+.btn-article .icon svg{
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+.btn-dark{
+    span{
+        background: $green_dark;  
+    }
+    .icon{
+        background: $green_dark;
+    }
+}
+
 // .btn--return{
 //     display: flex;
 //     flex-direction: row-reverse;

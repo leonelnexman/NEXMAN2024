@@ -50,9 +50,6 @@
     }
 }
 
-.slider-section{
-    height: auto !important;
-}
 
 .service-main{
     overflow: hidden;
@@ -81,8 +78,9 @@
     }
     &__text{
         margin-bottom: 3rem;
+        color: $dark;
         @media (max-width: 962px){
-            color: $text-dark;
+            color: $dark;
         }
     }
     .btn{
@@ -127,6 +125,8 @@
             }
         }
 }
+}
+
 
 .developers{
     &__title{
@@ -139,7 +139,6 @@
             margin-bottom: 1rem;
          }
         }
-    }
     &__text{
         font-size: 1.8rem;
         line-height: 140%;
@@ -455,5 +454,17 @@
             margin-left: 9rem;
          }
     }
+}
+
+.cases{
+    @media (max-width: 962px) {
+        .projects__wrapper{
+            gap: 0 !important;
+        }
+    }
+}
+
+.slider-section{
+    height: auto !important;
 }
 

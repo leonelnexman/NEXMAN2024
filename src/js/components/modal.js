@@ -7,19 +7,19 @@ const {body} = document;
 btns.forEach((btn) => {
     btn.onclick = function() {
         modal.classList.add('visible');
-        body.classList.add('overflow-hidden');
+        body.classList.add('no-scroll');
     };
 });
 
 span.onclick = function() {
     modal.classList.remove('visible');
-    body.classList.remove('overflow-hidden');
+    body.classList.remove('no-scroll');
 };
 
 window.onclick = function(event) {
     if (event.target === modal) {
         modal.classList.remove('visible');
-        body.classList.remove('overflow-hidden');
+        body.classList.remove('no-scroll');
     }
 };
 

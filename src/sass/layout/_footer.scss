@@ -194,11 +194,11 @@
     }
     &__descriptor{
         transition: all 0.3s;
-        &:hover{
-            color: $hover;
-            text-decoration: underline;
-            text-underline-offset: 0.3rem;
-        }
+        // &:hover{
+        //     color: $hover;
+        //     text-decoration: underline;
+        //     text-underline-offset: 0.3rem;
+        // }
     }
 }
 

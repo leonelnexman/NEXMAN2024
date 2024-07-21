@@ -1,5 +1,5 @@
-import "./components/projects-animate"
 import "./components/sliders"
+import "./components/projects-animate"
 import "./components/aos"
 import "./components/header-fixed"
 import "./components/cursor"

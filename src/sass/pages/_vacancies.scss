@@ -262,7 +262,7 @@
     &__inner-wrapper{
         display: flex;
         flex-direction: column;
-        gap: 1.5rem; 
+        gap: 2.5rem; 
     }
     &__top{
         display: flex;
@@ -386,8 +386,9 @@
     &__actions-telegram{
         margin-bottom: 3rem;
         a{
+            margin-left: 0.5rem;
             @media (max-width: 962px){
-                margin-left: 1rem;
+                margin-left: 0.5rem;
             }   
         }
     }

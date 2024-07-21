@@ -59,6 +59,8 @@
         background: $light-middle-gray-50;
         margin-right: 2rem;
         transition: all 0.7s;
+        min-height: 5.5rem;
+        max-height: 5.5rem;
         svg{
             transition: all 0.7s;
         }
@@ -73,6 +75,8 @@
             }
         }
         @media (max-width: 962px){
+            min-height: auto;
+            max-height: 100%;
             &.active{
                 background: transparent;
                 .mobile{
@@ -188,9 +192,11 @@
         backdrop-filter: blur(11.041009902954102px);
         background: $light-middle-gray-50;
         transition: all 0.3s;
-
+        min-height: 5.5rem;
+        max-height: 5.5rem;
         @media (max-width: 962px){
             display: none;
+            
         }
         &:hover{
             background: $hover;
@@ -238,13 +244,21 @@
         background: $light-middle-gray-50;
         margin-right: 2rem;
         transition: all 0.3s;
+        min-height: 5.5rem;
+        max-height: 5.5rem;
         @media (max-width: 962px){
+            min-height: 100%;
+            max-height: 100%;
             padding: 1.2rem 1.2rem 1rem;
             margin-right: 1rem;
         }
         &:hover{
             background: $hover;
             transition: all 0.3s;
+            svg path{
+                transition: all 0.3s;
+                fill: rgba(255,255,255, 0.7);
+            } 
         }
         a{
             svg path{
@@ -279,8 +293,12 @@
         background: $light-middle-gray-50;
         transition: all 0.3s;
         cursor: pointer;
+        min-height: 5.5rem;
+        max-height: 5.5rem;
         @media (max-width: 962px){
             padding: 0rem 1rem;
+            min-height: 100%;
+            max-height: 100%;
         }
         &:hover{
             background: $hover;

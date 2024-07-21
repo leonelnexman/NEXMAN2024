@@ -43,6 +43,7 @@ const imgSlider = new Swiper('.img-slider', {
 //     imgSlider.slideTo(0, 600); // Slide back to the first slide with a smooth transition
 // });
 
+
 const doingnow = new Swiper('.doingnow__slider', {
     modules: [Autoplay],
     spaceBetween: 15,
@@ -186,6 +187,16 @@ const line = new Swiper('.marqee-line__slider', {
         disableOnInteraction: false
     },
     slidesPerView: "auto",
+    breakpoints: {
+        260: {
+            speed: 3000,
+            spaceBetween: 10,
+        },
+        962: {
+            speed: 7900,
+            spaceBetween: 50,
+        }
+    }
   });
 
   const swiper2 = new Swiper(".mySwiper2", {

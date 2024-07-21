@@ -252,3 +252,13 @@
 .blogs .tabs{
     margin-bottom: 3rem;
 }
+
+.telegram.telegram-flex .btn--social span{
+    @media (max-width: 962px){
+        width: 33rem;
+        font-size: 1.2rem;
+    }
+    @media (max-width: 600px){
+        width: 24rem;
+    }
+}
