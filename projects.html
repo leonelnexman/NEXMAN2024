@@ -375,7 +375,7 @@
             <a href="#" class="nav__link label--big">шоурил</a>
             <a href="#" class="nav__link label--big">контакты</a>
           </nav>
-          <button class="btn">
+          <button class="btn btn-dark">
             <span>Заказать работу</span>
             <div class="icon">
               <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -624,13 +624,24 @@
               </a>
             </div>
             <div class="projects__actions">
-              <button class="btn btn--return">
-                <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect x="0.5" y="0.5" width="55" height="55" rx="9.5" stroke="#186D72" />
-                  <path d="M18 28H38M38 28L32.8387 24M38 28L32.8387 32" stroke="#186D72" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                </svg>
-                <span>Все проекты</span>
-              </button>
+              <div class="blogs__navigations">
+                <button class="blogs__navigations-prev disable">
+                  <svg width="20" height="11" viewBox="0 0 20 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M18.4004 5.40039H0.800391M0.800391 5.40039L5.34233 1.40039M0.800391 5.40039L5.34233 9.40039" stroke="#343F3F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </button>
+                <div class="blogs__navigations-items">
+                  <button class="blogs__navigations-item active label--large">1</button>
+                  <button class="blogs__navigations-item label--large">2</button>
+                  <button class="blogs__navigations-item label--large">3</button>
+                  <button class="blogs__navigations-item label--large">4</button>
+                </div>
+                <button class="blogs__navigations-next">
+                  <svg width="20" height="11" viewBox="0 0 20 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1.59961 5.40039H19.1996M19.1996 5.40039L14.6577 1.40039M19.1996 5.40039L14.6577 9.40039" stroke="#343F3F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </button>
+              </div>
             </div>
           </div>
         </section>
@@ -649,11 +660,12 @@
           </div>
           <button class="btn btn--social" data-aos="fade-up">
             <span>Перейти в телеграм</span>
-            <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect width="56" height="56" rx="10" fill="#343F3F" />
-              <path d="M23.3997 22.3202L31.8897 19.4902C35.6997 18.2202 37.7697 20.3002 36.5097 24.1102L33.6797 32.6002C31.7797 38.3102 28.6597 38.3102 26.7597 32.6002L25.9197 30.0802L23.3997 29.2402C17.6897 27.3402 17.6897 24.2302 23.3997 22.3202Z" stroke="white" stroke-miterlimit="10" stroke-linecap="round" />
-              <path d="M26.1094 29.6501L29.6894 26.0601" stroke="white" stroke-miterlimit="10" stroke-linecap="round" />
-            </svg>
+            <div class="icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M7.39969 6.31991L15.8897 3.48991C19.6997 2.21991 21.7697 4.29991 20.5097 8.10991L17.6797 16.5999C15.7797 22.3099 12.6597 22.3099 10.7597 16.5999L9.91969 14.0799L7.39969 13.2399C1.68969 11.3399 1.68969 8.22991 7.39969 6.31991Z" stroke="white" stroke-miterlimit="10" stroke-linecap="round" />
+                <path d="M10.1094 13.6501L13.6894 10.0601" stroke="white" stroke-miterlimit="10" stroke-linecap="round" />
+              </svg>
+            </div>
           </button>
         </section>
         <section class="task">
@@ -678,11 +690,11 @@
             </div>
             <div class="task__content">
               <img src="./img/chat.png" alt="" class="task__img" data-aos="zoom-in-up">
-              <button class="btn">
+              <button class="btn btn-up">
                 <span>Написать</span>
                 <div class="icon">
-                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M0.928036 15.0711L15.0702 0.928968M15.0702 0.928968L8.59216 1.75012M15.0702 0.928968L14.249 7.40698" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                  <svg width="10" height="23" viewBox="0 0 10 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M5.0918 21.4336L5.0918 1.43359M5.0918 1.43359L1.0918 6.59488M5.0918 1.43359L9.0918 6.59488" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                   </svg>
                 </div>
               </button>
@@ -701,7 +713,7 @@
           <div class="footer__wrapper">
             <div class="footer__info">
               <div class="footer__info-title h3">Получите</div>
-              <p class="footer__info-text text--large">индивидуальное коммерческое предложение и консультацию специалиста</p>
+              <p class="footer__info-text text--large">индивидуальное коммерческое предложение <br> и консультацию специалиста</p>
               <div class="footer__actions">
                 <div class="footer__action">
                   <div class="footer__action-img">
@@ -790,7 +802,7 @@
         <form class="promotion__form">
           <input class="label--medium tel" type="tel" placeholder="Ваш телефон">
           <button class="label--medium">Получить скидку</button>
-          <p class="promotion__descr label--xsmall"> Отправляя свои данные вы соглашаетесь <a href="">с политикой конфиденциальности</a>
+          <p class="promotion__descr label--xsmall"> Отправляя свои данные вы соглашаетесь с <a href=""> политикой конфиденциальности</a>
           </p>
         </form>
       </div>
