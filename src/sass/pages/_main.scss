@@ -708,7 +708,7 @@
         background:  $dark-50;
         z-index: 77777;
         backdrop-filter: blur(10px);
-        opacity: 0;
+        opacity: 1;
         transition: all 0.3s;
         @media (max-width: 962px){
             opacity: 1;

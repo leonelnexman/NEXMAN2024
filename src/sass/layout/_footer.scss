@@ -111,7 +111,9 @@
         background: $light-middle-gray-50;
         width: 100%;
         transition: all 0.3s;
-        animation: swing 2s ease-in-out infinite;
+        transform: rotate(5deg);
+        animation: swing 3.5s infinite;
+        cursor: pointer;
         &:hover{
             background: $hover;
             .label--big{
@@ -126,11 +128,10 @@
             width: 100%;
         }
         @keyframes swing {
-            0% { transform: rotate(0deg); }
-            40% { transform: rotate(5deg); }
-            80% { transform: rotate(-5deg); }
-            100% { transform: rotate(0deg); }
-          }
+            0% { transform: rotate(5deg); }
+            50% { transform: rotate(-5deg); }
+            100% { transform: rotate(5deg); }
+        }
     }
     &__action-img{
         border-radius: 50%;
@@ -177,6 +178,8 @@
         width: 129.2rem;
         height: 22.1rem;
         animation-duration: 1.9s;
+        opacity: 0;
+        transform: scale(0.5);
         @media (max-width: 962px){
             margin-top: 4rem;
             margin-bottom: 2.5rem;

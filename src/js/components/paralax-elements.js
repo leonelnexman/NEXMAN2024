@@ -39,3 +39,24 @@ ScrollTrigger.matchMedia({
         });
     }
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+    const intersectionObserver = new IntersectionObserver((entries, obs) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          gsap.to(entry.target, {
+            duration: 1.5, // Продолжительность анимации в секундах
+            opacity: 1,
+            scale: 1,
+            ease: 'power2.out' 
+          });
+          obs.unobserve(entry.target);
+        }
+      });
+    });
+
+    const footerLogo = document.querySelector('.footer__logo');
+    if (footerLogo) {
+      intersectionObserver.observe(footerLogo);
+    }
+  });
