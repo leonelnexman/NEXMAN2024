@@ -337,7 +337,11 @@
         }  
     }
     .services__item{
+        transform: none;
         width: 31.7rem;
+        @media (max-width: 962px){
+            transform: none;
+        } 
         &:nth-child(3){
             .services__item-content{
               right: -30rem;

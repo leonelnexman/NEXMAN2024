@@ -13,7 +13,7 @@ import "./components/promotion"
 import "./components/navbar"
 import "./components/phone-mask"
 import "./components/fancybox"
-import "./components/modal"
+// import "./components/modal"
 
 
 
