@@ -81,4 +81,12 @@ body{
     .swiper{
         overflow: visible;
     }
+    .display-menubar{
+        .menubar .nav{
+            display: none;
+        }
+    }
+    .fancybox__backdrop{
+        z-index: 7;
+    }
 }

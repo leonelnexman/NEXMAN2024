@@ -108,11 +108,14 @@ const service = new Swiper('.service__slider', {
     spaceBetween: 15,
     centeredSlides: true,
     loop: true,
-    speed: 5900,
-    freeMode: true,
+    speed: 3000,
+    freeMode: {
+        enabled: true,
+        momentum: false,
+    },
     autoplay: {
-        delay: 30,
-        disableOnInteraction: false
+        delay: 0,
+        disableOnInteraction: false,
     },
     slidesPerView: "auto",
   });

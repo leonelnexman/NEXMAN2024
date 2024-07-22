@@ -6,7 +6,7 @@
     align-items: center;
     width: 100%;
     justify-content: center;
-    z-index: 77777; 
+    z-index: 777; 
     &.main-menubar{
         .nav{
             display: flex;
@@ -56,4 +56,9 @@
             display: none;
         }
     }
+}
+
+
+.fancybox__footer{
+    z-index: 77777;
 }

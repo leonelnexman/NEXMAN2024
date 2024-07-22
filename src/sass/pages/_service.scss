@@ -19,31 +19,38 @@
         .swiper-slide{
             background: #E7ECEC;
             border-radius: 3rem;
+            transition-property: transform !important;
+            will-change: transform;
             @media (max-width: 962px){
-                &:nth-child(1){
+                &.slide1{
                     border-radius: 1.5rem;
                     width: 19.6rem !important;
                     height: 14.7rem !important;   
                 }
-                &:nth-child(2){
-                    border-radius: 1.5rem;
-                    width: 19.6rem !important;
-                    height: 14.7rem !important;   
-                }
-                &:nth-child(3){
+                &.slide2{
                     border-radius: 1.5rem;
                     width: 12.7rem !important;
                     height: 17.2rem !important;   
                 }
-                &:nth-child(4){
+                &.slide3{
                     border-radius: 1.5rem;
-                    width: 12.8rem !important;
+                    width: 12.9rem !important;
                     height: 12.9rem !important;   
                 }
-                &:nth-child(5){
+                &.slide4{
+                    border-radius: 1.5rem;
+                    width: 12.7rem !important;
+                    height: 17.2rem !important;;   
+                }
+                &.slide5{
                     border-radius: 1.5rem;
                     width: 19.6rem !important;
                     height: 14.7rem !important;    
+                }
+                &.slide6{
+                    border-radius: 1.5rem;
+                    width: 12.7rem !important;
+                    height: 17.2rem !important;    
                 }
             }
         }

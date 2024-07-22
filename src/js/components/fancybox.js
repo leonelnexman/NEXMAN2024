@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
             type: "classic",
         },
         toolbar: false, 
-        closeButton: "top",
+        // closeButton: "top",
     });
 
     document.querySelector('.fancybox-close').addEventListener('click', () => {

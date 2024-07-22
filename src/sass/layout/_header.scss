@@ -4,7 +4,7 @@
     left: 0;
     width: 100%;
     padding-top: 2rem;
-    z-index: 7777777777777777;
+    z-index: 777;
     transition: all 0.3s;
     &.static{
         position: fixed;
@@ -16,7 +16,7 @@
         left: 0;
         position: fixed;
         transition: all 0.5s;
-        mix-blend-mode: difference;
+        // mix-blend-mode: difference;
     }
     .container{
         width: 135.8rem;
